@@ -1,0 +1,4 @@
+/*2/16/2024 5:20:22 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/16/2024 5:20:32 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/16/2024 5:20:35 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/16/2024 5:20:42 PM: */ SELECT * FROM [Customers] WHERE  ERPCustomerID = 'TAR6266P' ORDER BY Id DESC

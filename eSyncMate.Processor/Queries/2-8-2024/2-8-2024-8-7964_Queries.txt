@@ -1,0 +1,4 @@
+/*2/8/2024 8:22:03 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 8:22:04 AM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/8/2024 8:22:05 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 8:22:31 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC

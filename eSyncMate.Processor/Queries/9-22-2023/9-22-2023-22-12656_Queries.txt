@@ -1,0 +1,266 @@
+/*9/22/2023 10:03:36 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 10:03:41 PM: */ SELECT * FROM [Orders] WHERE [Id] = 9
+/*9/22/2023 10:03:41 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 9
+/*9/22/2023 10:03:41 PM: */ SELECT * FROM [InboundEDI] WHERE [Id] = 9
+/*9/22/2023 10:03:41 PM: */ SELECT * FROM [InboundEDIInfo] WHERE InboundEDIId = 9
+/*9/22/2023 10:03:41 PM: */ SELECT * FROM [OutboundEDI] WHERE OrderId = 9
+/*9/22/2023 10:03:41 PM: */ SELECT * FROM [Customers] WHERE [Id] = 1
+/*9/22/2023 10:03:41 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/22/2023 10:03:41 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/22/2023 10:04:01 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:04:01 PM: */ UPDATE [Orders] SET [Status] = 'ASNMARK',[CustomerId] = 1,[InboundEDIId] = 9,[OrderDate] = '9/21/2023 12:00:00 AM',[OrderNumber] = '8180520196',[VendorNumber] = '587462631',[OrderType] = '',[ReferenceNo] = '10101689708-001',[CustomerOrderNo] = '10101689708-001',[ExternalId] = '',[ShippingMethod] = 'FEDERAL EXPRESS '' ''SG',[ShipToId] = '',[ShipToName] = 'JESSICA SANDONA',[ShipToAddress1] = '612 E SMITH ST',[ShipToAddress2] = '',[ShipToCity] = 'IRON MOUNTAIN',[ShipToState] = 'MI',[ShipToZip] = '49801',[ShipToCountry] = 'US',[ShipToEmail] = '',[ShipToPhone] = '9062826537',[BillToId] = '0047371549510',[BillToName] = 'Jessica Sandona',[BillToAddress1] = '612 E Smith St',[BillToAddress2] = '',[BillToCity] = 'Iron Mountain',[BillToState] = 'MI',[BillToZip] = '49801',[BillToCountry] = 'US',[BillToEmail] = '',[BillToPhone] = '(906)282-6537',[BuyerId] = '0605388007940',[BuyerName] = 'SAMS CLUB 4727',[BuyerAddress1] = '2101 SE SIMPLE SAVINGS DR',[BuyerAddress2] = '',[BuyerCity] = 'BENTONVILLE',[BuyerState] = 'AR',[BuyerZip] = '72712-4304',[BuyerCountry] = 'US',[BuyerEmail] = '',[BuyerPhone] = '',[IsStoreOrder] = 0,[CreatedDate] = '9/21/2023 10:12:17 PM',[CreatedBy] = 1 WHERE [Id] = 9
+/*9/22/2023 10:04:01 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:04:01 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:04:01 PM: */ DELETE FROM OrderData WHERE OrderId = 9 AND [Type] = 'ASN-MARK-NS'
+/*9/22/2023 10:04:01 PM: */ /****************************************Rollback Transaction********************************/
+/*9/22/2023 10:04:01 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:04:01 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/22/2023 10:04:01 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[OrderNumber],[Data],[CreatedDate],[CreatedBy]) VALUES (115,9,'ASN-MARK-NS','8180520196','[{"status":"OK","message":"Entity updated","entity":"IF547654"}]','9/22/2023 10:04:01 PM',1)
+/*9/22/2023 10:04:01 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:04:01 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 10:04:28 PM: */ SELECT * FROM [Orders] WHERE [Id] = 10
+/*9/22/2023 10:04:28 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 10
+/*9/22/2023 10:04:28 PM: */ SELECT * FROM [InboundEDI] WHERE [Id] = 10
+/*9/22/2023 10:04:28 PM: */ SELECT * FROM [InboundEDIInfo] WHERE InboundEDIId = 10
+/*9/22/2023 10:04:28 PM: */ SELECT * FROM [OutboundEDI] WHERE OrderId = 10
+/*9/22/2023 10:04:28 PM: */ SELECT * FROM [Customers] WHERE [Id] = 1
+/*9/22/2023 10:04:28 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/22/2023 10:04:28 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/22/2023 10:04:31 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:04:31 PM: */ UPDATE [Orders] SET [Status] = 'ASNMARK',[CustomerId] = 1,[InboundEDIId] = 10,[OrderDate] = '9/21/2023 12:00:00 AM',[OrderNumber] = '8180520660',[VendorNumber] = '587462631',[OrderType] = '',[ReferenceNo] = '10101708338-001',[CustomerOrderNo] = '10101708338-001',[ExternalId] = '',[ShippingMethod] = 'FEDERAL EXPRESS '' ''SG',[ShipToId] = '',[ShipToName] = 'ANNA ZANKO',[ShipToAddress1] = '3763 PETE MILLER AVE N',[ShipToAddress2] = '',[ShipToCity] = 'STILLWATER',[ShipToState] = 'MN',[ShipToZip] = '55082',[ShipToCountry] = 'US',[ShipToEmail] = '',[ShipToPhone] = '6512809009',[BillToId] = '0045454924110',[BillToName] = 'Anna Zanko',[BillToAddress1] = '3763 Pete Miller Ave N',[BillToAddress2] = '',[BillToCity] = 'Stillwater',[BillToState] = 'MN',[BillToZip] = '55082',[BillToCountry] = 'US',[BillToEmail] = '',[BillToPhone] = '(651)280-9009',[BuyerId] = '0605388007940',[BuyerName] = 'SAMS CLUB 4727',[BuyerAddress1] = '2101 SE SIMPLE SAVINGS DR',[BuyerAddress2] = '',[BuyerCity] = 'BENTONVILLE',[BuyerState] = 'AR',[BuyerZip] = '72712-4304',[BuyerCountry] = 'US',[BuyerEmail] = '',[BuyerPhone] = '',[IsStoreOrder] = 0,[CreatedDate] = '9/21/2023 10:18:52 PM',[CreatedBy] = 1 WHERE [Id] = 10
+/*9/22/2023 10:04:32 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:04:32 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:04:32 PM: */ DELETE FROM OrderData WHERE OrderId = 10 AND [Type] = 'ASN-MARK-NS'
+/*9/22/2023 10:04:32 PM: */ /****************************************Rollback Transaction********************************/
+/*9/22/2023 10:04:32 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:04:32 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/22/2023 10:04:32 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[OrderNumber],[Data],[CreatedDate],[CreatedBy]) VALUES (116,10,'ASN-MARK-NS','8180520660','[{"status":"OK","message":"Entity updated","entity":"IF547656"}]','9/22/2023 10:04:32 PM',1)
+/*9/22/2023 10:04:32 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:04:32 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 10:04:36 PM: */ SELECT * FROM [Orders] WHERE [Id] = 11
+/*9/22/2023 10:04:36 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 11
+/*9/22/2023 10:04:36 PM: */ SELECT * FROM [InboundEDI] WHERE [Id] = 11
+/*9/22/2023 10:04:36 PM: */ SELECT * FROM [InboundEDIInfo] WHERE InboundEDIId = 11
+/*9/22/2023 10:04:36 PM: */ SELECT * FROM [OutboundEDI] WHERE OrderId = 11
+/*9/22/2023 10:04:36 PM: */ SELECT * FROM [Customers] WHERE [Id] = 1
+/*9/22/2023 10:04:36 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/22/2023 10:04:36 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/22/2023 10:04:38 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:04:38 PM: */ UPDATE [Orders] SET [Status] = 'ASNMARK',[CustomerId] = 1,[InboundEDIId] = 11,[OrderDate] = '9/21/2023 12:00:00 AM',[OrderNumber] = '8180521137',[VendorNumber] = '587462631',[OrderType] = '',[ReferenceNo] = '10101717042-001',[CustomerOrderNo] = '10101717042-001',[ExternalId] = '',[ShippingMethod] = 'FEDERAL EXPRESS '' ''SG',[ShipToId] = '',[ShipToName] = 'TRISHIA NANCE',[ShipToAddress1] = '281 TRIPLE R RD',[ShipToAddress2] = '',[ShipToCity] = 'WILKESBORO',[ShipToState] = 'NC',[ShipToZip] = '28697',[ShipToCountry] = 'US',[ShipToEmail] = '',[ShipToPhone] = '3369844292',[BillToId] = '0006080270910',[BillToName] = 'TRISHIA NANCE',[BillToAddress1] = '281 TRIPLE R RD',[BillToAddress2] = '',[BillToCity] = 'WILKESBORO',[BillToState] = 'NC',[BillToZip] = '28697',[BillToCountry] = 'US',[BillToEmail] = '',[BillToPhone] = '(704)880-0247',[BuyerId] = '0605388007940',[BuyerName] = 'SAMS CLUB 4727',[BuyerAddress1] = '2101 SE SIMPLE SAVINGS DR',[BuyerAddress2] = '',[BuyerCity] = 'BENTONVILLE',[BuyerState] = 'AR',[BuyerZip] = '72712-4304',[BuyerCountry] = 'US',[BuyerEmail] = '',[BuyerPhone] = '',[IsStoreOrder] = 0,[CreatedDate] = '9/21/2023 10:19:12 PM',[CreatedBy] = 1 WHERE [Id] = 11
+/*9/22/2023 10:04:38 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:04:38 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:04:38 PM: */ DELETE FROM OrderData WHERE OrderId = 11 AND [Type] = 'ASN-MARK-NS'
+/*9/22/2023 10:04:38 PM: */ /****************************************Rollback Transaction********************************/
+/*9/22/2023 10:04:38 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:04:38 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/22/2023 10:04:38 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[OrderNumber],[Data],[CreatedDate],[CreatedBy]) VALUES (117,11,'ASN-MARK-NS','8180521137','[{"status":"OK","message":"Entity updated","entity":"IF547658"}]','9/22/2023 10:04:38 PM',1)
+/*9/22/2023 10:04:38 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:04:38 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 10:04:50 PM: */ SELECT * FROM [Orders] WHERE [Id] = 12
+/*9/22/2023 10:04:50 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 12
+/*9/22/2023 10:04:50 PM: */ SELECT * FROM [InboundEDI] WHERE [Id] = 12
+/*9/22/2023 10:04:50 PM: */ SELECT * FROM [InboundEDIInfo] WHERE InboundEDIId = 12
+/*9/22/2023 10:04:50 PM: */ SELECT * FROM [OutboundEDI] WHERE OrderId = 12
+/*9/22/2023 10:04:50 PM: */ SELECT * FROM [Customers] WHERE [Id] = 1
+/*9/22/2023 10:04:50 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/22/2023 10:04:50 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/22/2023 10:04:55 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:04:55 PM: */ UPDATE [Orders] SET [Status] = 'ASNMARK',[CustomerId] = 1,[InboundEDIId] = 12,[OrderDate] = '9/21/2023 12:00:00 AM',[OrderNumber] = '8180524478',[VendorNumber] = '587462631',[OrderType] = '',[ReferenceNo] = '10101815564-001',[CustomerOrderNo] = '10101815564-001',[ExternalId] = '',[ShippingMethod] = 'FEDERAL EXPRESS '' ''SG',[ShipToId] = '',[ShipToName] = 'ERIKA MONTTI',[ShipToAddress1] = '13368 LETTERMAN ST',[ShipToAddress2] = '',[ShipToCity] = 'MORENO VALLEY',[ShipToState] = 'CA',[ShipToZip] = '92555',[ShipToCountry] = 'US',[ShipToEmail] = '',[ShipToPhone] = '9518079781',[BillToId] = '0063348378911',[BillToName] = 'ERIKA MONTTI',[BillToAddress1] = '13368 LETTERMAN ST',[BillToAddress2] = '',[BillToCity] = 'MORENO VALLEY',[BillToState] = 'CA',[BillToZip] = '92555',[BillToCountry] = 'US',[BillToEmail] = '',[BillToPhone] = '(951)807-5100',[BuyerId] = '0605388007940',[BuyerName] = 'SAMS CLUB 4727',[BuyerAddress1] = '2101 SE SIMPLE SAVINGS DR',[BuyerAddress2] = '',[BuyerCity] = 'BENTONVILLE',[BuyerState] = 'AR',[BuyerZip] = '72712-4304',[BuyerCountry] = 'US',[BuyerEmail] = '',[BuyerPhone] = '',[IsStoreOrder] = 0,[CreatedDate] = '9/22/2023 2:35:44 AM',[CreatedBy] = 1 WHERE [Id] = 12
+/*9/22/2023 10:04:55 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:04:55 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:04:55 PM: */ DELETE FROM OrderData WHERE OrderId = 12 AND [Type] = 'ASN-MARK-NS'
+/*9/22/2023 10:04:55 PM: */ /****************************************Rollback Transaction********************************/
+/*9/22/2023 10:04:55 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:04:55 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/22/2023 10:04:55 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[OrderNumber],[Data],[CreatedDate],[CreatedBy]) VALUES (118,12,'ASN-MARK-NS','8180524478','[{"status":"OK","message":"Entity updated","entity":"IF547657"}]','9/22/2023 10:04:55 PM',1)
+/*9/22/2023 10:04:55 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:04:55 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 10:18:47 PM: */ SELECT * FROM [Orders] WHERE [Id] = 13
+/*9/22/2023 10:18:47 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 13
+/*9/22/2023 10:18:48 PM: */ SELECT * FROM [InboundEDI] WHERE [Id] = 13
+/*9/22/2023 10:18:48 PM: */ SELECT * FROM [InboundEDIInfo] WHERE InboundEDIId = 13
+/*9/22/2023 10:18:48 PM: */ SELECT * FROM [OutboundEDI] WHERE OrderId = 13
+/*9/22/2023 10:18:48 PM: */ SELECT * FROM [Customers] WHERE [Id] = 1
+/*9/22/2023 10:18:48 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/22/2023 10:18:48 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/22/2023 10:18:55 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:18:55 PM: */ DELETE FROM OrderData WHERE OrderId = 13 AND [Type] = 'ASN-NS'
+/*9/22/2023 10:18:55 PM: */ /****************************************Rollback Transaction********************************/
+/*9/22/2023 10:18:55 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:18:55 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/22/2023 10:18:55 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[OrderNumber],[Data],[CreatedDate],[CreatedBy]) VALUES (119,13,'ASN-NS','8180527334','{"status":"OK","message":"","data":[{"id":"9957637","name":"3719","number":"SO558530","docNo":"SO558530","soNos":"","ifNos":"","customerPO":"8180527334","orderDC":"","orderDate":"09/22/2023","plannedDeliveryDate":"09/22/2023","customerOrderNo":"10101918097-001","orderRefNo":"190398646001","buyer":{"name":"Sam''s Club","address1":"","address2":"","city":"","state":"","zip":"","country":""},"fulfillments":[{"id":"9959764","date":"09/22/2023","name":"3719","docNo":"IF547719","shipment":{"carrier":"FDEG","amount":"","service":"CG","idier":"SH67157510","price":"20.31"},"shipTo":{"name":"NICOLE DONALDSON","address1":"3637 W 36TH PL","address2":"","city":"YUMA","state":"AZ","country":"US","zip":"85365"},"shipFrom":{"name":"LALTITUDE LLC","address1":"","address2":"","city":"","state":"","country":"","zip":""},"trackingNos":["784106355670"],"packages":[{"cartonSSCC":"","height":1,"length":13.08,"name":"Box 1","palletSSCC":"","trackingNo":"784106355670","weight":1.93,"width":11.08,"id":"714614","items":[{"quantity":1,"sku":"PTB01-BLK-1948","upc":"817338021948","ediLineId":"001","vendorNo":"990285722"}]}]}],"totalPackages":1,"totalWeight":1.93}]}','9/22/2023 10:18:55 PM',1)
+/*9/22/2023 10:18:55 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:18:55 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:18:55 PM: */ DELETE FROM OrderData WHERE OrderId = 13 AND [Type] = 'ASN-JSON'
+/*9/22/2023 10:18:55 PM: */ /****************************************Rollback Transaction********************************/
+/*9/22/2023 10:18:55 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:18:55 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/22/2023 10:18:55 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[OrderNumber],[Data],[CreatedDate],[CreatedBy]) VALUES (120,13,'ASN-JSON','8180527334','{"StartNodes":[{"Name":"BSN","Data":["00","IF547719","20230922","2218","0001"]},{"Name":"HL","Data":["1","","S"]},{"Name":"TD5","Data":["B","2","FDEG","M","","","","","","","","CG"]},{"Name":"REF","Data":["BM","784106355670"]},{"Name":"DTM","Data":["011","20230922"]},{"Name":"N1","Data":["BY","SAMS CLUB 4727","UL","0605388007940"]},{"Name":"N1","Data":["SF","LALTITUDE LLC"]},{"Name":"HL","Data":["2","1","O"]},{"Name":"PRF","Data":["8180527334","","","20230922"]},{"Name":"REF","Data":["IA","587462631"]},{"Name":"REF","Data":["CO","10101918097-001"]},{"Name":"REF","Data":["AN","190398646001"]}],"Packs":[{"Data":[{"Name":"HL","Data":["@HL_IDX@","2","P"]},{"Name":"MAN","Data":["CP","784106355670"]}],"Items":[{"Data":[{"Name":"HL","Data":["@HL_IDX@","@HL_P_IDX@","I"]},{"Name":"LIN","Data":["","IN","990285722","UP","817338021948"]},{"Name":"SN1","Data":["",1,"EA"]}]}]}],"EndNodes":[{"Name":"CTT","Data":["@HLCOUNT@"]}]}','9/22/2023 10:18:55 PM',1)
+/*9/22/2023 10:18:55 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:18:56 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:18:56 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OutboundEDI
+/*9/22/2023 10:18:56 PM: */ INSERT INTO [OutboundEDI] ([Id],[OrderId],[Status],[Data],[CreatedDate],[CreatedBy]) VALUES (105015,13,'NEW','','9/22/2023 10:18:56 PM',1)
+/*9/22/2023 10:18:56 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:18:56 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:18:56 PM: */ DELETE FROM OrderData WHERE OrderId = 13 AND [Type] = 'ASN-EDI'
+/*9/22/2023 10:18:56 PM: */ /****************************************Rollback Transaction********************************/
+/*9/22/2023 10:18:56 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:18:56 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/22/2023 10:18:56 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[OrderNumber],[Data],[CreatedDate],[CreatedBy]) VALUES (121,13,'ASN-EDI','8180527334','ISA*00*          *00*          *ZZ*LALTSAMSCLUB   *08*925485USSM     *230922*1018*U*00501*000105015*0*P*>~GS*SH*LALTSAMSCLUB*925485USSM*20230922*1018*105015*X*005010~ST*856*0001~BSN*00*IF547719*20230922*2218*0001~HL*1**S~TD5*B*2*FDEG*M********CG~REF*BM*784106355670~DTM*011*20230922~N1*BY*SAMS CLUB 4727*UL*0605388007940~N1*SF*LALTITUDE LLC~HL*2*1*O~PRF*8180527334***20230922~REF*IA*587462631~REF*CO*10101918097-001~REF*AN*190398646001~HL*3*2*P~MAN*CP*784106355670~HL*4*3*I~LIN**IN*990285722*UP*817338021948~SN1**1*EA~CTT*4~SE*20*0001~GE*1*105015~IEA*1*000105015~','9/22/2023 10:18:56 PM',1)
+/*9/22/2023 10:18:56 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:18:56 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:18:56 PM: */ UPDATE [OutboundEDI] SET [OrderId] = 13,[Status] = 'NEW',[Data] = 'ISA*00*          *00*          *ZZ*LALTSAMSCLUB   *08*925485USSM     *230922*1018*U*00501*000105015*0*P*>~GS*SH*LALTSAMSCLUB*925485USSM*20230922*1018*105015*X*005010~ST*856*0001~BSN*00*IF547719*20230922*2218*0001~HL*1**S~TD5*B*2*FDEG*M********CG~REF*BM*784106355670~DTM*011*20230922~N1*BY*SAMS CLUB 4727*UL*0605388007940~N1*SF*LALTITUDE LLC~HL*2*1*O~PRF*8180527334***20230922~REF*IA*587462631~REF*CO*10101918097-001~REF*AN*190398646001~HL*3*2*P~MAN*CP*784106355670~HL*4*3*I~LIN**IN*990285722*UP*817338021948~SN1**1*EA~CTT*4~SE*20*0001~GE*1*105015~IEA*1*000105015~',[CreatedDate] = '9/22/2023 10:18:56 PM',[CreatedBy] = 1 WHERE [Id] = 105015
+/*9/22/2023 10:18:56 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:18:56 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:18:56 PM: */ UPDATE [Orders] SET [Status] = 'ASNGEN',[CustomerId] = 1,[InboundEDIId] = 13,[OrderDate] = '9/21/2023 12:00:00 AM',[OrderNumber] = '8180527334',[VendorNumber] = '587462631',[OrderType] = '',[ReferenceNo] = '10101918097-001',[CustomerOrderNo] = '10101918097-001',[ExternalId] = '',[ShippingMethod] = 'FEDERAL EXPRESS '' ''SG',[ShipToId] = '',[ShipToName] = 'NICOLE DONALDSON',[ShipToAddress1] = '3637 W 36TH PL',[ShipToAddress2] = '',[ShipToCity] = 'YUMA',[ShipToState] = 'AZ',[ShipToZip] = '85365',[ShipToCountry] = 'US',[ShipToEmail] = '',[ShipToPhone] = '5044853122',[BillToId] = '0045542015321',[BillToName] = 'Nic Donaldson',[BillToAddress1] = '3637 West 36th Place',[BillToAddress2] = '',[BillToCity] = 'Yuma',[BillToState] = 'AZ',[BillToZip] = '85365',[BillToCountry] = 'US',[BillToEmail] = '',[BillToPhone] = '(504)485-3122',[BuyerId] = '0605388007940',[BuyerName] = 'SAMS CLUB 4727',[BuyerAddress1] = '2101 SE SIMPLE SAVINGS DR',[BuyerAddress2] = '',[BuyerCity] = 'BENTONVILLE',[BuyerState] = 'AR',[BuyerZip] = '72712-4304',[BuyerCountry] = 'US',[BuyerEmail] = '',[BuyerPhone] = '',[IsStoreOrder] = 0,[CreatedDate] = '9/22/2023 2:45:13 PM',[CreatedBy] = 1 WHERE [Id] = 13
+/*9/22/2023 10:18:56 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:18:56 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 10:19:06 PM: */ SELECT * FROM [Orders] WHERE [Id] = 14
+/*9/22/2023 10:19:06 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 14
+/*9/22/2023 10:19:07 PM: */ SELECT * FROM [InboundEDI] WHERE [Id] = 14
+/*9/22/2023 10:19:07 PM: */ SELECT * FROM [InboundEDIInfo] WHERE InboundEDIId = 14
+/*9/22/2023 10:19:07 PM: */ SELECT * FROM [OutboundEDI] WHERE OrderId = 14
+/*9/22/2023 10:19:07 PM: */ SELECT * FROM [Customers] WHERE [Id] = 1
+/*9/22/2023 10:19:07 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/22/2023 10:19:07 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/22/2023 10:19:09 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:19:09 PM: */ DELETE FROM OrderData WHERE OrderId = 14 AND [Type] = 'ASN-NS'
+/*9/22/2023 10:19:09 PM: */ /****************************************Rollback Transaction********************************/
+/*9/22/2023 10:19:09 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:19:09 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/22/2023 10:19:09 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[OrderNumber],[Data],[CreatedDate],[CreatedBy]) VALUES (122,14,'ASN-NS','8180527170','{"status":"OK","message":"","data":[{"id":"9957638","name":"3719","number":"SO558531","docNo":"SO558531","soNos":"","ifNos":"","customerPO":"8180527170","orderDC":"","orderDate":"09/22/2023","plannedDeliveryDate":"09/22/2023","customerOrderNo":"10101891962-001","orderRefNo":"190397622001","buyer":{"name":"Sam''s Club","address1":"","address2":"","city":"","state":"","zip":"","country":""},"fulfillments":[{"id":"9959765","date":"09/22/2023","name":"3719","docNo":"IF547722","shipment":{"carrier":"FDEG","amount":"","service":"CG","idier":"SH67157513","price":"20.31"},"shipTo":{"name":"M ESCUTIA","address1":"37305 CALLE DE LOBO","address2":"","city":"MURRIETA","state":"CA","country":"US","zip":"92562"},"shipFrom":{"name":"LALTITUDE LLC","address1":"","address2":"","city":"","state":"","country":"","zip":""},"trackingNos":["784106356380"],"packages":[{"cartonSSCC":"","height":3,"length":10.75,"name":"Box 1","palletSSCC":"","trackingNo":"784106356380","weight":1.04,"width":7.75,"id":"714616","items":[{"quantity":1,"sku":"PBM03-3539","upc":"817338023539","ediLineId":"001","vendorNo":"990178313"}]}]}],"totalPackages":1,"totalWeight":1.04}]}','9/22/2023 10:19:09 PM',1)
+/*9/22/2023 10:19:09 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:19:09 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:19:09 PM: */ DELETE FROM OrderData WHERE OrderId = 14 AND [Type] = 'ASN-JSON'
+/*9/22/2023 10:19:09 PM: */ /****************************************Rollback Transaction********************************/
+/*9/22/2023 10:19:09 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:19:09 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/22/2023 10:19:09 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[OrderNumber],[Data],[CreatedDate],[CreatedBy]) VALUES (123,14,'ASN-JSON','8180527170','{"StartNodes":[{"Name":"BSN","Data":["00","IF547722","20230922","2219","0001"]},{"Name":"HL","Data":["1","","S"]},{"Name":"TD5","Data":["B","2","FDEG","M","","","","","","","","CG"]},{"Name":"REF","Data":["BM","784106356380"]},{"Name":"DTM","Data":["011","20230922"]},{"Name":"N1","Data":["BY","SAMS CLUB 4727","UL","0605388007940"]},{"Name":"N1","Data":["SF","LALTITUDE LLC"]},{"Name":"HL","Data":["2","1","O"]},{"Name":"PRF","Data":["8180527170","","","20230922"]},{"Name":"REF","Data":["IA","587462631"]},{"Name":"REF","Data":["CO","10101891962-001"]},{"Name":"REF","Data":["AN","190397622001"]}],"Packs":[{"Data":[{"Name":"HL","Data":["@HL_IDX@","2","P"]},{"Name":"MAN","Data":["CP","784106356380"]}],"Items":[{"Data":[{"Name":"HL","Data":["@HL_IDX@","@HL_P_IDX@","I"]},{"Name":"LIN","Data":["","IN","990178313","UP","817338023539"]},{"Name":"SN1","Data":["",1,"EA"]}]}]}],"EndNodes":[{"Name":"CTT","Data":["@HLCOUNT@"]}]}','9/22/2023 10:19:09 PM',1)
+/*9/22/2023 10:19:09 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:19:10 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:19:10 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OutboundEDI
+/*9/22/2023 10:19:10 PM: */ INSERT INTO [OutboundEDI] ([Id],[OrderId],[Status],[Data],[CreatedDate],[CreatedBy]) VALUES (155016,14,'NEW','','9/22/2023 10:19:10 PM',1)
+/*9/22/2023 10:19:10 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:19:10 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:19:10 PM: */ DELETE FROM OrderData WHERE OrderId = 14 AND [Type] = 'ASN-EDI'
+/*9/22/2023 10:19:10 PM: */ /****************************************Rollback Transaction********************************/
+/*9/22/2023 10:19:10 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:19:10 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/22/2023 10:19:10 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[OrderNumber],[Data],[CreatedDate],[CreatedBy]) VALUES (124,14,'ASN-EDI','8180527170','ISA*00*          *00*          *ZZ*LALTSAMSCLUB   *08*925485USSM     *230922*1019*U*00501*000155016*0*P*>~GS*SH*LALTSAMSCLUB*925485USSM*20230922*1019*155016*X*005010~ST*856*0001~BSN*00*IF547722*20230922*2219*0001~HL*1**S~TD5*B*2*FDEG*M********CG~REF*BM*784106356380~DTM*011*20230922~N1*BY*SAMS CLUB 4727*UL*0605388007940~N1*SF*LALTITUDE LLC~HL*2*1*O~PRF*8180527170***20230922~REF*IA*587462631~REF*CO*10101891962-001~REF*AN*190397622001~HL*3*2*P~MAN*CP*784106356380~HL*4*3*I~LIN**IN*990178313*UP*817338023539~SN1**1*EA~CTT*4~SE*20*0001~GE*1*155016~IEA*1*000155016~','9/22/2023 10:19:10 PM',1)
+/*9/22/2023 10:19:10 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:19:10 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:19:10 PM: */ UPDATE [OutboundEDI] SET [OrderId] = 14,[Status] = 'NEW',[Data] = 'ISA*00*          *00*          *ZZ*LALTSAMSCLUB   *08*925485USSM     *230922*1019*U*00501*000155016*0*P*>~GS*SH*LALTSAMSCLUB*925485USSM*20230922*1019*155016*X*005010~ST*856*0001~BSN*00*IF547722*20230922*2219*0001~HL*1**S~TD5*B*2*FDEG*M********CG~REF*BM*784106356380~DTM*011*20230922~N1*BY*SAMS CLUB 4727*UL*0605388007940~N1*SF*LALTITUDE LLC~HL*2*1*O~PRF*8180527170***20230922~REF*IA*587462631~REF*CO*10101891962-001~REF*AN*190397622001~HL*3*2*P~MAN*CP*784106356380~HL*4*3*I~LIN**IN*990178313*UP*817338023539~SN1**1*EA~CTT*4~SE*20*0001~GE*1*155016~IEA*1*000155016~',[CreatedDate] = '9/22/2023 10:19:10 PM',[CreatedBy] = 1 WHERE [Id] = 155016
+/*9/22/2023 10:19:10 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:19:10 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:19:10 PM: */ UPDATE [Orders] SET [Status] = 'ASNGEN',[CustomerId] = 1,[InboundEDIId] = 14,[OrderDate] = '9/21/2023 12:00:00 AM',[OrderNumber] = '8180527170',[VendorNumber] = '587462631',[OrderType] = '',[ReferenceNo] = '10101891962-001',[CustomerOrderNo] = '10101891962-001',[ExternalId] = '',[ShippingMethod] = 'FEDERAL EXPRESS '' ''SG',[ShipToId] = '',[ShipToName] = 'M ESCUTIA',[ShipToAddress1] = '37305 CALLE DE LOBO',[ShipToAddress2] = '',[ShipToCity] = 'MURRIETA',[ShipToState] = 'CA',[ShipToZip] = '92562',[ShipToCountry] = 'US',[ShipToEmail] = '',[ShipToPhone] = '9513573388',[BillToId] = '0090099195110',[BillToName] = 'MYCHAN PHAM',[BillToAddress1] = 'P.O BOX 54625',[BillToAddress2] = '',[BillToCity] = 'IRVINE',[BillToState] = 'CA',[BillToZip] = '92619',[BillToCountry] = 'US',[BillToEmail] = '',[BillToPhone] = '(951)357-3388',[BuyerId] = '0605388007940',[BuyerName] = 'SAMS CLUB 4727',[BuyerAddress1] = '2101 SE SIMPLE SAVINGS DR',[BuyerAddress2] = '',[BuyerCity] = 'BENTONVILLE',[BuyerState] = 'AR',[BuyerZip] = '72712-4304',[BuyerCountry] = 'US',[BuyerEmail] = '',[BuyerPhone] = '',[IsStoreOrder] = 0,[CreatedDate] = '9/22/2023 2:46:46 PM',[CreatedBy] = 1 WHERE [Id] = 14
+/*9/22/2023 10:19:10 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:19:10 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 10:19:17 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 14 ORDER BY Id
+/*9/22/2023 10:19:25 PM: */ SELECT * FROM [Orders] WHERE [Id] = 15
+/*9/22/2023 10:19:25 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 15
+/*9/22/2023 10:19:25 PM: */ SELECT * FROM [InboundEDI] WHERE [Id] = 15
+/*9/22/2023 10:19:25 PM: */ SELECT * FROM [InboundEDIInfo] WHERE InboundEDIId = 15
+/*9/22/2023 10:19:25 PM: */ SELECT * FROM [OutboundEDI] WHERE OrderId = 15
+/*9/22/2023 10:19:25 PM: */ SELECT * FROM [Customers] WHERE [Id] = 1
+/*9/22/2023 10:19:25 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/22/2023 10:19:26 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/22/2023 10:19:27 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:19:27 PM: */ DELETE FROM OrderData WHERE OrderId = 15 AND [Type] = 'ASN-NS'
+/*9/22/2023 10:19:27 PM: */ /****************************************Rollback Transaction********************************/
+/*9/22/2023 10:19:27 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:19:28 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/22/2023 10:19:28 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[OrderNumber],[Data],[CreatedDate],[CreatedBy]) VALUES (125,15,'ASN-NS','8180525574','{"status":"OK","message":"","data":[{"id":"9957639","name":"3719","number":"SO558532","docNo":"SO558532","soNos":"","ifNos":"","customerPO":"8180525574","orderDC":"","orderDate":"09/22/2023","plannedDeliveryDate":"09/22/2023","customerOrderNo":"10101846780-001","orderRefNo":"208826524969818001","buyer":{"name":"Sam''s Club","address1":"","address2":"","city":"","state":"","zip":"","country":""},"fulfillments":[{"id":"9959766","date":"09/22/2023","name":"3719","docNo":"IF547725","shipment":{"carrier":"FDEG","amount":"","service":"CG","idier":"SH67157979","price":"20.2"},"shipTo":{"name":"LORRINA CISNEROS","address1":"11242 NEWTON STREET","address2":"","city":"HOUSTON","state":"TX","country":"US","zip":"77089"},"shipFrom":{"name":"LALTITUDE LLC","address1":"","address2":"","city":"","state":"","country":"","zip":""},"trackingNos":["784106571396"],"packages":[{"cartonSSCC":"","height":3,"length":10.75,"name":"Box 1","palletSSCC":"","trackingNo":"784106571396","weight":2.63,"width":7.75,"id":"714521","items":[{"quantity":1,"sku":"PMC102-3652","upc":"817338023652","ediLineId":"001","vendorNo":"990285732"}]}]}],"totalPackages":1,"totalWeight":2.63}]}','9/22/2023 10:19:27 PM',1)
+/*9/22/2023 10:19:28 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:19:28 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:19:28 PM: */ DELETE FROM OrderData WHERE OrderId = 15 AND [Type] = 'ASN-JSON'
+/*9/22/2023 10:19:28 PM: */ /****************************************Rollback Transaction********************************/
+/*9/22/2023 10:19:28 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:19:28 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/22/2023 10:19:28 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[OrderNumber],[Data],[CreatedDate],[CreatedBy]) VALUES (126,15,'ASN-JSON','8180525574','{"StartNodes":[{"Name":"BSN","Data":["00","IF547725","20230922","2219","0001"]},{"Name":"HL","Data":["1","","S"]},{"Name":"TD5","Data":["B","2","FDEG","M","","","","","","","","CG"]},{"Name":"REF","Data":["BM","784106571396"]},{"Name":"DTM","Data":["011","20230922"]},{"Name":"N1","Data":["BY","SAMS CLUB 4727","UL","0605388007940"]},{"Name":"N1","Data":["SF","LALTITUDE LLC"]},{"Name":"HL","Data":["2","1","O"]},{"Name":"PRF","Data":["8180525574","","","20230922"]},{"Name":"REF","Data":["IA","587462631"]},{"Name":"REF","Data":["CO","10101846780-001"]},{"Name":"REF","Data":["AN","208826524969818001"]}],"Packs":[{"Data":[{"Name":"HL","Data":["@HL_IDX@","2","P"]},{"Name":"MAN","Data":["CP","784106571396"]}],"Items":[{"Data":[{"Name":"HL","Data":["@HL_IDX@","@HL_P_IDX@","I"]},{"Name":"LIN","Data":["","IN","990285732","UP","817338023652"]},{"Name":"SN1","Data":["",1,"EA"]}]}]}],"EndNodes":[{"Name":"CTT","Data":["@HLCOUNT@"]}]}','9/22/2023 10:19:28 PM',1)
+/*9/22/2023 10:19:28 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:19:28 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:19:28 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OutboundEDI
+/*9/22/2023 10:19:28 PM: */ INSERT INTO [OutboundEDI] ([Id],[OrderId],[Status],[Data],[CreatedDate],[CreatedBy]) VALUES (205017,15,'NEW','','9/22/2023 10:19:28 PM',1)
+/*9/22/2023 10:19:28 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:19:28 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:19:28 PM: */ DELETE FROM OrderData WHERE OrderId = 15 AND [Type] = 'ASN-EDI'
+/*9/22/2023 10:19:29 PM: */ /****************************************Rollback Transaction********************************/
+/*9/22/2023 10:19:29 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:19:29 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/22/2023 10:19:29 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[OrderNumber],[Data],[CreatedDate],[CreatedBy]) VALUES (127,15,'ASN-EDI','8180525574','ISA*00*          *00*          *ZZ*LALTSAMSCLUB   *08*925485USSM     *230922*1019*U*00501*000205017*0*P*>~GS*SH*LALTSAMSCLUB*925485USSM*20230922*1019*205017*X*005010~ST*856*0001~BSN*00*IF547725*20230922*2219*0001~HL*1**S~TD5*B*2*FDEG*M********CG~REF*BM*784106571396~DTM*011*20230922~N1*BY*SAMS CLUB 4727*UL*0605388007940~N1*SF*LALTITUDE LLC~HL*2*1*O~PRF*8180525574***20230922~REF*IA*587462631~REF*CO*10101846780-001~REF*AN*208826524969818001~HL*3*2*P~MAN*CP*784106571396~HL*4*3*I~LIN**IN*990285732*UP*817338023652~SN1**1*EA~CTT*4~SE*20*0001~GE*1*205017~IEA*1*000205017~','9/22/2023 10:19:29 PM',1)
+/*9/22/2023 10:19:29 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:19:29 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:19:29 PM: */ UPDATE [OutboundEDI] SET [OrderId] = 15,[Status] = 'NEW',[Data] = 'ISA*00*          *00*          *ZZ*LALTSAMSCLUB   *08*925485USSM     *230922*1019*U*00501*000205017*0*P*>~GS*SH*LALTSAMSCLUB*925485USSM*20230922*1019*205017*X*005010~ST*856*0001~BSN*00*IF547725*20230922*2219*0001~HL*1**S~TD5*B*2*FDEG*M********CG~REF*BM*784106571396~DTM*011*20230922~N1*BY*SAMS CLUB 4727*UL*0605388007940~N1*SF*LALTITUDE LLC~HL*2*1*O~PRF*8180525574***20230922~REF*IA*587462631~REF*CO*10101846780-001~REF*AN*208826524969818001~HL*3*2*P~MAN*CP*784106571396~HL*4*3*I~LIN**IN*990285732*UP*817338023652~SN1**1*EA~CTT*4~SE*20*0001~GE*1*205017~IEA*1*000205017~',[CreatedDate] = '9/22/2023 10:19:28 PM',[CreatedBy] = 1 WHERE [Id] = 205017
+/*9/22/2023 10:19:29 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:19:29 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:19:29 PM: */ UPDATE [Orders] SET [Status] = 'ASNGEN',[CustomerId] = 1,[InboundEDIId] = 15,[OrderDate] = '9/21/2023 12:00:00 AM',[OrderNumber] = '8180525574',[VendorNumber] = '587462631',[OrderType] = '',[ReferenceNo] = '10101846780-001',[CustomerOrderNo] = '10101846780-001',[ExternalId] = '',[ShippingMethod] = 'FEDERAL EXPRESS '' ''SG',[ShipToId] = '',[ShipToName] = 'LORRINA CISNEROS',[ShipToAddress1] = '11242 NEWTON STREET',[ShipToAddress2] = '',[ShipToCity] = 'HOUSTON',[ShipToState] = 'TX',[ShipToZip] = '77089',[ShipToCountry] = 'US',[ShipToEmail] = '',[ShipToPhone] = '7134447426',[BillToId] = '0074268236210',[BillToName] = 'LORRINA CISNEROS',[BillToAddress1] = '11242 NEWTON ST',[BillToAddress2] = '',[BillToCity] = 'HOUSTON',[BillToState] = 'TX',[BillToZip] = '77089',[BillToCountry] = 'US',[BillToEmail] = '',[BillToPhone] = '(713)444-7426',[BuyerId] = '0605388007940',[BuyerName] = 'SAMS CLUB 4727',[BuyerAddress1] = '2101 SE SIMPLE SAVINGS DR',[BuyerAddress2] = '',[BuyerCity] = 'BENTONVILLE',[BuyerState] = 'AR',[BuyerZip] = '72712-4304',[BuyerCountry] = 'US',[BuyerEmail] = '',[BuyerPhone] = '',[IsStoreOrder] = 0,[CreatedDate] = '9/22/2023 2:48:56 PM',[CreatedBy] = 1 WHERE [Id] = 15
+/*9/22/2023 10:19:29 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:19:29 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 10:19:34 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 14 ORDER BY Id
+/*9/22/2023 10:19:38 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 13 ORDER BY Id
+/*9/22/2023 10:20:12 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 14 ORDER BY Id
+/*9/22/2023 10:20:20 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 15 ORDER BY Id
+/*9/22/2023 10:25:01 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 10:25:08 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 10:25:13 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 10:25:59 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 10:26:06 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 10:28:45 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 10:28:50 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 10:38:52 PM: */ SELECT * FROM [Orders] WHERE [Id] = 13
+/*9/22/2023 10:38:52 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 13
+/*9/22/2023 10:38:53 PM: */ SELECT * FROM [InboundEDI] WHERE [Id] = 13
+/*9/22/2023 10:38:53 PM: */ SELECT * FROM [InboundEDIInfo] WHERE InboundEDIId = 13
+/*9/22/2023 10:38:53 PM: */ SELECT * FROM [OutboundEDI] WHERE OrderId = 13
+/*9/22/2023 10:38:53 PM: */ SELECT * FROM [Customers] WHERE [Id] = 1
+/*9/22/2023 10:38:53 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/22/2023 10:38:53 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/22/2023 10:38:58 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:38:58 PM: */ UPDATE [Orders] SET [Status] = 'ASNMARK',[CustomerId] = 1,[InboundEDIId] = 13,[OrderDate] = '9/21/2023 12:00:00 AM',[OrderNumber] = '8180527334',[VendorNumber] = '587462631',[OrderType] = '',[ReferenceNo] = '10101918097-001',[CustomerOrderNo] = '10101918097-001',[ExternalId] = '',[ShippingMethod] = 'FEDERAL EXPRESS '' ''SG',[ShipToId] = '',[ShipToName] = 'NICOLE DONALDSON',[ShipToAddress1] = '3637 W 36TH PL',[ShipToAddress2] = '',[ShipToCity] = 'YUMA',[ShipToState] = 'AZ',[ShipToZip] = '85365',[ShipToCountry] = 'US',[ShipToEmail] = '',[ShipToPhone] = '5044853122',[BillToId] = '0045542015321',[BillToName] = 'Nic Donaldson',[BillToAddress1] = '3637 West 36th Place',[BillToAddress2] = '',[BillToCity] = 'Yuma',[BillToState] = 'AZ',[BillToZip] = '85365',[BillToCountry] = 'US',[BillToEmail] = '',[BillToPhone] = '(504)485-3122',[BuyerId] = '0605388007940',[BuyerName] = 'SAMS CLUB 4727',[BuyerAddress1] = '2101 SE SIMPLE SAVINGS DR',[BuyerAddress2] = '',[BuyerCity] = 'BENTONVILLE',[BuyerState] = 'AR',[BuyerZip] = '72712-4304',[BuyerCountry] = 'US',[BuyerEmail] = '',[BuyerPhone] = '',[IsStoreOrder] = 0,[CreatedDate] = '9/22/2023 2:45:13 PM',[CreatedBy] = 1 WHERE [Id] = 13
+/*9/22/2023 10:38:58 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:38:58 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:38:58 PM: */ DELETE FROM OrderData WHERE OrderId = 13 AND [Type] = 'ASN-MARK-NS'
+/*9/22/2023 10:38:58 PM: */ /****************************************Rollback Transaction********************************/
+/*9/22/2023 10:38:58 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:38:58 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/22/2023 10:38:58 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[OrderNumber],[Data],[CreatedDate],[CreatedBy]) VALUES (128,13,'ASN-MARK-NS','8180527334','[{"status":"OK","message":"Entity updated","entity":"IF547719"}]','9/22/2023 10:38:58 PM',1)
+/*9/22/2023 10:38:59 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:38:59 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 10:39:02 PM: */ SELECT * FROM [Orders] WHERE [Id] = 14
+/*9/22/2023 10:39:02 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 14
+/*9/22/2023 10:39:02 PM: */ SELECT * FROM [InboundEDI] WHERE [Id] = 14
+/*9/22/2023 10:39:02 PM: */ SELECT * FROM [InboundEDIInfo] WHERE InboundEDIId = 14
+/*9/22/2023 10:39:02 PM: */ SELECT * FROM [OutboundEDI] WHERE OrderId = 14
+/*9/22/2023 10:39:02 PM: */ SELECT * FROM [Customers] WHERE [Id] = 1
+/*9/22/2023 10:39:03 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/22/2023 10:39:03 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/22/2023 10:39:05 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:39:05 PM: */ UPDATE [Orders] SET [Status] = 'ASNMARK',[CustomerId] = 1,[InboundEDIId] = 14,[OrderDate] = '9/21/2023 12:00:00 AM',[OrderNumber] = '8180527170',[VendorNumber] = '587462631',[OrderType] = '',[ReferenceNo] = '10101891962-001',[CustomerOrderNo] = '10101891962-001',[ExternalId] = '',[ShippingMethod] = 'FEDERAL EXPRESS '' ''SG',[ShipToId] = '',[ShipToName] = 'M ESCUTIA',[ShipToAddress1] = '37305 CALLE DE LOBO',[ShipToAddress2] = '',[ShipToCity] = 'MURRIETA',[ShipToState] = 'CA',[ShipToZip] = '92562',[ShipToCountry] = 'US',[ShipToEmail] = '',[ShipToPhone] = '9513573388',[BillToId] = '0090099195110',[BillToName] = 'MYCHAN PHAM',[BillToAddress1] = 'P.O BOX 54625',[BillToAddress2] = '',[BillToCity] = 'IRVINE',[BillToState] = 'CA',[BillToZip] = '92619',[BillToCountry] = 'US',[BillToEmail] = '',[BillToPhone] = '(951)357-3388',[BuyerId] = '0605388007940',[BuyerName] = 'SAMS CLUB 4727',[BuyerAddress1] = '2101 SE SIMPLE SAVINGS DR',[BuyerAddress2] = '',[BuyerCity] = 'BENTONVILLE',[BuyerState] = 'AR',[BuyerZip] = '72712-4304',[BuyerCountry] = 'US',[BuyerEmail] = '',[BuyerPhone] = '',[IsStoreOrder] = 0,[CreatedDate] = '9/22/2023 2:46:46 PM',[CreatedBy] = 1 WHERE [Id] = 14
+/*9/22/2023 10:39:05 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:39:05 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:39:05 PM: */ DELETE FROM OrderData WHERE OrderId = 14 AND [Type] = 'ASN-MARK-NS'
+/*9/22/2023 10:39:05 PM: */ /****************************************Rollback Transaction********************************/
+/*9/22/2023 10:39:05 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:39:05 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/22/2023 10:39:05 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[OrderNumber],[Data],[CreatedDate],[CreatedBy]) VALUES (129,14,'ASN-MARK-NS','8180527170','[{"status":"OK","message":"Entity updated","entity":"IF547722"}]','9/22/2023 10:39:05 PM',1)
+/*9/22/2023 10:39:05 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:39:05 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 10:39:07 PM: */ SELECT * FROM [Orders] WHERE [Id] = 15
+/*9/22/2023 10:39:07 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 15
+/*9/22/2023 10:39:07 PM: */ SELECT * FROM [InboundEDI] WHERE [Id] = 15
+/*9/22/2023 10:39:07 PM: */ SELECT * FROM [InboundEDIInfo] WHERE InboundEDIId = 15
+/*9/22/2023 10:39:07 PM: */ SELECT * FROM [OutboundEDI] WHERE OrderId = 15
+/*9/22/2023 10:39:07 PM: */ SELECT * FROM [Customers] WHERE [Id] = 1
+/*9/22/2023 10:39:07 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/22/2023 10:39:07 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/22/2023 10:39:10 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:39:10 PM: */ UPDATE [Orders] SET [Status] = 'ASNMARK',[CustomerId] = 1,[InboundEDIId] = 15,[OrderDate] = '9/21/2023 12:00:00 AM',[OrderNumber] = '8180525574',[VendorNumber] = '587462631',[OrderType] = '',[ReferenceNo] = '10101846780-001',[CustomerOrderNo] = '10101846780-001',[ExternalId] = '',[ShippingMethod] = 'FEDERAL EXPRESS '' ''SG',[ShipToId] = '',[ShipToName] = 'LORRINA CISNEROS',[ShipToAddress1] = '11242 NEWTON STREET',[ShipToAddress2] = '',[ShipToCity] = 'HOUSTON',[ShipToState] = 'TX',[ShipToZip] = '77089',[ShipToCountry] = 'US',[ShipToEmail] = '',[ShipToPhone] = '7134447426',[BillToId] = '0074268236210',[BillToName] = 'LORRINA CISNEROS',[BillToAddress1] = '11242 NEWTON ST',[BillToAddress2] = '',[BillToCity] = 'HOUSTON',[BillToState] = 'TX',[BillToZip] = '77089',[BillToCountry] = 'US',[BillToEmail] = '',[BillToPhone] = '(713)444-7426',[BuyerId] = '0605388007940',[BuyerName] = 'SAMS CLUB 4727',[BuyerAddress1] = '2101 SE SIMPLE SAVINGS DR',[BuyerAddress2] = '',[BuyerCity] = 'BENTONVILLE',[BuyerState] = 'AR',[BuyerZip] = '72712-4304',[BuyerCountry] = 'US',[BuyerEmail] = '',[BuyerPhone] = '',[IsStoreOrder] = 0,[CreatedDate] = '9/22/2023 2:48:56 PM',[CreatedBy] = 1 WHERE [Id] = 15
+/*9/22/2023 10:39:10 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:39:10 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:39:10 PM: */ DELETE FROM OrderData WHERE OrderId = 15 AND [Type] = 'ASN-MARK-NS'
+/*9/22/2023 10:39:10 PM: */ /****************************************Rollback Transaction********************************/
+/*9/22/2023 10:39:10 PM: */ /****************************************Begin Transaction********************************/
+/*9/22/2023 10:39:10 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/22/2023 10:39:10 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[OrderNumber],[Data],[CreatedDate],[CreatedBy]) VALUES (130,15,'ASN-MARK-NS','8180525574','[{"status":"OK","message":"Entity updated","entity":"IF547725"}]','9/22/2023 10:39:10 PM',1)
+/*9/22/2023 10:39:10 PM: */ /****************************************Commit Transaction********************************/
+/*9/22/2023 10:39:10 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC

@@ -1,0 +1,30 @@
+/*13/02/2024 8:47:11 pm: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*13/02/2024 8:47:12 pm: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*13/02/2024 8:47:17 pm: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*13/02/2024 8:47:19 pm: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*13/02/2024 8:47:19 pm: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*13/02/2024 8:47:19 pm: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*13/02/2024 8:47:19 pm: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*13/02/2024 8:47:19 pm: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*13/02/2024 8:49:11 pm: */ /****************************************Begin Transaction********************************/
+/*13/02/2024 8:49:11 pm: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Routes
+/*13/02/2024 8:49:11 pm: */ INSERT INTO [Routes] ([Id],[TypeId],[Status],[SourcePartyId],[DestinationPartyId],[SourceConnectorId],[DestinationConnectorId],[MapId],[PartyGroupId],[FrequencyType],[StartDate],[EndDate],[RepeatCount],[WeekDays],[OnDay],[ExecutionTime],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (9,5,'In-Active',5,4,4,5,12,2,'Weekly','12/02/2024 7:00:00 pm','14/02/2024 7:00:00 pm',0,'Monday,Tuesday,Wednesday,Thursday,Friday','','','01/01/0001 12:00:00 am',0,'13/02/2024 8:49:11 pm',0)
+/*13/02/2024 8:49:11 pm: */ Error: INSERT INTO [Routes] ([Id],[TypeId],[Status],[SourcePartyId],[DestinationPartyId],[SourceConnectorId],[DestinationConnectorId],[MapId],[PartyGroupId],[FrequencyType],[StartDate],[EndDate],[RepeatCount],[WeekDays],[OnDay],[ExecutionTime],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (9,5,'In-Active',5,4,4,5,12,2,'Weekly','12/02/2024 7:00:00 pm','14/02/2024 7:00:00 pm',0,'Monday,Tuesday,Wednesday,Thursday,Friday','','','01/01/0001 12:00:00 am',0,'13/02/2024 8:49:11 pm',0)
+/*13/02/2024 8:49:11 pm: */ /****************************************Rollback Transaction********************************/
+/*13/02/2024 8:49:11 pm: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*13/02/2024 8:49:15 pm: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*13/02/2024 8:49:15 pm: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*13/02/2024 8:49:15 pm: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*13/02/2024 8:49:15 pm: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*13/02/2024 8:49:15 pm: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*13/02/2024 8:50:59 pm: */ /****************************************Begin Transaction********************************/
+/*13/02/2024 8:50:59 pm: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Routes
+/*13/02/2024 8:50:59 pm: */ INSERT INTO [Routes] ([Id],[TypeId],[Status],[SourcePartyId],[DestinationPartyId],[SourceConnectorId],[DestinationConnectorId],[MapId],[PartyGroupId],[FrequencyType],[StartDate],[EndDate],[RepeatCount],[WeekDays],[OnDay],[ExecutionTime],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (9,5,'Active',5,4,5,5,12,2,'Weekly','12/02/2024 7:00:00 pm','14/02/2024 7:00:00 pm',0,'Monday,Tuesday,Wednesday,Thursday,Friday','','14:55','01/01/0001 12:00:00 am',0,'13/02/2024 8:50:59 pm',0)
+/*13/02/2024 8:51:00 pm: */ /****************************************Begin Transaction********************************/
+/*13/02/2024 8:51:00 pm: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Routes
+/*13/02/2024 8:51:00 pm: */ Error: INSERT INTO [Routes] ([Id],[TypeId],[Status],[SourcePartyId],[DestinationPartyId],[SourceConnectorId],[DestinationConnectorId],[MapId],[PartyGroupId],[FrequencyType],[StartDate],[EndDate],[RepeatCount],[WeekDays],[OnDay],[ExecutionTime],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (9,5,'Active',5,4,5,5,12,2,'Weekly','12/02/2024 7:00:00 pm','14/02/2024 7:00:00 pm',0,'Monday,Tuesday,Wednesday,Thursday,Friday','','14:55','01/01/0001 12:00:00 am',0,'13/02/2024 8:50:59 pm',0)
+/*13/02/2024 8:51:00 pm: */ INSERT INTO [Routes] ([Id],[TypeId],[Status],[SourcePartyId],[DestinationPartyId],[SourceConnectorId],[DestinationConnectorId],[MapId],[PartyGroupId],[FrequencyType],[StartDate],[EndDate],[RepeatCount],[WeekDays],[OnDay],[ExecutionTime],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (9,5,'Active',5,4,5,5,12,2,'Weekly','12/02/2024 7:00:00 pm','14/02/2024 7:00:00 pm',0,'Monday,Tuesday,Wednesday,Thursday,Friday','','14:55','01/01/0001 12:00:00 am',0,'13/02/2024 8:51:00 pm',0)
+/*13/02/2024 8:51:00 pm: */ /****************************************Rollback Transaction********************************/
+/*13/02/2024 8:51:01 pm: */ Error: INSERT INTO [Routes] ([Id],[TypeId],[Status],[SourcePartyId],[DestinationPartyId],[SourceConnectorId],[DestinationConnectorId],[MapId],[PartyGroupId],[FrequencyType],[StartDate],[EndDate],[RepeatCount],[WeekDays],[OnDay],[ExecutionTime],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (9,5,'Active',5,4,5,5,12,2,'Weekly','12/02/2024 7:00:00 pm','14/02/2024 7:00:00 pm',0,'Monday,Tuesday,Wednesday,Thursday,Friday','','14:55','01/01/0001 12:00:00 am',0,'13/02/2024 8:51:00 pm',0)
+/*13/02/2024 8:51:01 pm: */ /****************************************Rollback Transaction********************************/
+/*13/02/2024 8:51:01 pm: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC

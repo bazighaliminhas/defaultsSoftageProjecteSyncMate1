@@ -1,0 +1,14 @@
+/*1/9/2024 11:11:30 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/9/2024 11:12:00 PM: */ SELECT * FROM [VW_Connectors] WHERE [Name] = 'Test'
+/*1/9/2024 11:12:00 PM: */ /****************************************Begin Transaction********************************/
+/*1/9/2024 11:12:00 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Connectors
+/*1/9/2024 11:12:00 PM: */ INSERT INTO [Connectors] ([Id],[TypeId],[Name],[Data],[CreatedDate],[CreatedBy]) VALUES (6,3,'Test','Data','1/9/2024 11:12:00 PM',0)
+/*1/9/2024 11:12:00 PM: */ /****************************************Commit Transaction********************************/
+/*1/9/2024 11:12:01 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/9/2024 11:12:19 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/9/2024 11:12:36 PM: */ SELECT * FROM [VW_Connectors] WHERE [Name] = 'Test Saif'
+/*1/9/2024 11:12:36 PM: */ /****************************************Begin Transaction********************************/
+/*1/9/2024 11:12:36 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Connectors
+/*1/9/2024 11:12:36 PM: */ INSERT INTO [Connectors] ([Id],[TypeId],[Name],[Data],[CreatedDate],[CreatedBy]) VALUES (6,3,'Test Saif','Data Test','1/9/2024 11:12:36 PM',0)
+/*1/9/2024 11:12:36 PM: */ /****************************************Commit Transaction********************************/
+/*1/9/2024 11:12:36 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC

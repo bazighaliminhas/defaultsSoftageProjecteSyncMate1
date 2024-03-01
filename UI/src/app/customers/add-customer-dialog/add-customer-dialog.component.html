@@ -1,0 +1,49 @@
+<div mat-dialog-content class="dialog-content">
+  <h1 class="dialog-title">Add New Customer</h1>
+  <form [formGroup]="newCustomerForm" class="customer-form">
+
+    <!-- Row 1: Customer Name and ERP Customer ID -->
+    <div class="form-row">
+      <mat-form-field class="form-field">
+        <mat-label>Customer Name</mat-label>
+        <input matInput formControlName="name">
+      </mat-form-field>
+
+      <mat-form-field class="form-field">
+        <mat-label>ERP Customer ID</mat-label>
+        <input matInput formControlName="erpCustomerId">
+      </mat-form-field>
+    </div>
+
+    <!-- Row 2: ISA Customer ID and ISA 810 Receiver ID -->
+    <div class="form-row">
+      <mat-form-field class="form-field">
+        <mat-label>ISA Customer ID</mat-label>
+        <input matInput formControlName="isaCustomerId">
+      </mat-form-field>
+
+      <mat-form-field class="form-field">
+        <mat-label>ISA 810 Receiver ID</mat-label>
+        <input matInput formControlName="isa810ReceiverId">
+      </mat-form-field>
+    </div>
+
+    <!-- Marketplace: Occupies full row -->
+    <div class="form-row">
+      <mat-form-field class="form-field">
+        <mat-label>ISA 856 Receiver ID</mat-label>
+        <input matInput formControlName="isa856ReceiverId">
+      </mat-form-field>
+
+      <mat-form-field class="form-field full-width">
+        <mat-label>Marketplace</mat-label>
+        <input matInput formControlName="marketplace">
+      </mat-form-field>
+    </div>
+  </form>
+</div>
+
+<div mat-dialog-actions class="dialog-actions">
+  <button mat-button class="cancel-button" (click)="onCancel()">Cancel</button>
+  <button mat-raised-button color="primary" [disabled]="!newCustomerForm.valid" (click)="onSave()">Save</button>
+</div>

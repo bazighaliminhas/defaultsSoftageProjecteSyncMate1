@@ -1,0 +1,2 @@
+/*9/25/2023 6:35:11 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 50 ORDER BY Id
+/*9/25/2023 6:36:32 PM: */ Error: SELECT Id FROM [Orders] WHERE Status = 'SYNCERROR' || Status = 'NEW'

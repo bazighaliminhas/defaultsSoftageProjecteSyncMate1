@@ -1,0 +1,9 @@
+/*2/13/2024 6:27:34 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/13/2024 6:27:39 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/13/2024 6:27:43 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/13/2024 6:27:49 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/13/2024 6:28:13 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/13/2024 6:28:22 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/13/2024 6:28:28 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/13/2024 6:28:52 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/13/2024 6:29:13 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC

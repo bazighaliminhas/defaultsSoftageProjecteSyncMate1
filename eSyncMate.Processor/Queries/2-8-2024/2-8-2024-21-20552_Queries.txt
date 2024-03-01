@@ -1,0 +1,92 @@
+/*2/8/2024 9:00:34 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:02:22 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:02:37 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:04:21 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:04:30 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/8/2024 9:05:16 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/8/2024 9:13:34 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:13:41 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/8/2024 9:15:38 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:15:48 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:15:56 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/8/2024 9:17:41 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:18:01 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:18:15 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/8/2024 9:22:59 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:23:24 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:23:31 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/8/2024 9:23:52 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:24:10 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:24:53 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:25:22 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:25:29 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:25:55 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:26:01 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/8/2024 9:26:19 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/8/2024 9:29:19 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:30:03 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:30:38 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:31:10 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:31:53 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:32:01 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/8/2024 9:32:06 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/8/2024 9:32:24 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TARGET'
+/*2/8/2024 9:33:28 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:33:35 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/8/2024 9:34:14 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:34:18 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/8/2024 9:34:35 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:35:21 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:35:42 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:35:46 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:35:51 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/8/2024 9:36:55 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:36:59 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:37:13 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:37:18 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/8/2024 9:37:58 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:38:07 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:38:14 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:38:34 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:38:38 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'CSN6172'
+/*2/8/2024 9:38:55 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TARGET'
+/*2/8/2024 9:39:28 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TARGET'
+/*2/8/2024 9:39:33 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/8/2024 9:40:13 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:40:34 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/8/2024 9:40:38 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/8/2024 9:40:38 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/8/2024 9:40:38 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/8/2024 9:40:38 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/8/2024 9:40:38 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/8/2024 9:45:34 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/8/2024 9:45:34 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/8/2024 9:45:34 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/8/2024 9:45:34 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/8/2024 9:45:34 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/8/2024 9:46:34 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/8/2024 9:47:06 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/8/2024 9:49:20 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/8/2024 9:50:31 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/8/2024 9:51:18 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/8/2024 9:51:26 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/8/2024 9:51:28 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/8/2024 9:51:28 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/8/2024 9:51:28 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/8/2024 9:51:28 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/8/2024 9:51:28 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/8/2024 9:53:06 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/8/2024 9:53:15 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/8/2024 9:54:25 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/8/2024 9:54:43 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/8/2024 9:55:06 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/8/2024 9:55:17 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/8/2024 9:55:47 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/8/2024 9:56:08 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/8/2024 9:56:29 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/8/2024 9:56:31 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/8/2024 9:56:31 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/8/2024 9:56:31 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/8/2024 9:56:31 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/8/2024 9:56:31 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/8/2024 9:59:01 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC

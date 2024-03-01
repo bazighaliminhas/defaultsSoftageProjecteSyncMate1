@@ -1,0 +1,17 @@
+/*13/02/2024 8:53:41 pm: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*13/02/2024 8:53:44 pm: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*13/02/2024 8:53:44 pm: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*13/02/2024 8:53:44 pm: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*13/02/2024 8:53:44 pm: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*13/02/2024 8:53:44 pm: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*13/02/2024 8:54:15 pm: */ SELECT * FROM [VW_Routes] WHERE [Id] = 8
+/*13/02/2024 8:54:15 pm: */ SELECT * FROM [VW_Customers] WHERE [Id] = 4
+/*13/02/2024 8:54:15 pm: */ SELECT * FROM [VW_Customers] WHERE [Id] = 4
+/*13/02/2024 8:54:15 pm: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 4
+/*13/02/2024 8:54:15 pm: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 4
+/*13/02/2024 8:54:15 pm: */ SELECT * FROM [VW_Maps] WHERE [Id] = 12
+/*13/02/2024 8:54:35 pm: */ /****************************************Begin Transaction********************************/
+/*13/02/2024 8:54:37 pm: */ UPDATE [Routes] SET [TypeId] = 4,[Status] = 'Active',[SourcePartyId] = 4,[DestinationPartyId] = 4,[SourceConnectorId] = 4,[DestinationConnectorId] = 4,[MapId] = 12,[PartyGroupId] = 2,[FrequencyType] = 'Minutely',[StartDate] = '31/01/2024 7:00:00 pm',[EndDate] = '31/01/2024 7:00:00 pm',[RepeatCount] = 12,[WeekDays] = '',[OnDay] = '',[ExecutionTime] = '',[ModifiedDate] = '13/02/2024 8:54:14 pm',[ModifiedBy] = 0,[CreatedDate] = '01/01/0001 12:00:00 am',[CreatedBy] = 0 WHERE [Id] = 8
+/*13/02/2024 8:54:37 pm: */ Error: UPDATE [Routes] SET [TypeId] = 4,[Status] = 'Active',[SourcePartyId] = 4,[DestinationPartyId] = 4,[SourceConnectorId] = 4,[DestinationConnectorId] = 4,[MapId] = 12,[PartyGroupId] = 2,[FrequencyType] = 'Minutely',[StartDate] = '31/01/2024 7:00:00 pm',[EndDate] = '31/01/2024 7:00:00 pm',[RepeatCount] = 12,[WeekDays] = '',[OnDay] = '',[ExecutionTime] = '',[ModifiedDate] = '13/02/2024 8:54:14 pm',[ModifiedBy] = 0,[CreatedDate] = '01/01/0001 12:00:00 am',[CreatedBy] = 0 WHERE [Id] = 8
+/*13/02/2024 8:55:16 pm: */ /****************************************Rollback Transaction********************************/
+/*13/02/2024 8:55:17 pm: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC

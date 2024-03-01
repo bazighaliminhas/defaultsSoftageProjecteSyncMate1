@@ -1,0 +1,10 @@
+/*2/8/2024 11:00:51 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 11:00:58 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 11:01:02 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 11:01:27 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 11:01:52 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 11:05:13 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 11:05:20 AM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/8/2024 11:08:52 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 11:09:00 AM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/8/2024 11:09:52 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC

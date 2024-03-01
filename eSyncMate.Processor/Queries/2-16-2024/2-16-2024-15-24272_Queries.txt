@@ -1,0 +1,6 @@
+/*2/16/2024 3:45:11 PM: */ SELECT * FROM [VW_Routes] WHERE [Id] = 10
+/*2/16/2024 3:45:11 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 1
+/*2/16/2024 3:45:11 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 1
+/*2/16/2024 3:45:11 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 4
+/*2/16/2024 3:45:11 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 3
+/*2/16/2024 3:45:12 PM: */ SELECT * FROM [VW_Maps] WHERE [Id] = 11

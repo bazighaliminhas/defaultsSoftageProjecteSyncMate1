@@ -1,0 +1,1 @@
+/*2/15/2024 6:25:27 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'

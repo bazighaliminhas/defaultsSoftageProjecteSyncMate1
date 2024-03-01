@@ -1,0 +1,221 @@
+/*9/11/2023 9:14:05 PM: */ SELECT * FROM [Customers] WHERE [ISACustomerID] = '925485USSM'
+/*9/11/2023 9:14:05 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/11/2023 9:14:05 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/11/2023 9:14:11 PM: */ /****************************************Begin Transaction********************************/
+/*9/11/2023 9:14:11 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Orders
+/*9/11/2023 9:14:11 PM: */ INSERT INTO [Orders] ([Id],[Status],[CustomerId],[OrderDate],[OrderNumber],[VendorNumber],[OrderType],[ReferenceNo],[CustomerOrderNo],[ExternalId],[ShippingMethod],[ShipToId],[ShipToName],[ShipToAddress1],[ShipToAddress2],[ShipToCity],[ShipToState],[ShipToZip],[ShipToCountry],[ShipToEmail],[ShipToPhone],[BillToId],[BillToName],[BillToAddress1],[BillToAddress2],[BillToCity],[BillToState],[BillToZip],[BillToCountry],[BillToEmail],[BillToPhone],[BuyerId],[BuyerName],[BuyerAddress1],[BuyerAddress2],[BuyerCity],[BuyerState],[BuyerZip],[BuyerCountry],[BuyerEmail],[BuyerPhone],[IsStoreOrder],[CreatedDate],[CreatedBy]) VALUES (7,'NEW',1,'9/10/2023 12:00:00 AM','TEST-PO1','587462631','','189944562001','10099008164-001','','FEDERAL EXPRESSSG','','ROBYN SCHAMBERG','12C TRAIL RIDGE WAY','','HARVARD','MA','01451','US','','3392344477','0047073323410','','12C TRAIL RIDGE WAY','','Harvard','MA','01451','US','','(339)234-4477','0605388007940','SAMS CLUB 4727','2101 SE SIMPLE SAVINGS DR','','BENTONVILLE','AR','72712-4304','US','','',0,'9/11/2023 9:14:11 PM',1)
+/*9/11/2023 9:14:11 PM: */ /****************************************Commit Transaction********************************/
+/*9/11/2023 9:14:11 PM: */ /****************************************Begin Transaction********************************/
+/*9/11/2023 9:14:11 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/11/2023 9:14:11 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[Data],[CreatedDate],[CreatedBy]) VALUES (23,7,'EDI','ISA*00*          *00*          *08*925485USSM     *ZZ*LALTSAMSCLUB   *230910*2303*:*00501*850100862*0*P*>~
+GS*PO*925485USSM*LALTSAMSCLUB*20230910*2303*850100862*X*005010~
+ST*850*101018~
+BEG*00*SA*TEST-PO1**20230910~
+CUR*BY*USD~
+REF*DP*00063~
+REF*MR*0020~
+REF*KK*Home Delivery~
+REF*IA*587462631~
+REF*4U*SAMSCOM~
+REF*EVI*ONLINE~
+REF*CO*10099008164-001~
+REF*AN*189944562001~
+FOB*PP*OR*1~
+ITD*05*15*****30~
+DTM*001*20231209~
+DTM*830*20230913~
+DTM*002*20230920~
+DTM*004*20230910~
+TD5**LE*ENG~
+N9*ZZ*US~
+N1*BT**MI*0047073323410~
+N3*12C TRAIL RIDGE WAY~
+N4*Harvard*MA*01451*US~
+PER*OC*ROBYN SCHAMBERG*HP*(339)234-4477***EM*rscham56@gmail.com~
+N1*ST*ROBYN SCHAMBERG~
+N3*12C TRAIL RIDGE WAY~
+N4*HARVARD*MA*01451*US~
+PER*RE*ROBYN SCHAMBERG*HP*3392344477~
+N1*BY*SAMS CLUB 4727*UL*0605388007940~
+N3*2101 SE SIMPLE SAVINGS DR~
+N4*BENTONVILLE*AR*72712-4304*US~
+N1*SU*LALTITUDE LLC~
+PO1*001*1*EA*12*LE*IN*990178313*UP*817338023539~
+PID*F****UFO ROBOT~
+TD5*B*ZZ*FEDERAL EXPRESS*********SG~
+AMT*1*15.92~
+PO1*002*1*EA*12*LE*IN*990285733*UP*817338023515~
+PID*F****SPACE ROBOT~
+TD5*B*ZZ*FEDERAL EXPRESS*********SG~
+AMT*1*15.92~
+CTT*2~
+AMT*GV*24~
+SE*42*101018~
+ST*850*101019~
+BEG*00*SA*TEST-PO2**20230910~
+CUR*BY*USD~
+REF*DP*00063~
+REF*MR*0020~
+REF*KK*Home Delivery~
+REF*IA*587462631~
+REF*4U*SAMSCOM~
+REF*EVI*ONLINE~
+REF*CO*10098994770-001~
+REF*AN*189945456001~
+FOB*PP*OR*1~
+ITD*05*15*****30~
+DTM*001*20231209~
+DTM*830*20230913~
+DTM*002*20230918~
+DTM*004*20230910~
+TD5**LE*ENG~
+N9*ZZ*US~
+N1*BT**MI*0053976043910~
+N3*6259 HUMMINGBIRD LN~
+N3*LAS VEGAS~
+N4*LAS VEGAS*NV*89103*US~
+PER*OC*VANESSA BARRAGAN*HP*(702)292-8602***EM*atreyuamor@gmail.com~
+N1*ST*ADRIANA SILVA~
+N3*6319 GERBER MEADOW~
+N4*SAN ANTONIO*TX*78244*US~
+PER*RE*ADRIANA SILVA*HP*2104126687~
+N1*BY*SAMS CLUB 4727*UL*0605388007940~
+N3*2101 SE SIMPLE SAVINGS DR~
+N4*BENTONVILLE*AR*72712-4304*US~
+N1*SU*LALTITUDE LLC~
+PO1*001*1*EA*21.25*LE*IN*990285723*UP*817338023393~
+PID*F****CONSTRUCTION SET~
+TD5*B*ZZ*FEDERAL EXPRESS*********SG~
+AMT*1*32.45~
+CTT*1~
+AMT*GV*21.25~
+SE*39*101019~
+GE*2*850100862~
+IEA*1*850100862~','9/11/2023 9:14:11 PM',1)
+/*9/11/2023 9:14:11 PM: */ /****************************************Commit Transaction********************************/
+/*9/11/2023 9:14:11 PM: */ /****************************************Begin Transaction********************************/
+/*9/11/2023 9:14:11 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/11/2023 9:14:11 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[Data],[CreatedDate],[CreatedBy]) VALUES (24,7,'JSON','{"orderDate":"9/10/2023","orderNumber":"TEST-PO1","customerName":"","vendorNumber":"587462631","label":"TEST-PO1","status":"","marketplace":"","country":"US","poType":"","plannedDeliveryDate":"1/1/0001","brand":"","terms":"","deptNo":"00063","refNo":"189944562001","customerOrderNo":"10099008164-001","externalid":"","shippingPrice":"","shippingTax":"","shippingMethod":"FEDERAL EXPRESSSG","carrier":{"name":"FEDERAL EXPRESS","service":"SG"},"paymentType":"","discount":0,"department":"00063","division":"","merchandiseType":"0020","deliveryReference":"Home Delivery","placementMethod":"ONLINE","shipping":{"value":0,"tax":0,"taxes":[]},"shipNotBefore":"","shipNotAfter":"","shipmentDate":"1/1/0001","shipAccountNumber":"","packingSlipUrl":null,"priceIdentifier":{"code":null,"name":""},"paymentMode":"","allowanceOrCharge":"","grossAmount":null,"supplier":{"id":"","name":"LALTITUDE LLC","code":"","warehouseZip":"","phone":"","email":"","fax":""},"shipToCustomer":{"id":"","locationCode":"","name":"ROBYN SCHAMBERG","address1":"12C TRAIL RIDGE WAY","address2":"","city":"HARVARD","state":"MA","zip":"01451","country":"US","phone":"3392344477","email":""},"billing":{"id":"0047073323410","locationCode":"0047073323410","name":"","address1":"12C TRAIL RIDGE WAY","address2":"","city":"Harvard","state":"MA","zip":"01451","country":"US","phone":"(339)234-4477","email":""},"buyer":{"id":"0605388007940","locationCode":"0605388007940","name":"SAMS CLUB 4727","address1":"2101 SE SIMPLE SAVINGS DR","address2":"","city":"BENTONVILLE","state":"AR","zip":"72712-4304","country":"US","phone":"","email":""},"items":[{"lineNo":1,"upc":"817338023539","partNo":"990178313","vendorStyle":"","description":"","quantity":"1","price":"12","uom":"EA","discount":"","taxes":[],"department":null,"plannedDeliveryDate":"","salesReference":null,"salesEventEndDate":"1/1/0001","acceptedQuantity":"","allowances":null,"rebate":null,"locations":[]},{"lineNo":2,"upc":"817338023515","partNo":"990285733","vendorStyle":"","description":"","quantity":"1","price":"12","uom":"EA","discount":"","taxes":[],"department":null,"plannedDeliveryDate":"","salesReference":null,"salesEventEndDate":"1/1/0001","acceptedQuantity":"","allowances":null,"rebate":null,"locations":[]}]}','9/11/2023 9:14:11 PM',1)
+/*9/11/2023 9:14:11 PM: */ /****************************************Commit Transaction********************************/
+/*9/11/2023 9:14:11 PM: */ /****************************************Begin Transaction********************************/
+/*9/11/2023 9:14:11 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/11/2023 9:14:11 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[Data],[CreatedDate],[CreatedBy]) VALUES (25,7,'Fields','{"OrderDate":"9/10/2023","OrderNumber":"TEST-PO1","VendorNumber":"587462631","OrderType":"","ReferenceNo":"189944562001","CustomerOrderNo":"10099008164-001","ExternalId":"","ShippingMethod":"FEDERAL EXPRESSSG","ShipToId":"","ShipToName":"ROBYN SCHAMBERG","ShipToAddress1":"12C TRAIL RIDGE WAY","ShipToAddress2":"","ShipToCity":"HARVARD","ShipToState":"MA","ShipToZip":"01451","ShipToCountry":"US","ShipToPhone":"3392344477","ShipToEmail":"","BillToId":"0047073323410","BillToName":"","BillToAddress1":"12C TRAIL RIDGE WAY","BillToAddress2":"","BillToCity":"Harvard","BillToState":"MA","BillToZip":"01451","BillToCountry":"US","BillToPhone":"(339)234-4477","BillToEmail":"","BuyerId":"0605388007940","BuyerName":"SAMS CLUB 4727","BuyerAddress1":"2101 SE SIMPLE SAVINGS DR","BuyerAddress2":"","BuyerCity":"BENTONVILLE","BuyerState":"AR","BuyerZip":"72712-4304","BuyerCountry":"US","BuyerPhone":"","BuyerEmail":"","IsStoreOrder":"false"}','9/11/2023 9:14:11 PM',1)
+/*9/11/2023 9:14:11 PM: */ /****************************************Commit Transaction********************************/
+/*9/11/2023 9:14:11 PM: */ SELECT * FROM [Orders] WHERE [Id] = 7
+/*9/11/2023 9:14:11 PM: */ SELECT * FROM [OrderData] WHERE OrderId = 7
+/*9/11/2023 9:14:37 PM: */ /****************************************Begin Transaction********************************/
+/*9/11/2023 9:14:37 PM: */ UPDATE [Orders] SET [Status] = 'SYNCERROR',[CustomerId] = 1,[OrderDate] = '9/10/2023 12:00:00 AM',[OrderNumber] = 'TEST-PO1',[VendorNumber] = '587462631',[OrderType] = '',[ReferenceNo] = '189944562001',[CustomerOrderNo] = '10099008164-001',[ExternalId] = '',[ShippingMethod] = 'FEDERAL EXPRESSSG',[ShipToId] = '',[ShipToName] = 'ROBYN SCHAMBERG',[ShipToAddress1] = '12C TRAIL RIDGE WAY',[ShipToAddress2] = '',[ShipToCity] = 'HARVARD',[ShipToState] = 'MA',[ShipToZip] = '01451',[ShipToCountry] = 'US',[ShipToEmail] = '',[ShipToPhone] = '3392344477',[BillToId] = '0047073323410',[BillToName] = '',[BillToAddress1] = '12C TRAIL RIDGE WAY',[BillToAddress2] = '',[BillToCity] = 'Harvard',[BillToState] = 'MA',[BillToZip] = '01451',[BillToCountry] = 'US',[BillToEmail] = '',[BillToPhone] = '(339)234-4477',[BuyerId] = '0605388007940',[BuyerName] = 'SAMS CLUB 4727',[BuyerAddress1] = '2101 SE SIMPLE SAVINGS DR',[BuyerAddress2] = '',[BuyerCity] = 'BENTONVILLE',[BuyerState] = 'AR',[BuyerZip] = '72712-4304',[BuyerCountry] = 'US',[BuyerEmail] = '',[BuyerPhone] = '',[IsStoreOrder] = 0,[CreatedDate] = '9/11/2023 9:14:11 PM',[CreatedBy] = 1 WHERE [Id] = 7
+/*9/11/2023 9:14:37 PM: */ /****************************************Commit Transaction********************************/
+/*9/11/2023 9:14:37 PM: */ /****************************************Begin Transaction********************************/
+/*9/11/2023 9:14:37 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/11/2023 9:14:37 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[Data],[CreatedDate],[CreatedBy]) VALUES (26,7,'RESPONSE','{"error" : {"code" : "REQUEST_PARAM_REQD", "message" : "This request is missing a required parameter."}}','9/11/2023 9:14:37 PM',1)
+/*9/11/2023 9:14:37 PM: */ /****************************************Commit Transaction********************************/
+/*9/11/2023 9:14:42 PM: */ /****************************************Begin Transaction********************************/
+/*9/11/2023 9:14:42 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Orders
+/*9/11/2023 9:14:42 PM: */ INSERT INTO [Orders] ([Id],[Status],[CustomerId],[OrderDate],[OrderNumber],[VendorNumber],[OrderType],[ReferenceNo],[CustomerOrderNo],[ExternalId],[ShippingMethod],[ShipToId],[ShipToName],[ShipToAddress1],[ShipToAddress2],[ShipToCity],[ShipToState],[ShipToZip],[ShipToCountry],[ShipToEmail],[ShipToPhone],[BillToId],[BillToName],[BillToAddress1],[BillToAddress2],[BillToCity],[BillToState],[BillToZip],[BillToCountry],[BillToEmail],[BillToPhone],[BuyerId],[BuyerName],[BuyerAddress1],[BuyerAddress2],[BuyerCity],[BuyerState],[BuyerZip],[BuyerCountry],[BuyerEmail],[BuyerPhone],[IsStoreOrder],[CreatedDate],[CreatedBy]) VALUES (8,'NEW',1,'9/10/2023 12:00:00 AM','TEST-PO2','587462631','','189945456001','10098994770-001','','FEDERAL EXPRESSSG','','ADRIANA SILVA','6319 GERBER MEADOW','','SAN ANTONIO','TX','78244','US','','2104126687','0053976043910','','6259 HUMMINGBIRD LN','','LAS VEGAS','NV','89103','US','','(702)292-8602','0605388007940','SAMS CLUB 4727','2101 SE SIMPLE SAVINGS DR','','BENTONVILLE','AR','72712-4304','US','','',0,'9/11/2023 9:14:42 PM',1)
+/*9/11/2023 9:14:42 PM: */ /****************************************Commit Transaction********************************/
+/*9/11/2023 9:14:42 PM: */ /****************************************Begin Transaction********************************/
+/*9/11/2023 9:14:42 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/11/2023 9:14:42 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[Data],[CreatedDate],[CreatedBy]) VALUES (27,8,'EDI','ISA*00*          *00*          *08*925485USSM     *ZZ*LALTSAMSCLUB   *230910*2303*:*00501*850100862*0*P*>~
+GS*PO*925485USSM*LALTSAMSCLUB*20230910*2303*850100862*X*005010~
+ST*850*101018~
+BEG*00*SA*TEST-PO1**20230910~
+CUR*BY*USD~
+REF*DP*00063~
+REF*MR*0020~
+REF*KK*Home Delivery~
+REF*IA*587462631~
+REF*4U*SAMSCOM~
+REF*EVI*ONLINE~
+REF*CO*10099008164-001~
+REF*AN*189944562001~
+FOB*PP*OR*1~
+ITD*05*15*****30~
+DTM*001*20231209~
+DTM*830*20230913~
+DTM*002*20230920~
+DTM*004*20230910~
+TD5**LE*ENG~
+N9*ZZ*US~
+N1*BT**MI*0047073323410~
+N3*12C TRAIL RIDGE WAY~
+N4*Harvard*MA*01451*US~
+PER*OC*ROBYN SCHAMBERG*HP*(339)234-4477***EM*rscham56@gmail.com~
+N1*ST*ROBYN SCHAMBERG~
+N3*12C TRAIL RIDGE WAY~
+N4*HARVARD*MA*01451*US~
+PER*RE*ROBYN SCHAMBERG*HP*3392344477~
+N1*BY*SAMS CLUB 4727*UL*0605388007940~
+N3*2101 SE SIMPLE SAVINGS DR~
+N4*BENTONVILLE*AR*72712-4304*US~
+N1*SU*LALTITUDE LLC~
+PO1*001*1*EA*12*LE*IN*990178313*UP*817338023539~
+PID*F****UFO ROBOT~
+TD5*B*ZZ*FEDERAL EXPRESS*********SG~
+AMT*1*15.92~
+PO1*002*1*EA*12*LE*IN*990285733*UP*817338023515~
+PID*F****SPACE ROBOT~
+TD5*B*ZZ*FEDERAL EXPRESS*********SG~
+AMT*1*15.92~
+CTT*2~
+AMT*GV*24~
+SE*42*101018~
+ST*850*101019~
+BEG*00*SA*TEST-PO2**20230910~
+CUR*BY*USD~
+REF*DP*00063~
+REF*MR*0020~
+REF*KK*Home Delivery~
+REF*IA*587462631~
+REF*4U*SAMSCOM~
+REF*EVI*ONLINE~
+REF*CO*10098994770-001~
+REF*AN*189945456001~
+FOB*PP*OR*1~
+ITD*05*15*****30~
+DTM*001*20231209~
+DTM*830*20230913~
+DTM*002*20230918~
+DTM*004*20230910~
+TD5**LE*ENG~
+N9*ZZ*US~
+N1*BT**MI*0053976043910~
+N3*6259 HUMMINGBIRD LN~
+N3*LAS VEGAS~
+N4*LAS VEGAS*NV*89103*US~
+PER*OC*VANESSA BARRAGAN*HP*(702)292-8602***EM*atreyuamor@gmail.com~
+N1*ST*ADRIANA SILVA~
+N3*6319 GERBER MEADOW~
+N4*SAN ANTONIO*TX*78244*US~
+PER*RE*ADRIANA SILVA*HP*2104126687~
+N1*BY*SAMS CLUB 4727*UL*0605388007940~
+N3*2101 SE SIMPLE SAVINGS DR~
+N4*BENTONVILLE*AR*72712-4304*US~
+N1*SU*LALTITUDE LLC~
+PO1*001*1*EA*21.25*LE*IN*990285723*UP*817338023393~
+PID*F****CONSTRUCTION SET~
+TD5*B*ZZ*FEDERAL EXPRESS*********SG~
+AMT*1*32.45~
+CTT*1~
+AMT*GV*21.25~
+SE*39*101019~
+GE*2*850100862~
+IEA*1*850100862~','9/11/2023 9:14:42 PM',1)
+/*9/11/2023 9:14:42 PM: */ /****************************************Commit Transaction********************************/
+/*9/11/2023 9:14:42 PM: */ /****************************************Begin Transaction********************************/
+/*9/11/2023 9:14:42 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/11/2023 9:14:42 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[Data],[CreatedDate],[CreatedBy]) VALUES (28,8,'JSON','{"orderDate":"9/10/2023","orderNumber":"TEST-PO2","customerName":"","vendorNumber":"587462631","label":"TEST-PO2","status":"","marketplace":"","country":"US","poType":"","plannedDeliveryDate":"1/1/0001","brand":"","terms":"","deptNo":"00063","refNo":"189945456001","customerOrderNo":"10098994770-001","externalid":"","shippingPrice":"","shippingTax":"","shippingMethod":"FEDERAL EXPRESSSG","carrier":{"name":"FEDERAL EXPRESS","service":"SG"},"paymentType":"","discount":0,"department":"00063","division":"","merchandiseType":"0020","deliveryReference":"Home Delivery","placementMethod":"ONLINE","shipping":{"value":0,"tax":0,"taxes":[]},"shipNotBefore":"","shipNotAfter":"","shipmentDate":"1/1/0001","shipAccountNumber":"","packingSlipUrl":null,"priceIdentifier":{"code":null,"name":""},"paymentMode":"","allowanceOrCharge":"","grossAmount":null,"supplier":{"id":"","name":"LALTITUDE LLC","code":"","warehouseZip":"","phone":"","email":"","fax":""},"shipToCustomer":{"id":"","locationCode":"","name":"ADRIANA SILVA","address1":"6319 GERBER MEADOW","address2":"","city":"SAN ANTONIO","state":"TX","zip":"78244","country":"US","phone":"2104126687","email":""},"billing":{"id":"0053976043910","locationCode":"0053976043910","name":"","address1":"6259 HUMMINGBIRD LN","address2":"","city":"LAS VEGAS","state":"NV","zip":"89103","country":"US","phone":"(702)292-8602","email":""},"buyer":{"id":"0605388007940","locationCode":"0605388007940","name":"SAMS CLUB 4727","address1":"2101 SE SIMPLE SAVINGS DR","address2":"","city":"BENTONVILLE","state":"AR","zip":"72712-4304","country":"US","phone":"","email":""},"items":[{"lineNo":1,"upc":"817338023393","partNo":"990285723","vendorStyle":"","description":"","quantity":"1","price":"21.25","uom":"EA","discount":"","taxes":[],"department":null,"plannedDeliveryDate":"","salesReference":null,"salesEventEndDate":"1/1/0001","acceptedQuantity":"","allowances":null,"rebate":null,"locations":[]}]}','9/11/2023 9:14:42 PM',1)
+/*9/11/2023 9:14:42 PM: */ /****************************************Commit Transaction********************************/
+/*9/11/2023 9:14:42 PM: */ /****************************************Begin Transaction********************************/
+/*9/11/2023 9:14:42 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/11/2023 9:14:42 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[Data],[CreatedDate],[CreatedBy]) VALUES (29,8,'Fields','{"OrderDate":"9/10/2023","OrderNumber":"TEST-PO2","VendorNumber":"587462631","OrderType":"","ReferenceNo":"189945456001","CustomerOrderNo":"10098994770-001","ExternalId":"","ShippingMethod":"FEDERAL EXPRESSSG","ShipToId":"","ShipToName":"ADRIANA SILVA","ShipToAddress1":"6319 GERBER MEADOW","ShipToAddress2":"","ShipToCity":"SAN ANTONIO","ShipToState":"TX","ShipToZip":"78244","ShipToCountry":"US","ShipToPhone":"2104126687","ShipToEmail":"","BillToId":"0053976043910","BillToName":"","BillToAddress1":"6259 HUMMINGBIRD LN","BillToAddress2":"","BillToCity":"LAS VEGAS","BillToState":"NV","BillToZip":"89103","BillToCountry":"US","BillToPhone":"(702)292-8602","BillToEmail":"","BuyerId":"0605388007940","BuyerName":"SAMS CLUB 4727","BuyerAddress1":"2101 SE SIMPLE SAVINGS DR","BuyerAddress2":"","BuyerCity":"BENTONVILLE","BuyerState":"AR","BuyerZip":"72712-4304","BuyerCountry":"US","BuyerPhone":"","BuyerEmail":"","IsStoreOrder":"false"}','9/11/2023 9:14:42 PM',1)
+/*9/11/2023 9:14:42 PM: */ /****************************************Commit Transaction********************************/
+/*9/11/2023 9:14:42 PM: */ SELECT * FROM [Orders] WHERE [Id] = 8
+/*9/11/2023 9:14:42 PM: */ SELECT * FROM [OrderData] WHERE OrderId = 8
+/*9/11/2023 9:14:52 PM: */ /****************************************Begin Transaction********************************/
+/*9/11/2023 9:14:52 PM: */ UPDATE [Orders] SET [Status] = 'SYNCERROR',[CustomerId] = 1,[OrderDate] = '9/10/2023 12:00:00 AM',[OrderNumber] = 'TEST-PO2',[VendorNumber] = '587462631',[OrderType] = '',[ReferenceNo] = '189945456001',[CustomerOrderNo] = '10098994770-001',[ExternalId] = '',[ShippingMethod] = 'FEDERAL EXPRESSSG',[ShipToId] = '',[ShipToName] = 'ADRIANA SILVA',[ShipToAddress1] = '6319 GERBER MEADOW',[ShipToAddress2] = '',[ShipToCity] = 'SAN ANTONIO',[ShipToState] = 'TX',[ShipToZip] = '78244',[ShipToCountry] = 'US',[ShipToEmail] = '',[ShipToPhone] = '2104126687',[BillToId] = '0053976043910',[BillToName] = '',[BillToAddress1] = '6259 HUMMINGBIRD LN',[BillToAddress2] = '',[BillToCity] = 'LAS VEGAS',[BillToState] = 'NV',[BillToZip] = '89103',[BillToCountry] = 'US',[BillToEmail] = '',[BillToPhone] = '(702)292-8602',[BuyerId] = '0605388007940',[BuyerName] = 'SAMS CLUB 4727',[BuyerAddress1] = '2101 SE SIMPLE SAVINGS DR',[BuyerAddress2] = '',[BuyerCity] = 'BENTONVILLE',[BuyerState] = 'AR',[BuyerZip] = '72712-4304',[BuyerCountry] = 'US',[BuyerEmail] = '',[BuyerPhone] = '',[IsStoreOrder] = 0,[CreatedDate] = '9/11/2023 9:14:42 PM',[CreatedBy] = 1 WHERE [Id] = 8
+/*9/11/2023 9:14:52 PM: */ /****************************************Commit Transaction********************************/
+/*9/11/2023 9:14:52 PM: */ /****************************************Begin Transaction********************************/
+/*9/11/2023 9:14:52 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/11/2023 9:14:52 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[Data],[CreatedDate],[CreatedBy]) VALUES (30,8,'RESPONSE','{"error" : {"code" : "REQUEST_PARAM_REQD", "message" : "This request is missing a required parameter."}}','9/11/2023 9:14:52 PM',1)
+/*9/11/2023 9:14:52 PM: */ /****************************************Commit Transaction********************************/

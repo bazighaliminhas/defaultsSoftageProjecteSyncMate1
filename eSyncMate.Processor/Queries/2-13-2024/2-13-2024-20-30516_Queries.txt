@@ -1,0 +1,24 @@
+/*2/13/2024 8:25:58 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/13/2024 8:26:20 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/13/2024 8:27:07 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/13/2024 8:29:41 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/13/2024 8:29:42 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/13/2024 8:45:42 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/13/2024 8:51:19 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/13/2024 8:51:19 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/13/2024 8:51:20 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/13/2024 8:51:20 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/13/2024 8:51:20 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/13/2024 8:51:20 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/13/2024 8:51:20 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/13/2024 8:51:45 PM: */ /****************************************Begin Transaction********************************/
+/*2/13/2024 8:51:45 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Routes
+/*2/13/2024 8:51:45 PM: */ INSERT INTO [Routes] ([Id],[TypeId],[Status],[SourcePartyId],[DestinationPartyId],[SourceConnectorId],[DestinationConnectorId],[MapId],[PartyGroupId],[FrequencyType],[StartDate],[EndDate],[RepeatCount],[WeekDays],[OnDay],[ExecutionTime],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (9,3,'Active',2,3,3,4,10,1,'Minutely','1/31/2024 7:00:00 PM','1/31/2024 7:00:00 PM',2,'','','','1/1/1900 12:00:00 AM',0,'2/13/2024 8:51:45 PM',0)
+/*2/13/2024 8:51:45 PM: */ /****************************************Commit Transaction********************************/
+/*2/13/2024 8:51:45 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/13/2024 8:51:51 PM: */ SELECT Id,RouteId,Type,Message , Details , CreatedDate ,CreatedBy ,ModifiedDate , ModifiedBy FROM VW_RouteLog WHERE RouteId = '9'
+/*2/13/2024 8:51:53 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/13/2024 8:51:53 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/13/2024 8:51:53 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/13/2024 8:51:53 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/13/2024 8:51:53 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC

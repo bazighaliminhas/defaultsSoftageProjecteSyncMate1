@@ -1,0 +1,9 @@
+/*9/22/2023 3:48:06 PM: */ SELECT * FROM [Orders] WHERE Id = 9 AND  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-21' ORDER BY OrderDate DESC
+/*9/22/2023 3:48:47 PM: */ SELECT * FROM [Orders] WHERE [Id] = 9
+/*9/22/2023 3:48:47 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 9
+/*9/22/2023 3:48:47 PM: */ SELECT * FROM [InboundEDI] WHERE [Id] = 9
+/*9/22/2023 3:48:47 PM: */ SELECT * FROM [InboundEDIInfo] WHERE InboundEDIId = 9
+/*9/22/2023 3:48:47 PM: */ SELECT * FROM [OutboundEDI] WHERE OrderId = 9
+/*9/22/2023 3:48:47 PM: */ SELECT * FROM [Customers] WHERE [Id] = 1
+/*9/22/2023 3:48:47 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/22/2023 3:48:47 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1

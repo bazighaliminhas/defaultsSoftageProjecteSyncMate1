@@ -1,0 +1,32 @@
+/*2/8/2024 9:10:38 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:10:49 AM: */ SELECT * FROM [Customers] WHERE  ERPCustomerID = 'TAR6266P' ORDER BY Id DESC
+/*2/8/2024 9:11:29 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:12:43 AM: */ /****************************************Begin Transaction********************************/
+/*2/8/2024 9:12:43 AM: */ UPDATE [CustomerProductCatalog] SET [ERPCustomerID] = 'CSN6172',[TCIN] = '79318179',[PartnerSKU] = 'CY1356-3101-5',[ProductTitle] = 'Courtyard CY1356 Power Loomed Rectangle Indoor/Outdoor Indoor/Outdoor Area Rug - Natural/Blue - 5'' 3" X 7'' 7" - Safavieh',[ItemType] = 'Rugsf',[ItemTypeID] = '247928',[Relationship] = 'VC',[PublishStatus] = 'Yes',[DataUpdatesStatus] = 'APPROVED',[Price] = 112,[OfferPrice] = 81,[MAPPrice] = 0,[OfferDiscount] = 0,[PriceLastUpdated] = '10/15/2023 12:08:02 AM',[DistributionCenterName] = 'Lebanon',[DistributionCenterID] = 'mikpz1',[Inventory] = 18,[InventoryLastUpdated] = '7/17/2023 9:30:19 AM',[ModifiedDate] = '2/8/2024 9:12:43 AM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 2276524
+/*2/8/2024 9:12:43 AM: */ /****************************************Commit Transaction********************************/
+/*2/8/2024 9:12:43 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:12:51 AM: */ /****************************************Begin Transaction********************************/
+/*2/8/2024 9:12:51 AM: */ UPDATE [CustomerProductCatalog] SET [ERPCustomerID] = 'CSN6172',[TCIN] = '79318179',[PartnerSKU] = 'CY1356-3101-5',[ProductTitle] = 'Courtyard CY1356 Power Loomed Rectangle Indoor/Outdoor Indoor/Outdoor Area Rug - Natural/Blue - 5'' 3" X 7'' 7" - Safavieh',[ItemType] = 'Rugsf',[ItemTypeID] = '247928f',[Relationship] = 'VC',[PublishStatus] = 'Yes',[DataUpdatesStatus] = 'APPROVED',[Price] = 112,[OfferPrice] = 81,[MAPPrice] = 0,[OfferDiscount] = 0,[PriceLastUpdated] = '10/15/2023 12:08:02 AM',[DistributionCenterName] = 'Lebanon',[DistributionCenterID] = 'mikpz1',[Inventory] = 18,[InventoryLastUpdated] = '7/17/2023 9:30:19 AM',[ModifiedDate] = '2/8/2024 9:12:51 AM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 2276524
+/*2/8/2024 9:12:51 AM: */ /****************************************Commit Transaction********************************/
+/*2/8/2024 9:12:52 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:15:49 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:17:07 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:17:33 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:17:51 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:18:13 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:18:32 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:20:37 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:20:46 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:21:01 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:21:27 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:21:42 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:22:21 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:22:46 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:22:53 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:23:03 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:23:05 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:23:22 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:23:32 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:24:31 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:24:55 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/8/2024 9:31:52 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC

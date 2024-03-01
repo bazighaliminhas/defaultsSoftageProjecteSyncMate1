@@ -1,0 +1,202 @@
+
+<div class="mat-table-container">
+
+  <mat-card>
+    <mat-card-content>
+      <form [formGroup]="OrderForm">
+        <mat-form-field appearance="fill" color="accent">
+          <mat-label>Order ID</mat-label>
+          <input matInput formControlName="orderId">
+        </mat-form-field>
+        &nbsp;
+        <mat-form-field appearance="fill" color="accent">
+          <mat-label>Order Number</mat-label>
+          <input matInput formControlName="orderNo">
+        </mat-form-field>
+        &nbsp;
+        <mat-form-field color="accent">
+          <mat-label>From Date</mat-label>
+          <input formControlName="fromDate" matInput [matDatepicker]="fromDate">
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matIconSuffix [for]="fromDate"></mat-datepicker-toggle>
+          <mat-datepicker #fromDate></mat-datepicker>
+        </mat-form-field>
+        &nbsp;
+        <mat-form-field color="accent">
+          <mat-label>To Date</mat-label>
+          <input formControlName="toDate" matInput [matDatepicker]="toDate">
+          <mat-hint>MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matIconSuffix [for]="toDate"></mat-datepicker-toggle>
+          <mat-datepicker #toDate></mat-datepicker>
+        </mat-form-field>
+        &nbsp;
+        <mat-form-field appearance="fill" color="accent">
+          <mat-label>Status</mat-label>
+          <mat-select formControlName="status">
+            <mat-option *ngFor="let status of statusOptions" [value]="status">
+              {{ status }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+        &nbsp;
+        <button mat-flat-button color="accent" (click)="getOrders()">
+          <span *ngIf="!showSpinnerforSearch">Search Orders</span>
+          <mat-spinner *ngIf="showSpinnerforSearch" diameter="20"></mat-spinner>
+        </button>
+
+      </form>
+    </mat-card-content>
+  </mat-card>
+
+
+  &nbsp;
+  <mat-card>
+    <mat-card-content>
+      <table mat-table [dataSource]="ordersToDisplay">
+
+        <!-- ID Column -->
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef>Order ID</th>
+          <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+
+        <!-- Status -->
+        <ng-container matColumnDef="Status">
+          <th mat-header-cell *matHeaderCellDef>Status</th>
+          <td mat-cell *matCellDef="let element" [ngClass]="getStatusClass(element.status)">
+            {{element.status}}
+          </td>
+        </ng-container>
+
+        <!-- Customer Name -->
+        <ng-container matColumnDef="CustomerName">
+          <th mat-header-cell *matHeaderCellDef>Customer Name</th>
+          <td mat-cell *matCellDef="let element"> {{element.customerName}} </td>
+        </ng-container>
+
+        <!-- Order Date -->
+        <ng-container matColumnDef="OrderDate">
+          <th mat-header-cell *matHeaderCellDef>Order Date</th>
+          <td mat-cell *matCellDef="let element"> {{element.orderDate | date:'dd-MMM-YYYY'}} </td>
+        </ng-container>
+
+        <!-- Created Date -->
+        <ng-container matColumnDef="CreatedDate">
+          <th mat-header-cell *matHeaderCellDef>Create Date</th>
+          <td mat-cell *matCellDef="let element"> {{element.createdDate | date:'dd-MMM-YYYY hh:mm a'}} </td>
+        </ng-container>
+
+        <!-- OrderNumber -->
+        <ng-container matColumnDef="OrderNumber">
+          <th mat-header-cell *matHeaderCellDef>Order Number</th>
+          <td mat-cell *matCellDef="let element"> {{element.orderNumber}} </td>
+        </ng-container>
+
+        <!--GetOrderFiles-->
+        <ng-container matColumnDef="File">
+          <th mat-header-cell *matHeaderCellDef></th>
+          <td mat-cell *matCellDef="let element">
+            <button mat-icon-button aria-label="normal button" color="accent" matTooltip="Get Order Files" matTooltipPosition="above"
+                    (click)="getOrderFiles(element)">
+              <mat-icon>playlist_add</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+
+        <!--GenerateASN - process856-->
+        <ng-container matColumnDef="GenerateASN">
+          <th mat-header-cell *matHeaderCellDef>Actions</th>
+          <td mat-cell *matCellDef="let element">
+            <button mat-icon-button aria-label="normal button" matTooltip="Generate ASN" matTooltipPosition="above" color="accent"
+                    (click)="generateASN(element)"
+                    *ngIf="element.status == 'SYNCED' || element.status === 'PROCESSED' || element.status === 'ACKNOWLEDGED' ">
+              <mat-icon>local_shipping</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+
+        <!--Generate855EDI-->
+        <ng-container matColumnDef="SendOrderStatus">
+          <th mat-header-cell *matHeaderCellDef></th>
+          <td mat-cell *matCellDef="let element">
+            <button mat-icon-button aria-label="normal button" color="accent" matTooltip="Send Order ACK" matTooltipPosition="above"
+                    (click)="generate855EDI(element)"
+                    *ngIf="element.status === 'SYNCED' || element.status === 'PROCESSED' ">
+              <mat-icon>send</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+
+        <!--MarkOrderforASN-->
+        <ng-container matColumnDef="MarkOrderforASN">
+          <th mat-header-cell *matHeaderCellDef></th>
+          <td mat-cell *matCellDef="let element">
+            <button mat-icon-button aria-label="normal button" color="accent" matTooltip="Mark Order for ASN" matTooltipPosition="above"
+                    (click)="markForASN(element)"
+                    *ngIf="element.status === 'ASNGEN'">
+              <mat-icon>file_copy</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+
+        <!--CreateInvoice-->
+        <ng-container matColumnDef="CreateInvoice">
+          <th mat-header-cell *matHeaderCellDef></th>
+          <td mat-cell *matCellDef="let element">
+            <button mat-icon-button aria-label="normal button" color="accent" matTooltip="Create Invoice" matTooltipPosition="above"
+                    (click)="createInvoice(element)"
+                    *ngIf="element.status === 'ASNMARK'">
+              <mat-icon>ballot</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+
+        <!--Create810-->
+        <ng-container matColumnDef="Create810">
+          <th mat-header-cell *matHeaderCellDef></th>
+          <td mat-cell *matCellDef="let element">
+            <button mat-icon-button aria-label="normal button" color="accent" matTooltip="Create 810" matTooltipPosition="above"
+                    (click)="process810(element)"
+                    *ngIf="element.status === 'INVOICED'">
+              <mat-icon>developer_mode</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+
+        <!--SyncOrder-->
+        <ng-container matColumnDef="SyncOrder">
+          <th mat-header-cell *matHeaderCellDef></th>
+          <td mat-cell *matCellDef="let element">
+            <button mat-icon-button aria-label="normal button" color="accent" matTooltip="Sync Order" matTooltipPosition="above"
+                    (click)="syncOrder(element)"
+                    *ngIf="element.status === 'NEW' || element.status === 'SYNCERROR'">
+              <mat-icon>sync</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+
+        <!--getStoresOrder-->
+        <ng-container matColumnDef="GetStoresOrder">
+          <th mat-header-cell *matHeaderCellDef></th>
+          <td mat-cell *matCellDef="let element">
+            <button mat-icon-button aria-label="normal button" color="accent" matTooltip="Get Store Orders" matTooltipPosition="above"
+                    (click)="getStoresOrder(element)"
+                    *ngIf="element.status === 'SPLITED'">
+              <mat-icon>business_center</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="columns"></tr>
+        <tr mat-row *matRowDef="let row; columns: columns"></tr>
+
+      </table>
+
+    </mat-card-content>
+  </mat-card>
+
+</div>
+
+<div *ngIf="showSpinner" class="spinner-overlay">
+  <mat-spinner></mat-spinner>
+</div>

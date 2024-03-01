@@ -1,0 +1,5 @@
+/*1/7/2024 4:00:34 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/7/2024 4:01:40 PM: */ /****************************************Begin Transaction********************************/
+/*1/7/2024 4:01:41 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Customers
+/*1/7/2024 4:01:44 PM: */ INSERT INTO [Customers] ([Id],[Name],[ERPCustomerID],[ISACustomerID],[ISA856ReceiverId],[ISA810ReceiverId],[Marketplace],[CreatedDate],[CreatedBy]) VALUES (3,'Target Store','TARGET','6111470100',NULL,'6111470100','Target Stores','1/7/2024 4:01:36 PM',0)
+/*1/7/2024 4:01:44 PM: */ Error: INSERT INTO [Customers] ([Id],[Name],[ERPCustomerID],[ISACustomerID],[ISA856ReceiverId],[ISA810ReceiverId],[Marketplace],[CreatedDate],[CreatedBy]) VALUES (3,'Target Store','TARGET','6111470100',NULL,'6111470100','Target Stores','1/7/2024 4:01:36 PM',0)

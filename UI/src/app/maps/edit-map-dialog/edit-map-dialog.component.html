@@ -1,0 +1,45 @@
+<div mat-dialog-content class="dialog-content">
+  <h1 class="dialog-title">Modify Map</h1>
+  <form [formGroup]="updateMapForm" class="customer-form">
+
+    <mat-form-field class="form-field" [ngStyle]="{'display': 'none'}">
+      <mat-label>Id</mat-label>
+      <input matInput formControlName="id">
+    </mat-form-field>
+
+    <!-- Row 1: Map Name -->
+    <div class="form-row">
+      <mat-form-field class="form-field">
+        <mat-label>Map Name</mat-label>
+        <input matInput formControlName="name">
+      </mat-form-field>
+
+      <!-- Map Type -->
+      <div class="form-row">
+        <mat-form-field class="form-field">
+          <mat-label>Map Type</mat-label>
+          <mat-select formControlName="typeId">
+            <mat-option *ngFor="let mapType of mapTypesOptions" [value]="mapType.id">
+              {{ mapType.name }}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+    </div>
+
+    <!-- Row 2: Data -->
+    <div class="form-row">
+      <mat-form-field class="full-width" style="width: 100%;">
+        <mat-label>Map</mat-label>
+        <textarea matInput formControlName="map" style="height: 300px;"></textarea>
+      </mat-form-field>
+    </div>
+
+  </form>
+</div>
+
+<div mat-dialog-actions class="dialog-actions">
+  <button mat-button class="cancel-button" (click)="onCancel()">Cancel</button>
+  <button mat-raised-button color="primary" [disabled]="!updateMapForm.valid" (click)="updateMap()">Update</button>
+</div>

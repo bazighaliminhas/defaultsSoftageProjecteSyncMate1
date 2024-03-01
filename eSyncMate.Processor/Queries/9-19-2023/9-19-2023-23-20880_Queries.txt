@@ -1,0 +1,197 @@
+/*9/19/2023 11:00:44 PM: */ /****************************************Begin Transaction********************************/
+/*9/19/2023 11:00:44 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM InboundEDI
+/*9/19/2023 11:00:44 PM: */ INSERT INTO [InboundEDI] ([Id],[Status],[Data],[CreatedDate],[CreatedBy]) VALUES (5,'NEW','ISA*00*          *00*          *08*925485USSM     *ZZ*LALTSAMSCLUB   *230820*1003*:*00501*850100757*0*P*>~
+GS*PO*925485USSM*LALTSAMSCLUB*20230820*1003*850100757*X*005010~
+ST*850*100894~
+BEG*00*SA*TEST-PO-1**20230820~
+CUR*BY*USD~
+REF*DP*00063~
+REF*MR*0020~
+REF*KK*Home Delivery~
+REF*IA*587462631~
+REF*4U*SAMSCOM~
+REF*EVI*ONLINE~
+REF*CO*10092408186-001~
+REF*AN*189082391001~
+FOB*PP*OR*1~
+ITD*05*15*****30~
+DTM*001*20231118~
+DTM*830*20230823~
+DTM*002*20230829~
+DTM*004*20230820~
+TD5**LE*ENG~
+N9*ZZ*US~
+N1*BT**MI*0009735935010~
+N3*460 HARWOOD CT.~
+N3*OXFORD~
+N4*OXFORD*MI*48371*US~
+PER*OC*KAREN SCHODOWSKI*HP*(248)760-6522***EM*bokakesk@att.net~
+N1*ST*KAREN SCHODOWSKI~
+N3*460 HARWOOD CT~
+N4*OXFORD*MI*48371*US~
+PER*RE*KAREN SCHODOWSKI*HP*2487606522~
+N1*BY*SAMS CLUB 4727*UL*0605388007940~
+N3*2101 SE SIMPLE SAVINGS DR~
+N4*BENTONVILLE*AR*72712-4304*US~
+N1*SU*LALTITUDE LLC~
+PO1*001*1*EA*13.55*LE*IN*990285722*UP*817338021948~
+PID*F****DRAWING BOARD~
+TD5*B*ZZ*FEDERAL EXPRESS*********SG~
+AMT*1*21.18~
+PO1*002*1*EA*26.25*LE*IN*990285732*UP*817338023652~
+PID*F****DRAWING BOARD~
+TD5*B*ZZ*FEDERAL EXPRESS*********SG~
+AMT*1*26.25~
+CTT*2~
+AMT*GV*13.55~
+SE*43*100894~
+GE*1*850100757~
+IEA*1*850100757~','1/1/1900 12:00:00 AM',0)
+/*9/19/2023 11:00:44 PM: */ /****************************************Commit Transaction********************************/
+/*9/19/2023 11:00:45 PM: */ SELECT * FROM [Customers] WHERE [ISACustomerID] = '925485USSM'
+/*9/19/2023 11:00:45 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/19/2023 11:00:45 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/19/2023 11:00:45 PM: */ /****************************************Begin Transaction********************************/
+/*9/19/2023 11:00:45 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM InboundEDIInfo
+/*9/19/2023 11:00:45 PM: */ INSERT INTO [InboundEDIInfo] ([Id],[InboundEDIId],[ISASenderQual],[ISASenderId],[ISAReceiverQual],[ISAReceiverId],[ISAEdiVersion],[ISAUsageIndicator],[ISAControlNumber],[GSSenderId],[GSReceiverId],[GSControlNumber],[SegmentSeparator],[ElementSeparator],[CreatedDate],[CreatedBy]) VALUES (5,5,'08','925485USSM','ZZ','LALTSAMSCLUB','00501','P','850100757','925485USSM','LALTSAMSCLUB','850100757','~','*','1/1/1900 12:00:00 AM',0)
+/*9/19/2023 11:00:45 PM: */ /****************************************Commit Transaction********************************/
+/*9/19/2023 11:00:50 PM: */ /****************************************Begin Transaction********************************/
+/*9/19/2023 11:00:50 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Orders
+/*9/19/2023 11:00:50 PM: */ INSERT INTO [Orders] ([Id],[Status],[CustomerId],[InboundEDIId],[OrderDate],[OrderNumber],[VendorNumber],[OrderType],[ReferenceNo],[CustomerOrderNo],[ExternalId],[ShippingMethod],[ShipToId],[ShipToName],[ShipToAddress1],[ShipToAddress2],[ShipToCity],[ShipToState],[ShipToZip],[ShipToCountry],[ShipToEmail],[ShipToPhone],[BillToId],[BillToName],[BillToAddress1],[BillToAddress2],[BillToCity],[BillToState],[BillToZip],[BillToCountry],[BillToEmail],[BillToPhone],[BuyerId],[BuyerName],[BuyerAddress1],[BuyerAddress2],[BuyerCity],[BuyerState],[BuyerZip],[BuyerCountry],[BuyerEmail],[BuyerPhone],[IsStoreOrder],[CreatedDate],[CreatedBy]) VALUES (4,'NEW',1,5,'8/20/2023 12:00:00 AM','TEST-PO-1','587462631','','10092408186-001','10092408186-001','','FEDERAL EXPRESS '' ''SG','','KAREN SCHODOWSKI','460 HARWOOD CT','','OXFORD','MI','48371','US','','2487606522','0009735935010','KAREN SCHODOWSKI','460 HARWOOD CT.','','OXFORD','MI','48371','US','','(248)760-6522','0605388007940','SAMS CLUB 4727','2101 SE SIMPLE SAVINGS DR','','BENTONVILLE','AR','72712-4304','US','','',0,'9/19/2023 11:00:50 PM',1)
+/*9/19/2023 11:00:50 PM: */ /****************************************Commit Transaction********************************/
+/*9/19/2023 11:00:50 PM: */ /****************************************Begin Transaction********************************/
+/*9/19/2023 11:00:50 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/19/2023 11:00:50 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[Data],[CreatedDate],[CreatedBy]) VALUES (13,4,'EDI','ISA*00*          *00*          *08*925485USSM     *ZZ*LALTSAMSCLUB   *230820*1003*:*00501*850100757*0*P*>~
+GS*PO*925485USSM*LALTSAMSCLUB*20230820*1003*850100757*X*005010~
+ST*850*100894~
+BEG*00*SA*TEST-PO-1**20230820~
+CUR*BY*USD~
+REF*DP*00063~
+REF*MR*0020~
+REF*KK*Home Delivery~
+REF*IA*587462631~
+REF*4U*SAMSCOM~
+REF*EVI*ONLINE~
+REF*CO*10092408186-001~
+REF*AN*189082391001~
+FOB*PP*OR*1~
+ITD*05*15*****30~
+DTM*001*20231118~
+DTM*830*20230823~
+DTM*002*20230829~
+DTM*004*20230820~
+TD5**LE*ENG~
+N9*ZZ*US~
+N1*BT**MI*0009735935010~
+N3*460 HARWOOD CT.~
+N3*OXFORD~
+N4*OXFORD*MI*48371*US~
+PER*OC*KAREN SCHODOWSKI*HP*(248)760-6522***EM*bokakesk@att.net~
+N1*ST*KAREN SCHODOWSKI~
+N3*460 HARWOOD CT~
+N4*OXFORD*MI*48371*US~
+PER*RE*KAREN SCHODOWSKI*HP*2487606522~
+N1*BY*SAMS CLUB 4727*UL*0605388007940~
+N3*2101 SE SIMPLE SAVINGS DR~
+N4*BENTONVILLE*AR*72712-4304*US~
+N1*SU*LALTITUDE LLC~
+PO1*001*1*EA*13.55*LE*IN*990285722*UP*817338021948~
+PID*F****DRAWING BOARD~
+TD5*B*ZZ*FEDERAL EXPRESS*********SG~
+AMT*1*21.18~
+PO1*002*1*EA*26.25*LE*IN*990285732*UP*817338023652~
+PID*F****DRAWING BOARD~
+TD5*B*ZZ*FEDERAL EXPRESS*********SG~
+AMT*1*26.25~
+CTT*2~
+AMT*GV*13.55~
+SE*43*100894~
+GE*1*850100757~
+IEA*1*850100757~','9/19/2023 11:00:50 PM',1)
+/*9/19/2023 11:00:50 PM: */ /****************************************Commit Transaction********************************/
+/*9/19/2023 11:00:50 PM: */ /****************************************Begin Transaction********************************/
+/*9/19/2023 11:00:50 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/19/2023 11:00:50 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[Data],[CreatedDate],[CreatedBy]) VALUES (14,4,'JSON','{"orderDate":"20230820","shipDate":"20230823","orderNumber":"TEST-PO-1","customerName":"SAMSCLUB","vendorNumber":"587462631","label":"TEST-PO-1","status":"","marketplace":"SAMSCLUB_DSV","poType":"","plannedDeliveryDate":"","brand":"","terms":"","deptNo":"00063","refNo":"10092408186-001","customerOrderNo":"10092408186-001","externalid":"","shippingPrice":0,"shippingTax":0,"shippingTaxes":[],"shippingMethod":"FEDERAL EXPRESSSG","carrier":{"name":"FEDERAL EXPRESS","service":"SG"},"paymentType":"","discount":0,"department":"00063","division":"","merchandiseType":"0020","deliveryReference":"Home Delivery","placementMethod":"ONLINE","shipping":{"value":0,"tax":0,"taxes":[]},"shipNotBefore":"","shipNotAfter":"","shipmentDate":"","shipAccountNumber":"","packingSlipUrl":null,"priceIdentifier":{"code":null,"name":""},"paymentMode":"","allowanceOrCharge":"","grossAmount":null,"supplier":{"id":"","name":"LALTITUDE LLC","code":"","warehouseZip":"","phone":"","email":"","fax":""},"shipToCustomer":{"id":"","locationCode":"","name":"KAREN SCHODOWSKI","address1":"460 HARWOOD CT","address2":"","city":"OXFORD","state":"MI","zip":"48371","country":"US","phone":"2487606522","email":""},"billing":{"id":"0009735935010","locationCode":"0009735935010","name":"KAREN SCHODOWSKI","address1":"460 HARWOOD CT.","address2":"","city":"OXFORD","state":"MI","zip":"48371","country":"US","phone":"(248)760-6522","email":""},"buyer":{"id":"0605388007940","locationCode":"0605388007940","name":"SAMS CLUB 4727","address1":"2101 SE SIMPLE SAVINGS DR","address2":"","city":"BENTONVILLE","state":"AR","zip":"72712-4304","country":"US","phone":"","email":""},"items":[{"lineNo":"1","ediLineId":"001","upc":"817338021948","partNo":"990285722","vendorStyle":"","description":"","quantity":1,"price":13.55,"uom":"EA","discount":0,"taxes":[],"department":null,"plannedDeliveryDate":"","salesReference":null,"salesEventEndDate":null,"acceptedQuantity":"","allowances":null,"rebate":null,"locations":[]},{"lineNo":"2","ediLineId":"002","upc":"817338023652","partNo":"990285732","vendorStyle":"","description":"","quantity":1,"price":26.25,"uom":"EA","discount":0,"taxes":[],"department":null,"plannedDeliveryDate":"","salesReference":null,"salesEventEndDate":null,"acceptedQuantity":"","allowances":null,"rebate":null,"locations":[]}]}','9/19/2023 11:00:50 PM',1)
+/*9/19/2023 11:00:50 PM: */ /****************************************Commit Transaction********************************/
+/*9/19/2023 11:00:50 PM: */ /****************************************Begin Transaction********************************/
+/*9/19/2023 11:00:50 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/19/2023 11:00:50 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[Data],[CreatedDate],[CreatedBy]) VALUES (15,4,'Fields','{"OrderDate":"08/20/2023","OrderNumber":"TEST-PO-1","VendorNumber":"587462631","OrderType":"","ReferenceNo":"10092408186-001","CustomerOrderNo":"10092408186-001","ExternalId":"","ShippingMethod":"FEDERAL EXPRESS '' ''SG","ShipToId":"","ShipToName":"KAREN SCHODOWSKI","ShipToAddress1":"460 HARWOOD CT","ShipToAddress2":"","ShipToCity":"OXFORD","ShipToState":"MI","ShipToZip":"48371","ShipToCountry":"US","ShipToPhone":"2487606522","ShipToEmail":"","BillToId":"0009735935010","BillToName":"KAREN SCHODOWSKI","BillToAddress1":"460 HARWOOD CT.","BillToAddress2":"","BillToCity":"OXFORD","BillToState":"MI","BillToZip":"48371","BillToCountry":"US","BillToPhone":"(248)760-6522","BillToEmail":"","BuyerId":"0605388007940","BuyerName":"SAMS CLUB 4727","BuyerAddress1":"2101 SE SIMPLE SAVINGS DR","BuyerAddress2":"","BuyerCity":"BENTONVILLE","BuyerState":"AR","BuyerZip":"72712-4304","BuyerCountry":"US","BuyerPhone":"","BuyerEmail":"","IsStoreOrder":"false"}','9/19/2023 11:00:50 PM',1)
+/*9/19/2023 11:00:50 PM: */ /****************************************Commit Transaction********************************/
+/*9/19/2023 11:00:50 PM: */ SELECT * FROM [Orders] WHERE [Id] = 4
+/*9/19/2023 11:00:50 PM: */ SELECT * FROM [OrderData] WHERE OrderId = 4
+/*9/19/2023 11:00:50 PM: */ SELECT * FROM [InboundEDI] WHERE [Id] = 5
+/*9/19/2023 11:00:50 PM: */ SELECT * FROM [InboundEDIInfo] WHERE InboundEDIId = 5
+/*9/19/2023 11:00:50 PM: */ SELECT * FROM [OutboundEDI] WHERE OrderId = 4
+/*9/19/2023 11:00:52 PM: */ /****************************************Begin Transaction********************************/
+/*9/19/2023 11:00:52 PM: */ UPDATE [Orders] SET [Status] = 'SYNCERROR',[CustomerId] = 1,[InboundEDIId] = 5,[OrderDate] = '8/20/2023 12:00:00 AM',[OrderNumber] = 'TEST-PO-1',[VendorNumber] = '587462631',[OrderType] = '',[ReferenceNo] = '10092408186-001',[CustomerOrderNo] = '10092408186-001',[ExternalId] = '',[ShippingMethod] = 'FEDERAL EXPRESS '' ''SG',[ShipToId] = '',[ShipToName] = 'KAREN SCHODOWSKI',[ShipToAddress1] = '460 HARWOOD CT',[ShipToAddress2] = '',[ShipToCity] = 'OXFORD',[ShipToState] = 'MI',[ShipToZip] = '48371',[ShipToCountry] = 'US',[ShipToEmail] = '',[ShipToPhone] = '2487606522',[BillToId] = '0009735935010',[BillToName] = 'KAREN SCHODOWSKI',[BillToAddress1] = '460 HARWOOD CT.',[BillToAddress2] = '',[BillToCity] = 'OXFORD',[BillToState] = 'MI',[BillToZip] = '48371',[BillToCountry] = 'US',[BillToEmail] = '',[BillToPhone] = '(248)760-6522',[BuyerId] = '0605388007940',[BuyerName] = 'SAMS CLUB 4727',[BuyerAddress1] = '2101 SE SIMPLE SAVINGS DR',[BuyerAddress2] = '',[BuyerCity] = 'BENTONVILLE',[BuyerState] = 'AR',[BuyerZip] = '72712-4304',[BuyerCountry] = 'US',[BuyerEmail] = '',[BuyerPhone] = '',[IsStoreOrder] = 0,[CreatedDate] = '9/19/2023 11:00:50 PM',[CreatedBy] = 1 WHERE [Id] = 4
+/*9/19/2023 11:00:52 PM: */ /****************************************Commit Transaction********************************/
+/*9/19/2023 11:00:52 PM: */ /****************************************Begin Transaction********************************/
+/*9/19/2023 11:00:52 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM OrderData
+/*9/19/2023 11:00:52 PM: */ INSERT INTO [OrderData] ([Id],[OrderId],[Type],[Data],[CreatedDate],[CreatedBy]) VALUES (16,4,'RESPONSE','{"error" : {"code" : "422", "message" : "[
+  {
+    \"property\": \"date\",
+    \"message\": \"is missing and it is required\"
+  },
+  {
+    \"property\": \"vendorName\",
+    \"message\": \"is missing and it is required\"
+  },
+  {
+    \"property\": \"customer\",
+    \"message\": \"is missing and it is required\"
+  },
+  {
+    \"property\": \"billing.email\",
+    \"message\": \"does not match the regex pattern /^(([^<>()\\[\\]\\\\.,;:\\s@\\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\\"]+)*)|(\\".+\\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$/i\"
+  }
+]"}}','9/19/2023 11:00:52 PM',1)
+/*9/19/2023 11:00:52 PM: */ /****************************************Commit Transaction********************************/
+/*9/19/2023 11:00:52 PM: */ /****************************************Begin Transaction********************************/
+/*9/19/2023 11:00:52 PM: */ UPDATE [InboundEDI] SET [Status] = 'PROCESSED',[Data] = 'ISA*00*          *00*          *08*925485USSM     *ZZ*LALTSAMSCLUB   *230820*1003*:*00501*850100757*0*P*>~
+GS*PO*925485USSM*LALTSAMSCLUB*20230820*1003*850100757*X*005010~
+ST*850*100894~
+BEG*00*SA*TEST-PO-1**20230820~
+CUR*BY*USD~
+REF*DP*00063~
+REF*MR*0020~
+REF*KK*Home Delivery~
+REF*IA*587462631~
+REF*4U*SAMSCOM~
+REF*EVI*ONLINE~
+REF*CO*10092408186-001~
+REF*AN*189082391001~
+FOB*PP*OR*1~
+ITD*05*15*****30~
+DTM*001*20231118~
+DTM*830*20230823~
+DTM*002*20230829~
+DTM*004*20230820~
+TD5**LE*ENG~
+N9*ZZ*US~
+N1*BT**MI*0009735935010~
+N3*460 HARWOOD CT.~
+N3*OXFORD~
+N4*OXFORD*MI*48371*US~
+PER*OC*KAREN SCHODOWSKI*HP*(248)760-6522***EM*bokakesk@att.net~
+N1*ST*KAREN SCHODOWSKI~
+N3*460 HARWOOD CT~
+N4*OXFORD*MI*48371*US~
+PER*RE*KAREN SCHODOWSKI*HP*2487606522~
+N1*BY*SAMS CLUB 4727*UL*0605388007940~
+N3*2101 SE SIMPLE SAVINGS DR~
+N4*BENTONVILLE*AR*72712-4304*US~
+N1*SU*LALTITUDE LLC~
+PO1*001*1*EA*13.55*LE*IN*990285722*UP*817338021948~
+PID*F****DRAWING BOARD~
+TD5*B*ZZ*FEDERAL EXPRESS*********SG~
+AMT*1*21.18~
+PO1*002*1*EA*26.25*LE*IN*990285732*UP*817338023652~
+PID*F****DRAWING BOARD~
+TD5*B*ZZ*FEDERAL EXPRESS*********SG~
+AMT*1*26.25~
+CTT*2~
+AMT*GV*13.55~
+SE*43*100894~
+GE*1*850100757~
+IEA*1*850100757~',[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 5
+/*9/19/2023 11:00:52 PM: */ /****************************************Commit Transaction********************************/

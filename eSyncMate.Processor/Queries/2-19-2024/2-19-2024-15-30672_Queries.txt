@@ -1,0 +1,13 @@
+/*2/19/2024 3:30:04 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/19/2024 3:30:05 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/19/2024 3:30:09 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 3:30:19 PM: */ SELECT * FROM [VW_RouteTypes] WHERE  Name = '856' ORDER BY Id DESC
+/*2/19/2024 3:30:24 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 3:46:33 PM: */ SELECT * FROM [VW_RouteTypes] WHERE  Id = 5 ORDER BY Id DESC
+/*2/19/2024 3:46:38 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 3:46:49 PM: */ SELECT * FROM [VW_RouteTypes] WHERE  Name = 'sdfdsfa' ORDER BY Id DESC
+/*2/19/2024 3:46:51 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 3:47:06 PM: */ SELECT * FROM [VW_RouteTypes] WHERE  Description = 'Invoice' ORDER BY Id DESC
+/*2/19/2024 3:47:09 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 3:48:23 PM: */ SELECT * FROM [VW_RouteTypes] WHERE  CreatedDate >= '2024-02-16 00:00:00.000' AND CreatedDate <= '2024-02-19 23:59:59.999' ORDER BY Id DESC
+/*2/19/2024 3:48:30 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC

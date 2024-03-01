@@ -1,0 +1,178 @@
+/*2/19/2024 5:08:21 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/19/2024 5:08:21 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/19/2024 5:08:21 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/19/2024 5:08:23 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 5:08:27 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2024-02-12' AND OrderDate <= '2024-02-19' ORDER BY Id DESC
+/*2/19/2024 5:08:38 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 5:09:05 PM: */ SELECT * FROM [Customers] WHERE  Name = 'Target Plus' ORDER BY Id DESC
+/*2/19/2024 5:09:08 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 5:09:24 PM: */ SELECT * FROM [Customers] WHERE  Marketplace = 'SCS Customer' ORDER BY Id DESC
+/*2/19/2024 5:09:35 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 5:10:14 PM: */ SELECT * FROM [VW_Customers] WHERE [Name] = 'majid'
+/*2/19/2024 5:10:14 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 5:10:14 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Customers
+/*2/19/2024 5:10:14 PM: */ INSERT INTO [Customers] ([Id],[Name],[ERPCustomerID],[ISACustomerID],[ISA856ReceiverId],[ISA810ReceiverId],[Marketplace],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (6,'majid','TAR6266P','TAR6266P','TAR6266P','TAR6266P','TAR6266P','1/1/1900 12:00:00 AM',0,'2/19/2024 5:10:14 PM',0)
+/*2/19/2024 5:10:14 PM: */ /****************************************Commit Transaction********************************/
+/*2/19/2024 5:10:14 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 5:10:24 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*2/19/2024 5:10:27 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*2/19/2024 5:10:42 PM: */ SELECT * FROM [VW_Connectors] WHERE [Name] = 'majid'
+/*2/19/2024 5:10:42 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 5:10:42 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Connectors
+/*2/19/2024 5:10:42 PM: */ INSERT INTO [Connectors] ([Id],[TypeId],[Name],[Data],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (6,3,'majid','majid','1/1/1900 12:00:00 AM',0,'2/19/2024 5:10:42 PM',0)
+/*2/19/2024 5:10:42 PM: */ /****************************************Commit Transaction********************************/
+/*2/19/2024 5:10:42 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*2/19/2024 5:10:45 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*2/19/2024 5:10:52 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 5:10:52 PM: */ UPDATE [Connectors] SET [TypeId] = 2,[Name] = 'majid1',[Data] = 'majid1',[ModifiedDate] = '2/19/2024 5:10:52 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 6
+/*2/19/2024 5:10:52 PM: */ /****************************************Commit Transaction********************************/
+/*2/19/2024 5:10:52 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*2/19/2024 5:11:05 PM: */ SELECT * FROM [VW_Connectors] WHERE  ConnectorType = 'ASNs' ORDER BY Id DESC
+/*2/19/2024 5:11:07 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*2/19/2024 5:11:13 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 5:11:24 PM: */ SELECT * FROM [VW_Maps] WHERE  MapType = '856 Transformation' ORDER BY Id DESC
+/*2/19/2024 5:11:36 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 5:11:55 PM: */ SELECT * FROM [VW_Maps] WHERE  Name = 'NORDSTROM 856' ORDER BY Id DESC
+/*2/19/2024 5:11:58 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 5:12:00 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*2/19/2024 5:12:14 PM: */ SELECT * FROM [VW_Maps] WHERE [Name] = 'majid'
+/*2/19/2024 5:12:14 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 5:12:14 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Maps
+/*2/19/2024 5:12:14 PM: */ INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'majid',2,'dfsdafsdafsdf','1/1/1900 12:00:00 AM',0,'2/19/2024 5:12:14 PM',0)
+/*2/19/2024 5:12:14 PM: */ Error: INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'majid',2,'dfsdafsdafsdf','1/1/1900 12:00:00 AM',0,'2/19/2024 5:12:14 PM',0)
+/*2/19/2024 5:12:14 PM: */ /****************************************Rollback Transaction********************************/
+/*2/19/2024 5:12:15 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 5:12:19 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 5:12:27 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*2/19/2024 5:12:33 PM: */ SELECT * FROM [VW_Maps] WHERE [Name] = 'sdfsdfsa'
+/*2/19/2024 5:12:33 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 5:12:33 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Maps
+/*2/19/2024 5:12:33 PM: */ INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'sdfsdfsa',5,'sdfsafsadfsdf','1/1/1900 12:00:00 AM',0,'2/19/2024 5:12:33 PM',0)
+/*2/19/2024 5:12:33 PM: */ Error: INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'sdfsdfsa',5,'sdfsafsadfsdf','1/1/1900 12:00:00 AM',0,'2/19/2024 5:12:33 PM',0)
+/*2/19/2024 5:12:33 PM: */ /****************************************Rollback Transaction********************************/
+/*2/19/2024 5:12:33 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 5:12:40 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*2/19/2024 5:12:45 PM: */ SELECT * FROM [VW_Maps] WHERE [Name] = 'TARGET STORE 856'
+/*2/19/2024 5:12:45 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 5:13:02 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*2/19/2024 5:13:12 PM: */ SELECT * FROM [VW_Maps] WHERE [Name] = '810'
+/*2/19/2024 5:13:12 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 5:13:19 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*2/19/2024 5:13:23 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*2/19/2024 5:13:33 PM: */ SELECT * FROM [VW_Maps] WHERE [Name] = '8888'
+/*2/19/2024 5:13:33 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 5:13:33 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Maps
+/*2/19/2024 5:13:33 PM: */ INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'8888',6,'ascZXzXz','1/1/1900 12:00:00 AM',0,'2/19/2024 5:13:33 PM',0)
+/*2/19/2024 5:13:33 PM: */ Error: INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'8888',6,'ascZXzXz','1/1/1900 12:00:00 AM',0,'2/19/2024 5:13:33 PM',0)
+/*2/19/2024 5:13:33 PM: */ /****************************************Rollback Transaction********************************/
+/*2/19/2024 5:13:33 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 5:13:54 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*2/19/2024 5:13:55 PM: */ SELECT * FROM [VW_Maps] WHERE  MapType = '856 Transformation' ORDER BY Id DESC
+/*2/19/2024 5:13:57 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 5:14:02 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 5:14:04 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 5:14:07 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 5:14:15 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 5:14:21 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*2/19/2024 5:14:37 PM: */ SELECT * FROM [VW_Maps] WHERE [Name] = '888'
+/*2/19/2024 5:14:37 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 5:14:37 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Maps
+/*2/19/2024 5:14:37 PM: */ INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'888',6,'8555','1/1/1900 12:00:00 AM',0,'2/19/2024 5:14:37 PM',0)
+/*2/19/2024 5:14:37 PM: */ Error: INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'888',6,'8555','1/1/1900 12:00:00 AM',0,'2/19/2024 5:14:37 PM',0)
+/*2/19/2024 5:14:37 PM: */ /****************************************Rollback Transaction********************************/
+/*2/19/2024 5:14:37 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 5:14:42 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*2/19/2024 5:14:44 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*2/19/2024 5:14:50 PM: */ SELECT * FROM [VW_Connectors] WHERE [Name] = 'sdfdsfsadf'
+/*2/19/2024 5:14:50 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 5:14:50 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Connectors
+/*2/19/2024 5:14:50 PM: */ INSERT INTO [Connectors] ([Id],[TypeId],[Name],[Data],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (7,3,'sdfdsfsadf','sdfasdfsadf','1/1/1900 12:00:00 AM',0,'2/19/2024 5:14:50 PM',0)
+/*2/19/2024 5:14:50 PM: */ /****************************************Commit Transaction********************************/
+/*2/19/2024 5:14:50 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*2/19/2024 5:14:59 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 5:15:04 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*2/19/2024 5:15:10 PM: */ SELECT * FROM [VW_Maps] WHERE [Name] = 'sdfasfsadfsdf'
+/*2/19/2024 5:15:10 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 5:15:10 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Maps
+/*2/19/2024 5:15:10 PM: */ INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'sdfasfsadfsdf',5,'sdfaasdfsdf','1/1/1900 12:00:00 AM',0,'2/19/2024 5:15:10 PM',0)
+/*2/19/2024 5:15:10 PM: */ Error: INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'sdfasfsadfsdf',5,'sdfaasdfsdf','1/1/1900 12:00:00 AM',0,'2/19/2024 5:15:10 PM',0)
+/*2/19/2024 5:15:10 PM: */ /****************************************Rollback Transaction********************************/
+/*2/19/2024 5:15:10 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 5:15:23 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 5:15:25 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 5:15:31 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE [Description] = 'Target Plus - Target Plus'
+/*2/19/2024 5:15:31 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 5:15:31 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM PartnerGroups
+/*2/19/2024 5:15:31 PM: */ INSERT INTO [PartnerGroups] ([Id],[SourcePartyId],[DestinationPartyId],[Description],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (3,5,5,'Target Plus - Target Plus','1/1/1900 12:00:00 AM',0,'2/19/2024 5:15:31 PM',0)
+/*2/19/2024 5:15:31 PM: */ /****************************************Commit Transaction********************************/
+/*2/19/2024 5:15:31 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 5:15:39 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/19/2024 5:15:42 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 5:15:42 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 5:15:42 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/19/2024 5:15:42 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/19/2024 5:15:42 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/19/2024 5:16:11 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 5:16:11 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Routes
+/*2/19/2024 5:16:11 PM: */ INSERT INTO [Routes] ([Id],[TypeId],[Status],[SourcePartyId],[DestinationPartyId],[SourceConnectorId],[DestinationConnectorId],[MapId],[PartyGroupId],[FrequencyType],[StartDate],[EndDate],[RepeatCount],[WeekDays],[OnDay],[ExecutionTime],[JobID],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (8,5,'Active',6,5,7,6,11,2,'Daily','2/1/2024 12:00:00 AM','2/29/2024 12:00:00 AM',0,'','','','2','1/1/1900 12:00:00 AM',0,'2/19/2024 5:16:11 PM',0)
+/*2/19/2024 5:16:11 PM: */ /****************************************Commit Transaction********************************/
+/*2/19/2024 5:16:12 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/19/2024 5:16:23 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 5:16:23 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/19/2024 5:16:23 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 5:16:23 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/19/2024 5:16:23 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/19/2024 5:16:26 PM: */ SELECT * FROM [VW_Routes] WHERE [Id] = 8
+/*2/19/2024 5:16:27 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 6
+/*2/19/2024 5:16:27 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 5
+/*2/19/2024 5:16:27 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 7
+/*2/19/2024 5:16:27 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 6
+/*2/19/2024 5:16:27 PM: */ SELECT * FROM [VW_Maps] WHERE [Id] = 11
+/*2/19/2024 5:16:27 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 5:16:27 PM: */ UPDATE [Routes] SET [TypeId] = 5,[Status] = 'In-Active',[SourcePartyId] = 6,[DestinationPartyId] = 5,[SourceConnectorId] = 7,[DestinationConnectorId] = 6,[MapId] = 11,[PartyGroupId] = 2,[FrequencyType] = 'Daily',[StartDate] = '2/1/2024 12:00:00 AM',[EndDate] = '2/29/2024 12:00:00 AM',[RepeatCount] = 0,[WeekDays] = '',[OnDay] = '',[ExecutionTime] = '',[JobID] = NULL,[ModifiedDate] = '2/19/2024 5:16:26 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 8
+/*2/19/2024 5:16:27 PM: */ /****************************************Commit Transaction********************************/
+/*2/19/2024 5:16:27 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/19/2024 5:16:31 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/19/2024 5:16:42 PM: */ SELECT * FROM [VW_CustomerProductCatalog] WHERE  ERPCustomerID = 'CSN6172' ORDER BY Id DESC
+/*2/19/2024 5:16:45 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/19/2024 5:17:31 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*2/19/2024 5:17:33 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 5:17:34 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 5:17:40 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*2/19/2024 5:17:41 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 5:18:28 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 5:18:30 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*2/19/2024 5:18:36 PM: */ SELECT * FROM [VW_Maps] WHERE [Name] = 'asdfdsf'
+/*2/19/2024 5:18:36 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 5:18:36 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Maps
+/*2/19/2024 5:18:36 PM: */ INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'asdfdsf',5,'sfdaasdfsdf','1/1/1900 12:00:00 AM',0,'2/19/2024 5:18:36 PM',0)
+/*2/19/2024 5:18:36 PM: */ Error: INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'asdfdsf',5,'sfdaasdfsdf','1/1/1900 12:00:00 AM',0,'2/19/2024 5:18:36 PM',0)
+/*2/19/2024 5:18:36 PM: */ /****************************************Rollback Transaction********************************/
+/*2/19/2024 5:18:36 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 5:20:43 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*2/19/2024 5:20:52 PM: */ SELECT * FROM [VW_Maps] WHERE [Name] = 'hgjh'
+/*2/19/2024 5:20:52 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 5:20:52 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Maps
+/*2/19/2024 5:20:52 PM: */ INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'hgjh',5,'hvhvhjv','1/1/1900 12:00:00 AM',0,'2/19/2024 5:20:52 PM',0)
+/*2/19/2024 5:20:52 PM: */ Error: INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'hgjh',5,'hvhvhjv','1/1/1900 12:00:00 AM',0,'2/19/2024 5:20:52 PM',0)
+/*2/19/2024 5:20:52 PM: */ /****************************************Rollback Transaction********************************/
+/*2/19/2024 5:20:52 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 5:22:20 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*2/19/2024 5:35:57 PM: */ SELECT * FROM [VW_Maps] WHERE [Name] = 'dfssdfadsa'
+/*2/19/2024 5:35:59 PM: */ SELECT * FROM [VW_Maps] WHERE [Name] = 'dfssdfadsa'
+/*2/19/2024 5:35:59 PM: */ SELECT * FROM [VW_Maps] WHERE [Name] = 'dfssdfadsa'
+/*2/19/2024 5:36:13 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 5:36:14 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Maps
+/*2/19/2024 5:36:14 PM: */ INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'dfssdfadsa',5,'sdfsadfasdf','1/1/1900 12:00:00 AM',0,'2/19/2024 5:36:10 PM',0)
+/*2/19/2024 5:36:28 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 5:36:28 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Maps
+/*2/19/2024 5:36:28 PM: */ INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'dfssdfadsa',5,'sdfsadfasdf','1/1/1900 12:00:00 AM',0,'2/19/2024 5:36:14 PM',0)
+/*2/19/2024 5:36:28 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 5:36:28 PM: */ Error: INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'dfssdfadsa',5,'sdfsadfasdf','1/1/1900 12:00:00 AM',0,'2/19/2024 5:36:10 PM',0)
+/*2/19/2024 5:36:28 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Maps
+/*2/19/2024 5:36:28 PM: */ INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'dfssdfadsa',5,'sdfsadfasdf','1/1/1900 12:00:00 AM',0,'2/19/2024 5:36:28 PM',0)
+/*2/19/2024 5:36:28 PM: */ /****************************************Rollback Transaction********************************/
+/*2/19/2024 5:36:28 PM: */ Error: INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'dfssdfadsa',5,'sdfsadfasdf','1/1/1900 12:00:00 AM',0,'2/19/2024 5:36:14 PM',0)
+/*2/19/2024 5:36:28 PM: */ Error: INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'dfssdfadsa',5,'sdfsadfasdf','1/1/1900 12:00:00 AM',0,'2/19/2024 5:36:28 PM',0)
+/*2/19/2024 5:36:29 PM: */ /****************************************Rollback Transaction********************************/
+/*2/19/2024 5:54:16 PM: */ /****************************************Rollback Transaction********************************/

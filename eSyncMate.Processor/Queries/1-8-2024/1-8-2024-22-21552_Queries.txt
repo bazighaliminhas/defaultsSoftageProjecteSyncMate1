@@ -1,0 +1,6 @@
+/*1/8/2024 10:35:52 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 10:35:54 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 10:36:01 PM: */ /****************************************Begin Transaction********************************/
+/*1/8/2024 10:36:01 PM: */ UPDATE [Customers] SET [Name] = 'Target Store',[ERPCustomerID] = 'TARGET1',[ISACustomerID] = '6111470100',[ISA856ReceiverId] = '6111470100',[ISA810ReceiverId] = '6111470100',[Marketplace] = 'Target Stores',[ModifyDate] = '1/8/2024 10:36:01 PM',[ModifyBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 3
+/*1/8/2024 10:36:02 PM: */ /****************************************Commit Transaction********************************/
+/*1/8/2024 10:36:02 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC

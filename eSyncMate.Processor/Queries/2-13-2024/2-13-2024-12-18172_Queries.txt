@@ -1,0 +1,2 @@
+/*13/02/2024 12:48:59 pm: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*13/02/2024 12:49:06 pm: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC

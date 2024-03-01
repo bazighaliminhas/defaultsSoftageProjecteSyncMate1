@@ -1,0 +1,4 @@
+/*9/8/2023 7:39:33 PM: */ SELECT * FROM [Customers] WHERE [ISACustomerID] = '925485USSM'
+/*9/8/2023 7:39:33 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/8/2023 7:39:33 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/8/2023 7:40:21 PM: */ SELECT * FROM [Customers] WHERE [ISACustomerID] = '925485USSM'

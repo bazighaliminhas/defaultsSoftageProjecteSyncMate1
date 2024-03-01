@@ -1,0 +1,16 @@
+/*2/6/2024 8:22:08 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 8:22:53 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2024-01-30' AND OrderDate <= '2024-02-06' ORDER BY Id DESC
+/*2/6/2024 8:23:15 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 8:23:21 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2024-01-30' AND OrderDate <= '2024-02-06' ORDER BY Id DESC
+/*2/6/2024 8:23:32 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND Status = 'ACKNOWLEGED' ORDER BY Id DESC
+/*2/6/2024 8:23:35 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND Status = 'NEW' ORDER BY Id DESC
+/*2/6/2024 8:23:39 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND Status = 'COMPLETE' ORDER BY Id DESC
+/*2/6/2024 8:23:42 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND Status = 'PROCESSED' ORDER BY Id DESC
+/*2/6/2024 8:23:45 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND Status = 'PROCESSED' ORDER BY Id DESC
+/*2/6/2024 8:25:43 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 8:32:56 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/6/2024 8:33:17 PM: */ /****************************************Begin Transaction********************************/
+/*2/6/2024 8:33:17 PM: */ UPDATE [Customers] SET [Name] = 'Target Plus',[ERPCustomerID] = 'TAR6266P',[ISACustomerID] = 'TAR6266P',[ISA856ReceiverId] = 'TAR6266P',[ISA810ReceiverId] = 'TAR6266P',[Marketplace] = 'Target Plus',[ModifiedDate] = '2/6/2024 8:33:17 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 5
+/*2/6/2024 8:33:17 PM: */ /****************************************Commit Transaction********************************/
+/*2/6/2024 8:33:17 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/6/2024 8:33:20 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC

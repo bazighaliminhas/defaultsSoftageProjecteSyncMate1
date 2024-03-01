@@ -1,0 +1,11 @@
+/*1/23/2024 2:10:30 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GDEBC@AN' AND Status = 'ACTIVE'
+/*1/23/2024 2:10:34 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*1/23/2024 2:10:36 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/23/2024 2:10:39 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/23/2024 2:11:13 PM: */ /****************************************Begin Transaction********************************/
+/*1/23/2024 2:11:13 PM: */ UPDATE [PartnerGroups] SET [SourcePartyId] = 3,[DestinationPartyId] = 2,[Description] = 'Target Store - Nordstrom Store',[ModifiedDate] = '1/23/2024 2:11:13 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 2
+/*1/23/2024 2:11:13 PM: */ /****************************************Commit Transaction********************************/
+/*1/23/2024 2:11:13 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/23/2024 2:21:06 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/23/2024 2:21:15 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/23/2024 2:21:19 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC

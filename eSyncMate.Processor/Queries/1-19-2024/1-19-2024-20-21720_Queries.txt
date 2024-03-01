@@ -1,0 +1,2 @@
+/*1/19/2024 8:08:29 PM: */ Error: SELECT * FROM [VW_Maps] WHERE  Description = 'SCS Customer-Target Plus' ORDER BY Id DESC
+/*1/19/2024 8:08:55 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC

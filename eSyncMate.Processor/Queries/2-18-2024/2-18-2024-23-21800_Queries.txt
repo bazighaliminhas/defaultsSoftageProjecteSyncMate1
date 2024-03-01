@@ -1,0 +1,16 @@
+/*2/18/2024 11:49:47 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/18/2024 11:50:22 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/18/2024 11:50:30 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/18/2024 11:50:46 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/18/2024 11:51:27 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/18/2024 11:51:45 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 11:51:51 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/18/2024 11:51:57 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/18/2024 11:52:13 PM: */ /****************************************Begin Transaction********************************/
+/*2/18/2024 11:52:13 PM: */ UPDATE [RouteTypes] SET [Name] = 'Abdullah Gandu',[Description] = 'dsfasdfasdfsdf',[ModifiedDate] = '2/18/2024 11:52:13 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 7
+/*2/18/2024 11:52:13 PM: */ /****************************************Commit Transaction********************************/
+/*2/18/2024 11:52:13 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/18/2024 11:52:29 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*2/18/2024 11:52:31 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/18/2024 11:52:33 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/18/2024 11:52:35 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2024-02-11' AND OrderDate <= '2024-02-18' ORDER BY Id DESC

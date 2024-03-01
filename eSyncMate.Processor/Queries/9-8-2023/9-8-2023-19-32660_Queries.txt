@@ -1,0 +1,15 @@
+/*9/8/2023 7:48:24 PM: */ SELECT * FROM [Customers] WHERE [ISACustomerID] = '925485USSM'
+/*9/8/2023 7:48:31 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/8/2023 7:48:41 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/8/2023 7:49:03 PM: */ SELECT * FROM [Customers] WHERE [ISACustomerID] = '925485USSM'
+/*9/8/2023 7:49:03 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/8/2023 7:49:03 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/8/2023 7:49:50 PM: */ SELECT * FROM [Customers] WHERE [ISACustomerID] = '925485USSM'
+/*9/8/2023 7:49:56 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/8/2023 7:49:56 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/8/2023 7:53:53 PM: */ SELECT * FROM [Customers] WHERE [ISACustomerID] = '925485USSM'
+/*9/8/2023 7:53:53 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/8/2023 7:53:53 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/8/2023 7:57:02 PM: */ SELECT * FROM [Customers] WHERE [ISACustomerID] = '925485USSM'
+/*9/8/2023 7:57:02 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/8/2023 7:57:02 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1

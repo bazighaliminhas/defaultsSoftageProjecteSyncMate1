@@ -1,0 +1,1 @@
+/*2/19/2024 5:05:42 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC

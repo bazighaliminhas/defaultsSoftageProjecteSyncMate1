@@ -1,0 +1,39 @@
+/*2/16/2024 6:00:03 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/16/2024 6:00:03 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/16/2024 6:07:18 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/16/2024 6:07:18 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/16/2024 6:07:20 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/16/2024 6:07:20 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/16/2024 6:08:36 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/16/2024 6:08:36 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/16/2024 6:09:12 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/16/2024 6:09:40 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/16/2024 6:09:41 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/16/2024 6:10:23 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/16/2024 6:10:24 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/16/2024 6:10:50 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/16/2024 6:10:50 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/16/2024 6:27:20 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/16/2024 6:27:27 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/16/2024 6:34:37 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/16/2024 6:37:58 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*2/16/2024 6:38:03 PM: */ SELECT * FROM [VW_Maps] WHERE [Name] = 'sfgsdafadsf'
+/*2/16/2024 6:38:03 PM: */ /****************************************Begin Transaction********************************/
+/*2/16/2024 6:38:03 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Maps
+/*2/16/2024 6:38:03 PM: */ INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'sfgsdafadsf',5,'dsfasdfsadfsdf','1/1/1900 12:00:00 AM',0,'2/16/2024 6:38:03 PM',0)
+/*2/16/2024 6:38:03 PM: */ Error: INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'sfgsdafadsf',5,'dsfasdfsadfsdf','1/1/1900 12:00:00 AM',0,'2/16/2024 6:38:03 PM',0)
+/*2/16/2024 6:38:03 PM: */ /****************************************Rollback Transaction********************************/
+/*2/16/2024 6:38:04 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/16/2024 6:38:15 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/16/2024 6:40:11 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*2/16/2024 6:44:01 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*2/16/2024 6:45:01 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*2/16/2024 6:46:04 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*2/16/2024 6:46:07 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/16/2024 6:48:06 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/16/2024 6:48:06 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/16/2024 6:48:28 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/16/2024 6:49:41 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/16/2024 6:49:44 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/16/2024 6:51:25 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/16/2024 6:58:15 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC

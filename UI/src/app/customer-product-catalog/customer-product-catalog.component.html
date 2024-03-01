@@ -1,0 +1,156 @@
+<div class="mat-table-container">
+
+  <mat-card>
+    <mat-card-content>
+      <mat-form-field appearance="fill" color="accent">
+        <mat-label>Search by:</mat-label>
+        <mat-select id="myComboBox" [(ngModel)]="selectedOption" (click)="onSelectionChange()">
+          <mat-option *ngFor="let option of options" [value]="option">
+            {{ option }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      &nbsp;
+
+      <ng-container *ngIf="selectedOption !== 'Created Date' else dateRangeField">
+        <mat-form-field appearance="fill" color="accent">
+          <mat-label>{{ label }}</mat-label>
+          <input matInput [(ngModel)]="searchValue" />
+        </mat-form-field>
+      </ng-container>
+
+      <ng-template #dateRangeField>
+        <mat-form-field appearance="fill" color="accent">
+          <mat-label>{{ label }}</mat-label>
+          <mat-date-range-input [rangePicker]="picker">
+            <input matStartDate [(ngModel)]="startDate" placeholder="Start date">
+            <input matEndDate [(ngModel)]="endDate" placeholder="End date">
+          </mat-date-range-input>
+          <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-date-range-picker #picker></mat-date-range-picker>
+        </mat-form-field>
+      </ng-template>
+
+      &nbsp;
+      <button mat-flat-button color="accent" (click)="getCustomerProductCatalog()">
+        <span>Search </span>
+        <mat-spinner *ngIf="showSpinnerforSearch" diameter="20"></mat-spinner>
+      </button>
+
+      &nbsp;
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+
+      <mat-form-field class="form-field">
+        <mat-label>ERP CustomerID</mat-label>
+        <input matInput [(ngModel)]="erpCustomerID">
+        <button mat-icon-button matSuffix matTooltip="Show History" (click)="showHistory()" >
+          <mat-icon>history</mat-icon>
+        </button>
+
+      </mat-form-field>
+      &nbsp;
+
+      <input class="file-input" type="file" (change)="onFileSelected($event)" accept=".csv,.xls,.xlsx">
+
+
+      <button mat-icon-button color="accent" matTooltip="Clear File" matTooltipPosition="above" (click)="clearFile()">
+        <mat-icon style="margin-bottom:-9px;">clear</mat-icon>
+      </button>
+
+      <button mat-flat-button color="accent" [disabled]="isButtonDisabled" (click)="uploadCustomerProductCatalogFile()">
+        <span>
+          Process Product Catalog
+        </span>
+
+      </button>
+    </mat-card-content>
+  </mat-card>
+
+  &nbsp;
+<mat-card>
+  <mat-card-content>
+    <table mat-table [dataSource]="customerProductCatalogToDisplay">
+
+      <ng-container matColumnDef="id">
+        <th mat-header-cell *matHeaderCellDef>Id</th>
+        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+      </ng-container>
+      <!----ID Column-->
+      <ng-container matColumnDef="ERPCustomerID">
+        <th mat-header-cell *matHeaderCellDef>ERP CustomerID</th>
+        <td mat-cell *matCellDef="let element"> {{element.erpCustomerID}} </td>
+      </ng-container>
+
+      <!--Partner Group Description-->
+      <ng-container matColumnDef="TCIN">
+        <th mat-header-cell *matHeaderCellDef>TCIN</th>
+        <td mat-cell *matCellDef="let element"> {{element.tcin}} </td>
+      </ng-container>
+
+      <!--SourceParty-->
+      <ng-container matColumnDef="PartnerSKU">
+        <th mat-header-cell *matHeaderCellDef>Partner SKU</th>
+        <td mat-cell *matCellDef="let element"> {{element.partnerSKU}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="ProductTitle">
+        <th mat-header-cell *matHeaderCellDef>Product Title</th>
+        <td mat-cell *matCellDef="let element"> {{element.productTitle}} </td>
+      </ng-container>
+
+      <!--DestinationParty-->
+      <ng-container matColumnDef="ItemType">
+        <th mat-header-cell *matHeaderCellDef>Item Type</th>
+        <td mat-cell *matCellDef="let element"> {{element.itemType}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="ItemTypeID">
+        <th mat-header-cell *matHeaderCellDef>ItemTypeID</th>
+        <td mat-cell *matCellDef="let element"> {{element.itemTypeID}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="Relationship">
+        <th mat-header-cell *matHeaderCellDef>Relationship</th>
+        <td mat-cell *matCellDef="let element"> {{element.relationship}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="PublishStatus">
+        <th mat-header-cell *matHeaderCellDef>Publish Status</th>
+        <td mat-cell *matCellDef="let element"> {{element.publishStatus}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="DataUpdatesStatus">
+        <th mat-header-cell *matHeaderCellDef>Data Updates Status</th>
+        <td mat-cell *matCellDef="let element"> {{element.dataUpdatesStatus}} </td>
+      </ng-container>
+
+      <!--Created Date-->
+      <ng-container matColumnDef="CreatedDate">
+        <th mat-header-cell *matHeaderCellDef>Create Date</th>
+        <td mat-cell *matCellDef="let element"> {{element.createdDate | date:'dd-MMM-YYYY hh:mm a'}} </td>
+      </ng-container>
+
+      <!--Edit-->
+      <ng-container matColumnDef="Edit">
+        <th mat-header-cell *matHeaderCellDef> Actions</th>
+        <td mat-cell *matCellDef="let element">
+          <button mat-icon-button aria-label="normal button" (click)="openEditDialog(element)" color="accent" matTooltip="Edit Customer Product Catalog" matTooltipPosition="above">
+            <mat-icon>edit</mat-icon>
+          </button>
+        </td>
+      </ng-container>
+
+      <tr mat-header-row *matHeaderRowDef="columns"></tr>
+      <tr mat-row *matRowDef="let row; columns: columns"></tr>
+
+    </table>
+
+  </mat-card-content>
+</mat-card>
+</div>
+
+<div *ngIf="showSpinner" class="spinner-overlay">
+  <mat-spinner></mat-spinner>
+</div>

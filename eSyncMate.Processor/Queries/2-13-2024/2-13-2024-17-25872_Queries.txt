@@ -1,0 +1,47 @@
+/*2/13/2024 5:53:15 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/13/2024 5:53:19 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/13/2024 5:53:25 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/13/2024 5:53:25 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/13/2024 5:53:25 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/13/2024 5:53:25 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/13/2024 5:53:25 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/13/2024 5:53:30 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/13/2024 5:53:30 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/13/2024 5:53:30 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/13/2024 5:53:30 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/13/2024 5:53:30 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/13/2024 5:53:51 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/13/2024 5:53:51 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/13/2024 5:53:51 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/13/2024 5:53:51 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/13/2024 5:53:51 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/13/2024 5:54:17 PM: */ /****************************************Begin Transaction********************************/
+/*2/13/2024 5:54:17 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Routes
+/*2/13/2024 5:54:17 PM: */ INSERT INTO [Routes] ([Id],[TypeId],[Status],[SourcePartyId],[DestinationPartyId],[SourceConnectorId],[DestinationConnectorId],[MapId],[PartyGroupId],[FrequencyType],[StartDate],[EndDate],[RepeatCount],[WeekDays],[OnDay],[ExecutionTime],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (8,4,'Active',4,4,4,4,12,2,'Minutely','1/31/2024 7:00:00 PM','1/31/2024 7:00:00 PM',12,'','','','1/1/1900 12:00:00 AM',0,'2/13/2024 5:54:17 PM',0)
+/*2/13/2024 5:54:17 PM: */ /****************************************Commit Transaction********************************/
+/*2/13/2024 5:54:18 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/13/2024 5:54:23 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/13/2024 5:54:23 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/13/2024 5:54:23 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/13/2024 5:54:23 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/13/2024 5:54:23 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/13/2024 5:55:09 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/13/2024 5:55:14 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/13/2024 5:55:30 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'csn6172'
+/*2/13/2024 5:55:40 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'CSN6172'
+/*2/13/2024 5:55:46 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/13/2024 5:55:57 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/13/2024 5:56:04 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/13/2024 5:56:07 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/13/2024 5:56:07 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/13/2024 5:56:07 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/13/2024 5:56:07 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/13/2024 5:56:07 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/13/2024 5:56:53 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/13/2024 5:56:53 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/13/2024 5:56:53 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/13/2024 5:56:53 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/13/2024 5:56:53 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/13/2024 5:56:54 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/13/2024 5:57:04 PM: */ SELECT * FROM [VW_Routes] WHERE  SourceParty = 'SCS' ORDER BY Id DESC
+/*2/13/2024 5:57:15 PM: */ SELECT * FROM [VW_Routes] WHERE  RouteType = '856' ORDER BY Id DESC

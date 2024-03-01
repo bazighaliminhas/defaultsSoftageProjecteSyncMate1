@@ -1,0 +1,6 @@
+/*1/22/2024 9:05:32 PM: */ /****************************************Begin Transaction********************************/
+/*1/22/2024 9:05:32 PM: */ UPDATE [PartnerGroups] SET [SourcePartyId] = 5,[DestinationPartyId] = 3,[Description] = 'Test',[ModifiedDate] = '1/22/2024 9:05:32 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 2
+/*1/22/2024 9:05:32 PM: */ /****************************************Commit Transaction********************************/
+/*1/22/2024 9:06:27 PM: */ /****************************************Begin Transaction********************************/
+/*1/22/2024 9:06:27 PM: */ UPDATE [PartnerGroups] SET [SourcePartyId] = 4,[DestinationPartyId] = 3,[Description] = 'SCS - Target Store',[ModifiedDate] = '1/22/2024 9:06:27 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 2
+/*1/22/2024 9:06:27 PM: */ /****************************************Commit Transaction********************************/

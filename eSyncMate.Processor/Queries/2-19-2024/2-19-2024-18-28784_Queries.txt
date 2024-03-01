@@ -1,0 +1,149 @@
+/*2/19/2024 6:19:50 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 6:19:51 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*2/19/2024 6:19:58 PM: */ SELECT * FROM [VW_Maps] WHERE [Name] = 'sdfsadfasdf'
+/*2/19/2024 6:19:58 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 6:19:58 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Maps
+/*2/19/2024 6:19:58 PM: */ INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'sdfsadfasdf',6,'dsfasdfasd','1/1/1900 12:00:00 AM',0,'2/19/2024 6:19:58 PM',0)
+/*2/19/2024 6:19:58 PM: */ /****************************************Commit Transaction********************************/
+/*2/19/2024 6:19:58 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 6:20:25 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*2/19/2024 6:20:35 PM: */ SELECT * FROM [VW_Maps] WHERE [Name] = 'bazigh ali minhas'
+/*2/19/2024 6:20:35 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 6:20:35 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Maps
+/*2/19/2024 6:20:35 PM: */ INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (14,'bazigh ali minhas',5,'bazigh ali minhas','1/1/1900 12:00:00 AM',0,'2/19/2024 6:20:35 PM',0)
+/*2/19/2024 6:20:35 PM: */ /****************************************Commit Transaction********************************/
+/*2/19/2024 6:20:35 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 6:20:42 PM: */ SELECT * FROM [VW_Maps] WHERE  Id = 14 ORDER BY Id DESC
+/*2/19/2024 6:20:44 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 6:20:50 PM: */ SELECT * FROM [VW_Maps] WHERE  Name = 'bazigh ali minhas' ORDER BY Id DESC
+/*2/19/2024 6:20:55 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 6:21:01 PM: */ SELECT * FROM [VW_Maps] WHERE  MapType = '855 Transformation' ORDER BY Id DESC
+/*2/19/2024 6:21:03 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 6:21:08 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*2/19/2024 6:21:18 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 6:23:24 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/19/2024 6:23:42 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 6:23:46 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2024-02-12' AND OrderDate <= '2024-02-19' ORDER BY Id DESC
+/*2/19/2024 6:24:02 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 6:24:17 PM: */ SELECT * FROM [VW_Customers] WHERE [Name] = '1111111111111'
+/*2/19/2024 6:24:17 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 6:24:17 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Customers
+/*2/19/2024 6:24:17 PM: */ INSERT INTO [Customers] ([Id],[Name],[ERPCustomerID],[ISACustomerID],[ISA856ReceiverId],[ISA810ReceiverId],[Marketplace],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (7,'1111111111111','11111111111','11111111111111','1111111111','1111111111111','1111111111111','1/1/1900 12:00:00 AM',0,'2/19/2024 6:24:17 PM',0)
+/*2/19/2024 6:24:17 PM: */ /****************************************Commit Transaction********************************/
+/*2/19/2024 6:24:18 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 6:24:39 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 6:24:39 PM: */ UPDATE [Customers] SET [Name] = '1',[ERPCustomerID] = '1',[ISACustomerID] = '1',[ISA856ReceiverId] = '1',[ISA810ReceiverId] = '1',[Marketplace] = '1',[ModifiedDate] = '2/19/2024 6:24:39 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 7
+/*2/19/2024 6:24:39 PM: */ /****************************************Commit Transaction********************************/
+/*2/19/2024 6:24:40 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 6:24:47 PM: */ SELECT * FROM [Customers] WHERE  Id = 7 ORDER BY Id DESC
+/*2/19/2024 6:24:50 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 6:25:05 PM: */ SELECT * FROM [Customers] WHERE  Name = 'majid' ORDER BY Id DESC
+/*2/19/2024 6:25:07 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 6:25:17 PM: */ SELECT * FROM [Customers] WHERE  ERPCustomerID = 'TAR6266P' ORDER BY Id DESC
+/*2/19/2024 6:25:19 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 6:25:51 PM: */ SELECT * FROM [Customers] WHERE  ERPCustomerID = 'SCS Customer' ORDER BY Id DESC
+/*2/19/2024 6:25:54 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 6:26:07 PM: */ SELECT * FROM [Customers] WHERE  ISACustomerID = 'ISA Customer ID' ORDER BY Id DESC
+/*2/19/2024 6:26:14 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 6:26:27 PM: */ SELECT * FROM [Customers] WHERE  ISACustomerID = 'TAR6266P' ORDER BY Id DESC
+/*2/19/2024 6:26:30 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 6:26:42 PM: */ SELECT * FROM [Customers] WHERE  ISA810ReceiverId = 'TAR6266P' ORDER BY Id DESC
+/*2/19/2024 6:26:43 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 6:26:58 PM: */ SELECT * FROM [Customers] WHERE  ISA810ReceiverId = 'TAR6266P' ORDER BY Id DESC
+/*2/19/2024 6:27:00 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 6:27:13 PM: */ SELECT * FROM [Customers] WHERE  Marketplace = 'TAR6266P' ORDER BY Id DESC
+/*2/19/2024 6:27:15 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 6:28:00 PM: */ SELECT * FROM [Customers] WHERE  CreatedDate >= '1900-01-01 00:00:00.000' AND CreatedDate <= '2022-01-20 23:59:59.999' ORDER BY Id DESC
+/*2/19/2024 6:28:22 PM: */ SELECT * FROM [Customers] WHERE  CreatedDate >= '1900-01-01 00:00:00.000' AND CreatedDate <= '2022-01-20 23:59:59.999' ORDER BY Id DESC
+/*2/19/2024 6:28:38 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/19/2024 6:28:50 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 6:28:58 PM: */ SELECT * FROM [VW_Maps] WHERE  Id = 13 ORDER BY Id DESC
+/*2/19/2024 6:29:00 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 6:29:08 PM: */ SELECT * FROM [VW_Maps] WHERE  Name = 'bazigh ali minhas' ORDER BY Id DESC
+/*2/19/2024 6:29:10 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 6:29:18 PM: */ SELECT * FROM [VW_Maps] WHERE  MapType = '856 Transformation' ORDER BY Id DESC
+/*2/19/2024 6:29:20 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 6:29:21 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*2/19/2024 6:29:27 PM: */ SELECT * FROM [VW_Maps] WHERE [Name] = '11111111111111111111'
+/*2/19/2024 6:29:27 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 6:29:27 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Maps
+/*2/19/2024 6:29:27 PM: */ INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (15,'11111111111111111111',5,'11111111111111111111','1/1/1900 12:00:00 AM',0,'2/19/2024 6:29:27 PM',0)
+/*2/19/2024 6:29:27 PM: */ /****************************************Commit Transaction********************************/
+/*2/19/2024 6:29:27 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 6:29:29 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*2/19/2024 6:29:35 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 6:29:35 PM: */ UPDATE [Maps] SET [Name] = '1',[TypeId] = 5,[Map] = '1',[ModifiedDate] = '2/19/2024 6:29:35 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 15
+/*2/19/2024 6:29:35 PM: */ /****************************************Commit Transaction********************************/
+/*2/19/2024 6:29:35 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/19/2024 6:29:45 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*2/19/2024 6:30:10 PM: */ SELECT * FROM [VW_Connectors] WHERE  Id = 7 ORDER BY Id DESC
+/*2/19/2024 6:30:12 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*2/19/2024 6:30:19 PM: */ SELECT * FROM [VW_Connectors] WHERE  Name = 'sdfdsfsadf' ORDER BY Id DESC
+/*2/19/2024 6:30:21 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*2/19/2024 6:30:56 PM: */ SELECT * FROM [VW_Connectors] WHERE  Name = 'Create Invoice	' ORDER BY Id DESC
+/*2/19/2024 6:30:58 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*2/19/2024 6:31:07 PM: */ SELECT * FROM [VW_Connectors] WHERE  Name = 'sdfdsfsadf' ORDER BY Id DESC
+/*2/19/2024 6:31:09 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*2/19/2024 6:31:16 PM: */ SELECT * FROM [VW_Connectors] WHERE  ConnectorType = 'ASNs' ORDER BY Id DESC
+/*2/19/2024 6:31:18 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*2/19/2024 6:31:19 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*2/19/2024 6:31:59 PM: */ SELECT * FROM [VW_Connectors] WHERE  CreatedDate >= '2024-02-19 00:00:00.000' AND CreatedDate <= '2024-03-03 23:59:59.999' ORDER BY Id DESC
+/*2/19/2024 6:32:02 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*2/19/2024 6:32:07 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 6:32:18 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  Id = 3 ORDER BY Id DESC
+/*2/19/2024 6:32:20 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 6:32:30 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  Description = 'Target Plus - Target Plus' ORDER BY Id DESC
+/*2/19/2024 6:32:32 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 6:32:40 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  SourceParty = 'Target Store	' ORDER BY Id DESC
+/*2/19/2024 6:32:42 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 6:32:50 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  SourceParty = 'Target Store' ORDER BY Id DESC
+/*2/19/2024 6:32:52 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 6:32:59 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  Description = 'Nordstrom Store' ORDER BY Id DESC
+/*2/19/2024 6:33:02 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 6:33:16 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  DestinationParty = 'Target Plus	' ORDER BY Id DESC
+/*2/19/2024 6:33:18 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 6:33:28 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  SourceParty = 'Target Plus' ORDER BY Id DESC
+/*2/19/2024 6:33:30 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 6:33:38 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  DestinationParty = 'Nordstrom Store	' ORDER BY Id DESC
+/*2/19/2024 6:33:40 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  DestinationParty = 'Nordstrom Store	' ORDER BY Id DESC
+/*2/19/2024 6:33:40 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  DestinationParty = 'Nordstrom Store	' ORDER BY Id DESC
+/*2/19/2024 6:33:40 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  DestinationParty = 'Nordstrom Store	' ORDER BY Id DESC
+/*2/19/2024 6:33:40 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  DestinationParty = 'Nordstrom Store	' ORDER BY Id DESC
+/*2/19/2024 6:33:41 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  DestinationParty = 'Nordstrom Store	' ORDER BY Id DESC
+/*2/19/2024 6:33:42 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 6:36:08 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  DestinationParty = 'Target Plus' ORDER BY Id DESC
+/*2/19/2024 6:36:09 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  DestinationParty = 'Target Plus' ORDER BY Id DESC
+/*2/19/2024 6:36:09 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  DestinationParty = 'Target Plus' ORDER BY Id DESC
+/*2/19/2024 6:36:18 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 6:36:28 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  DestinationParty = 'Nordstrom Store	' ORDER BY Id DESC
+/*2/19/2024 6:36:31 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 6:36:49 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  DestinationParty = 'Target Plus' ORDER BY Id DESC
+/*2/19/2024 6:36:52 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 6:37:05 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  DestinationParty = 'Nordstrom Store' ORDER BY Id DESC
+/*2/19/2024 6:37:07 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 6:38:00 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  CreatedDate >= '2024-02-19 00:00:00.000' AND CreatedDate <= '2024-01-01 23:59:59.999' ORDER BY Id DESC
+/*2/19/2024 6:38:06 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 6:38:46 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  CreatedDate >= '2024-02-19 00:00:00.000' AND CreatedDate <= '2024-02-20 23:59:59.999' ORDER BY Id DESC
+/*2/19/2024 6:38:49 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 6:39:08 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/19/2024 6:39:20 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/19/2024 6:39:27 PM: */ SELECT * FROM [VW_Routes] WHERE  Id = 8 ORDER BY Id DESC
+/*2/19/2024 6:39:34 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/19/2024 6:51:42 PM: */ SELECT * FROM [VW_Routes] WHERE  RouteType = '855' ORDER BY Id DESC
+/*2/19/2024 6:51:44 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/19/2024 6:51:52 PM: */ SELECT * FROM [VW_Routes] WHERE  SourceParty = 'majid' ORDER BY Id DESC
+/*2/19/2024 6:51:54 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/19/2024 6:52:11 PM: */ SELECT * FROM [VW_Routes] WHERE  SourceConnector = 'sdfdsfsadf' ORDER BY Id DESC
+/*2/19/2024 6:52:24 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/19/2024 6:52:34 PM: */ SELECT * FROM [VW_Routes] WHERE  DestinationParty = 'Target Plus	' ORDER BY Id DESC
+/*2/19/2024 6:52:39 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/19/2024 6:54:09 PM: */ SELECT * FROM [VW_Routes] WHERE  DestinationConnector = 'majid1' ORDER BY Id DESC
+/*2/19/2024 6:54:10 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/19/2024 6:54:15 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/19/2024 6:56:47 PM: */ SELECT * FROM [VW_CustomerProductCatalog] WHERE  ERPCustomerID = 'CSN6172' ORDER BY Id DESC
+/*2/19/2024 6:56:49 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/19/2024 6:57:00 PM: */ SELECT * FROM [VW_CustomerProductCatalog] WHERE  TCIN = '79318179' ORDER BY Id DESC
+/*2/19/2024 6:59:06 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/19/2024 6:59:16 PM: */ SELECT * FROM [VW_CustomerProductCatalog] WHERE  PartnerSKU = 'CY1356-3101-5' ORDER BY Id DESC
+/*2/19/2024 6:59:20 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/19/2024 6:59:57 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC

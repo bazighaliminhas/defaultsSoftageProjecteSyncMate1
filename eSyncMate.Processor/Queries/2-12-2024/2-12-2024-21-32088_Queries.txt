@@ -1,0 +1,12 @@
+/*12/02/2024 9:09:30 pm: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*12/02/2024 9:09:35 pm: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*12/02/2024 9:09:58 pm: */ SELECT * FROM [VW_Routes] WHERE  SourceParty = 'Sams Club	' ORDER BY Id DESC
+/*12/02/2024 9:10:05 pm: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*12/02/2024 9:10:14 pm: */ SELECT * FROM [VW_Routes] WHERE  SourceParty = 'Sams Club' ORDER BY Id DESC
+/*12/02/2024 9:10:20 pm: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*12/02/2024 9:10:22 pm: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*12/02/2024 9:10:22 pm: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*12/02/2024 9:10:22 pm: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*12/02/2024 9:10:22 pm: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*12/02/2024 9:10:22 pm: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*12/02/2024 9:11:07 pm: */ SELECT * FROM [VW_Routes] WHERE  DestinationParty = 'Nordstrom Store' ORDER BY Id DESC

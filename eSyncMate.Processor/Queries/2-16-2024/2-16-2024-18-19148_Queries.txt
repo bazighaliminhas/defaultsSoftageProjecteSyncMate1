@@ -1,0 +1,17 @@
+/*2/16/2024 6:46:59 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/16/2024 6:47:02 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/16/2024 6:47:15 PM: */ /****************************************Begin Transaction********************************/
+/*2/16/2024 6:47:15 PM: */ UPDATE [CustomerProductCatalog] SET [ERPCustomerID] = 'TAR6266P',[TCIN] = '89315573',[PartnerSKU] = 'VTP427N-9',[ProductTitle] = 'Vintage Persian VTP427 Power Loomed Area Rug - Navy/Ivory - 9''x12'' - Safavieh',[ItemType] = 'Rugs',[ItemTypeID] = '247928',[Relationship] = 'VC',[PublishStatus] = 'No',[DataUpdatesStatus] = 'UNLISTED',[Price] = 661,[OfferPrice] = 482,[MAPPrice] = 0,[OfferDiscount] = 0,[PriceLastUpdated] = '9/24/2354 12:00:00 AM',[DistributionCenterName] = 'Lebanon',[DistributionCenterID] = 'mikpz1',[Inventory] = 0,[InventoryLastUpdated] = '10/27/2023 12:00:00 AM',[ModifiedDate] = '2/16/2024 6:47:15 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 2765676
+/*2/16/2024 6:47:15 PM: */ /****************************************Commit Transaction********************************/
+/*2/16/2024 6:47:15 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/16/2024 6:53:04 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*2/16/2024 6:53:06 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/16/2024 6:53:07 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/16/2024 6:53:07 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2024-02-09' AND OrderDate <= '2024-02-16' ORDER BY Id DESC
+/*2/16/2024 6:53:09 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/16/2024 6:53:29 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/16/2024 6:53:54 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2024-02-09' AND OrderDate <= '2024-02-16' ORDER BY Id DESC
+/*2/16/2024 6:54:03 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND Status = 'ACKNOWLEGED' ORDER BY Id DESC
+/*2/16/2024 6:54:20 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND Status = 'INVOICED' ORDER BY Id DESC
+/*2/16/2024 6:54:24 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 50 ORDER BY Id
+/*2/16/2024 6:58:43 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2024-02-09' AND OrderDate <= '2024-02-16' ORDER BY Id DESC

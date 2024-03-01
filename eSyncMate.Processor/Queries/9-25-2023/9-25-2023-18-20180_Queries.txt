@@ -1,0 +1,1 @@
+/*9/25/2023 6:37:24 PM: */ SELECT Id FROM [Orders] WHERE Status = 'SYNCERROR' OR Status = 'NEW'

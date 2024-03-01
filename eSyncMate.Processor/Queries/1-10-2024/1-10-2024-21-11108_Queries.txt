@@ -1,0 +1,106 @@
+/*1/10/2024 9:10:52 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:11:30 PM: */ /****************************************Begin Transaction********************************/
+/*1/10/2024 9:11:30 PM: */ UPDATE [Connectors] SET [TypeId] = 3,[Name] = 'Test Saif',[Data] = 'Data Test',[ModifiedDate] = '1/10/2024 9:11:30 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 6
+/*1/10/2024 9:11:30 PM: */ /****************************************Commit Transaction********************************/
+/*1/10/2024 9:11:31 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:11:35 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:11:44 PM: */ /****************************************Begin Transaction********************************/
+/*1/10/2024 9:11:44 PM: */ UPDATE [Connectors] SET [TypeId] = 3,[Name] = 'Test Saif',[Data] = 'Data Test Update',[ModifiedDate] = '1/10/2024 9:11:44 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 6
+/*1/10/2024 9:11:44 PM: */ /****************************************Commit Transaction********************************/
+/*1/10/2024 9:11:45 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:11:48 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:11:50 PM: */ /****************************************Begin Transaction********************************/
+/*1/10/2024 9:11:50 PM: */ UPDATE [Connectors] SET [TypeId] = 2,[Name] = 'Test Saif',[Data] = 'Data Test Update',[ModifiedDate] = '1/10/2024 9:11:50 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 6
+/*1/10/2024 9:11:50 PM: */ /****************************************Commit Transaction********************************/
+/*1/10/2024 9:11:51 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:22:28 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:22:53 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:22:58 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:23:13 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:23:18 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:37:16 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:38:03 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:38:05 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:43:30 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:43:32 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:43:33 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:43:41 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:46:02 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:46:04 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:46:08 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:46:42 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:46:58 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:47:04 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:47:05 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:47:08 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:47:34 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:47:39 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:47:48 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:47:49 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:47:54 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:47:57 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:47:58 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:48:02 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:48:13 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:48:14 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:48:22 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:48:27 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:48:29 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:48:30 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:48:55 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:48:56 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:49:02 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:49:09 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:49:10 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:49:22 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:49:49 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:49:50 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:49:59 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:50:00 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:50:04 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:50:05 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:50:09 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:50:11 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:50:26 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:50:32 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:50:33 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:50:38 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:50:43 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:50:48 PM: */ /****************************************Begin Transaction********************************/
+/*1/10/2024 9:50:48 PM: */ UPDATE [Connectors] SET [TypeId] = 2,[Name] = 'Test Saif',[Data] = '{
+  "BaseUrl": "https://6198403.restlets.api.netsuite.com/app/site/hosting/",
+  "Url": "restlet.nl",
+  "Method": "PUT",
+  "Headers": [
+    {
+      "Name": "Host",
+      "Value": "6198403.restlets.api.netsuite.com"
+    },
+    {
+      "Name": "Content-Type",
+      "Value": "application/json"
+    }
+  ],
+  "Parmeters": [
+    {
+      "Name": "script",
+      "Value": "1167"
+    },
+    {
+      "Name": "deploy",
+      "Value": "1"
+    }
+  ],
+  "BodyFormat": "JSON",
+  "ConsumerKey": "75fd391bed60ac6f9544267044544eba3cf2a828f700064bdd75e9ded4b0a266",
+  "ConsumerSecret": "79017bcbe52c2ad8bb18aebe1bd9da45998c034151c2d0e5fd1a1af83393ee0f",
+  "Token": "655063da3a0282aa64603249da3b2d4d585b3a458871f440883a4bd0dba69411",
+  "TokenSecret": "92b2fd5f13d17120c1b9c2ea2edca1f2b02f1e058efc93edd4312748b23d7f68",
+  "Realm": "6198403"
+}',[ModifiedDate] = '1/10/2024 9:50:48 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 6
+/*1/10/2024 9:50:48 PM: */ /****************************************Commit Transaction********************************/
+/*1/10/2024 9:50:48 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/10/2024 9:50:51 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:51:02 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:54:14 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/10/2024 9:54:21 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC

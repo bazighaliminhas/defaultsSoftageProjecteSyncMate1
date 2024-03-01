@@ -1,0 +1,28 @@
+/*1/8/2024 9:50:00 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 9:50:25 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 9:50:56 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 9:50:58 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 9:51:01 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 9:53:14 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 9:53:36 PM: */ /****************************************Begin Transaction********************************/
+/*1/8/2024 9:53:43 PM: */ UPDATE [Customers] SET [Name] = 'Target Store',[ERPCustomerID] = 'TARGET1',[ISACustomerID] = '6111470100',[ISA856ReceiverId] = '6111470100',[ISA810ReceiverId] = '6111470100',[Marketplace] = 'Target Stores',[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 3
+/*1/8/2024 9:53:43 PM: */ /****************************************Commit Transaction********************************/
+/*1/8/2024 9:53:44 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 9:56:13 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 9:56:15 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 9:57:46 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 9:58:00 PM: */ /****************************************Begin Transaction********************************/
+/*1/8/2024 9:58:00 PM: */ UPDATE [Customers] SET [Name] = 'Target Store',[ERPCustomerID] = 'TARGET',[ISACustomerID] = '6111470100',[ISA856ReceiverId] = '6111470100',[ISA810ReceiverId] = '6111470100',[Marketplace] = 'Target Stores',[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 3
+/*1/8/2024 9:58:00 PM: */ /****************************************Commit Transaction********************************/
+/*1/8/2024 9:58:01 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 9:58:23 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 9:58:31 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 9:58:35 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 9:59:16 PM: */ /****************************************Begin Transaction********************************/
+/*1/8/2024 9:59:16 PM: */ UPDATE [Customers] SET [Name] = 'Nordstrom Store',[ERPCustomerID] = 'NORDSTROM',[ISACustomerID] = '007942915',[ISA856ReceiverId] = '2062336664',[ISA810ReceiverId] = '007942915',[Marketplace] = 'Nordstrom Rack Stores Nordstrom Rack Stores',[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 2
+/*1/8/2024 9:59:16 PM: */ /****************************************Commit Transaction********************************/
+/*1/8/2024 9:59:16 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 9:59:21 PM: */ /****************************************Begin Transaction********************************/
+/*1/8/2024 9:59:21 PM: */ UPDATE [Customers] SET [Name] = 'Nordstrom Store',[ERPCustomerID] = 'NORDSTROM',[ISACustomerID] = '007942915',[ISA856ReceiverId] = '2062336664',[ISA810ReceiverId] = '007942915',[Marketplace] = 'Nordstrom Rack Stores',[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 2
+/*1/8/2024 9:59:21 PM: */ /****************************************Commit Transaction********************************/
+/*1/8/2024 9:59:22 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC

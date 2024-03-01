@@ -1,0 +1,42 @@
+/*2/18/2024 4:00:44 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/18/2024 4:05:44 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/18/2024 4:07:19 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/18/2024 4:07:51 PM: */ SELECT * FROM [VW_Maps] WHERE  Id = 12 ORDER BY Id DESC
+/*2/18/2024 4:23:48 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/18/2024 4:23:48 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:48 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:48 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:48 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:48 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:48 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:49 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:49 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:49 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:49 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:49 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:49 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:49 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:49 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:49 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:49 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:49 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:49 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:49 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:49 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:49 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:49 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:49 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:49 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:49 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:23:49 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 4:24:30 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/18/2024 4:26:53 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/18/2024 4:33:42 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/18/2024 4:34:07 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/18/2024 4:34:07 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/18/2024 4:34:15 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/18/2024 4:34:15 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/18/2024 4:34:24 PM: */ SELECT * FROM [VW_RouteTypes] WHERE  Id = 6 ORDER BY Id DESC
+/*2/18/2024 4:34:27 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/18/2024 4:38:44 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/18/2024 4:38:45 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC

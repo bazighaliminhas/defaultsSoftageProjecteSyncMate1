@@ -1,0 +1,1 @@
+/*2/16/2024 6:03:14 PM: */ SELECT * FROM [Customers] WHERE  ERPCustomerID = 'TAR6266P' ORDER BY Id DESC

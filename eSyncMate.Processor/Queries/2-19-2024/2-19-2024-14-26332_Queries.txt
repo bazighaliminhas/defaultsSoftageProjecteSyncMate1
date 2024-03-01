@@ -1,0 +1,71 @@
+/*2/19/2024 2:32:07 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/19/2024 2:32:08 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/19/2024 2:32:10 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:32:18 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:32:29 PM: */ /****************************************Begin Transaction********************************/
+/*2/19/2024 2:32:29 PM: */ UPDATE [RouteTypes] SET [Name] = 'bazigh ali minhas',[Description] = 'i am Graphics designerbnbnb',[ModifiedDate] = '2/19/2024 2:32:29 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 8
+/*2/19/2024 2:32:29 PM: */ /****************************************Commit Transaction********************************/
+/*2/19/2024 2:32:29 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:32:34 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:37:59 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:38:55 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:38:58 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:40:32 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:40:45 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:40:58 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:41:05 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:41:05 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:41:08 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:41:42 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:41:44 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:42:08 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:42:57 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:42:59 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:43:02 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:43:19 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:43:50 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:43:51 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:45:09 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/19/2024 2:45:20 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:45:40 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:46:13 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:46:22 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:46:27 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:50:58 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:52:07 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:52:55 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:53:03 PM: */ SELECT * FROM [VW_RouteTypes] WHERE  Id = 6 ORDER BY Id DESC
+/*2/19/2024 2:53:07 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:53:17 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:53:18 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:53:18 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:53:19 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:53:19 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:53:19 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:53:34 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:53:35 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:53:35 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:53:35 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:53:43 PM: */ SELECT * FROM [VW_RouteTypes] WHERE  Description = 'ASN' ORDER BY Id DESC
+/*2/19/2024 2:53:49 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:53:59 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:54:00 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:54:00 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:54:00 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:54:00 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:54:01 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:54:01 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:54:01 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:54:01 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:56:17 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:56:54 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:57:04 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:57:04 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:57:04 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:57:04 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:57:04 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:57:05 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:57:05 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:57:05 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:57:05 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/19/2024 2:57:06 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC

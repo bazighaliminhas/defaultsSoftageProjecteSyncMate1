@@ -1,0 +1,10 @@
+/*9/9/2023 1:52:19 PM: */ SELECT * FROM [Customers] WHERE [ISACustomerID] = '925485USSM'
+/*9/9/2023 1:52:19 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/9/2023 1:52:20 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/9/2023 1:53:27 PM: */ /****************************************Begin Transaction********************************/
+/*9/9/2023 1:53:27 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Orders
+/*9/9/2023 1:53:27 PM: */ 1,'NEW',1,'9/6/2023 12:00:00 AM','7730433756','587462631','','189779212001','10097507599-001','','FEDERAL EXPRESSSG','','JO FLORES','5408 21ST','','LUBBOCK','TX','79407','US','','8067935511','0048311518421','','5408 21ST ST','','LUBBOCK','TX','79407','US','','(806)793-5511','0605388007940','SAMS CLUB 4727','2101 SE SIMPLE SAVINGS DR','','BENTONVILLE','AR','72712-4304','US','','','9/9/2023 1:53:25 PM',1)
+/*9/9/2023 1:53:27 PM: */ Error: 1,'NEW',1,'9/6/2023 12:00:00 AM','7730433756','587462631','','189779212001','10097507599-001','','FEDERAL EXPRESSSG','','JO FLORES','5408 21ST','','LUBBOCK','TX','79407','US','','8067935511','0048311518421','','5408 21ST ST','','LUBBOCK','TX','79407','US','','(806)793-5511','0605388007940','SAMS CLUB 4727','2101 SE SIMPLE SAVINGS DR','','BENTONVILLE','AR','72712-4304','US','','','9/9/2023 1:53:25 PM',1)
+/*9/9/2023 1:53:27 PM: */ /****************************************Rollback Transaction********************************/
+/*9/9/2023 1:54:00 PM: */ /****************************************Begin Transaction********************************/
+/*9/9/2023 1:54:00 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Orders

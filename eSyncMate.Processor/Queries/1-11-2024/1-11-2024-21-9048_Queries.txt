@@ -1,0 +1,91 @@
+/*1/11/2024 9:35:07 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*1/11/2024 9:35:11 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*1/11/2024 9:35:14 PM: */ /****************************************Begin Transaction********************************/
+/*1/11/2024 9:35:14 PM: */ UPDATE [Maps] SET [Name] = 'Test Saif Map1',[TypeId] = 3,[Map] = '{
+	"StartNodes": [
+		{ "Name": "BSN", "Data": [ "00", "#valueof($.SONo)", "#customfunction(EDI.Processor,EDI.Maps.Transformations.formatDate,#valueof($.ShipDate),yyyyMMdd)", "#customfunction(EDI.Processor,EDI.Maps.Transformations.getCurrentTime,)", "0002" ] },
+		{ "Name": "HL", "Data": [ "1", "", "S" ] },
+		{ "Name": "TD5", "Data": [ "B", "2", "#valueof($.Carrier)", "M" ] },
+		{ "Name": "REF", "Data": [ "BM", "#valueof($.BOL)" ] },
+		{ "Name": "N1", "Data": [ "ST", "", "92" , "#valueof($.DC)" ] },
+	],
+	"Orders": {
+		"#loop($.Stores)": {
+			"Data": [
+		        { "Name": "HL", "Data": [ "@HL_IDX@", "1", "O" ] },
+		        { "Name": "PRF", "Data": [ "#valueof($.CustomerPO)" ] },
+		        { "Name": "PID", "Data": [ "S", "", "VI", "ZZ" ] },
+        		{ "Name": "TD1", "Data": [ "CTN25", "#currentvalueatpath($.TotalCarton)" ] },
+		        { "Name": "N1", "Data": [ "BY", "", "92" , "#currentvalueatpath($.StoreNo)" ] },
+			],
+	        "Packs": {
+		        "#loop($.Cartons)": {
+			        "Data": [
+				        { "Name": "HL", "Data": [ "@HL_IDX@", "@HL_P_IDX@", "P" ] },
+				        { "Name": "MAN", "Data": [ "GM", "#currentvalueatpath($.TrackingNo)" ] },
+			        ],
+			        "Items": {
+				        "#loop($.Items)": {
+					        "Data": [
+						        { "Name": "HL", "Data": [ "@HL_IDX@", "@HL_P_IDX@", "I" ] },
+						        { "Name": "LIN", "Data": [ "", "UP", "#currentvalueatpath($.UPC)" ] },
+						        { "Name": "SN1", "Data": [ "", "#currentvalueatpath($.Qty)", "EA" ] },
+						        { "Name": "PO4", "Data": [ "2" ] },
+					        ]
+				        } 
+			        } 
+		        }
+	        },
+		}
+	},
+	"EndNodes": [
+		{ "Name": "CTT", "Data": [ "@HLCOUNT@" ] },
+	]
+}',[ModifiedDate] = '1/11/2024 9:35:14 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 13
+/*1/11/2024 9:35:14 PM: */ /****************************************Commit Transaction********************************/
+/*1/11/2024 9:35:14 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*1/11/2024 9:35:17 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*1/11/2024 9:35:20 PM: */ /****************************************Begin Transaction********************************/
+/*1/11/2024 9:35:20 PM: */ UPDATE [Maps] SET [Name] = 'Test Saif Map',[TypeId] = 3,[Map] = '{
+	"StartNodes": [
+		{ "Name": "BSN", "Data": [ "00", "#valueof($.SONo)", "#customfunction(EDI.Processor,EDI.Maps.Transformations.formatDate,#valueof($.ShipDate),yyyyMMdd)", "#customfunction(EDI.Processor,EDI.Maps.Transformations.getCurrentTime,)", "0002" ] },
+		{ "Name": "HL", "Data": [ "1", "", "S" ] },
+		{ "Name": "TD5", "Data": [ "B", "2", "#valueof($.Carrier)", "M" ] },
+		{ "Name": "REF", "Data": [ "BM", "#valueof($.BOL)" ] },
+		{ "Name": "N1", "Data": [ "ST", "", "92" , "#valueof($.DC)" ] },
+	],
+	"Orders": {
+		"#loop($.Stores)": {
+			"Data": [
+		        { "Name": "HL", "Data": [ "@HL_IDX@", "1", "O" ] },
+		        { "Name": "PRF", "Data": [ "#valueof($.CustomerPO)" ] },
+		        { "Name": "PID", "Data": [ "S", "", "VI", "ZZ" ] },
+        		{ "Name": "TD1", "Data": [ "CTN25", "#currentvalueatpath($.TotalCarton)" ] },
+		        { "Name": "N1", "Data": [ "BY", "", "92" , "#currentvalueatpath($.StoreNo)" ] },
+			],
+	        "Packs": {
+		        "#loop($.Cartons)": {
+			        "Data": [
+				        { "Name": "HL", "Data": [ "@HL_IDX@", "@HL_P_IDX@", "P" ] },
+				        { "Name": "MAN", "Data": [ "GM", "#currentvalueatpath($.TrackingNo)" ] },
+			        ],
+			        "Items": {
+				        "#loop($.Items)": {
+					        "Data": [
+						        { "Name": "HL", "Data": [ "@HL_IDX@", "@HL_P_IDX@", "I" ] },
+						        { "Name": "LIN", "Data": [ "", "UP", "#currentvalueatpath($.UPC)" ] },
+						        { "Name": "SN1", "Data": [ "", "#currentvalueatpath($.Qty)", "EA" ] },
+						        { "Name": "PO4", "Data": [ "2" ] },
+					        ]
+				        } 
+			        } 
+		        }
+	        },
+		}
+	},
+	"EndNodes": [
+		{ "Name": "CTT", "Data": [ "@HLCOUNT@" ] },
+	]
+}',[ModifiedDate] = '1/11/2024 9:35:20 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 13
+/*1/11/2024 9:35:20 PM: */ /****************************************Commit Transaction********************************/
+/*1/11/2024 9:35:21 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC

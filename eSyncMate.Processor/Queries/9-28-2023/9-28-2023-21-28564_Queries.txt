@@ -1,0 +1,36 @@
+/*9/28/2023 9:00:09 PM: */ SELECT Id FROM [Orders] WHERE Status = 'INVOICED'
+/*9/28/2023 9:00:09 PM: */ SELECT Id FROM [Orders] WHERE Status = 'ASNMARK'
+/*9/28/2023 9:00:09 PM: */ SELECT * FROM [Orders] WHERE [Id] = 9
+/*9/28/2023 9:00:09 PM: */ SELECT Id FROM [Orders] WHERE Status = 'ASNGEN'
+/*9/28/2023 9:00:09 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 9
+/*9/28/2023 9:00:09 PM: */ SELECT * FROM [Orders] WHERE [Id] = 1
+/*9/28/2023 9:00:09 PM: */ SELECT * FROM [InboundEDI] WHERE [Id] = 9
+/*9/28/2023 9:00:09 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 1
+/*9/28/2023 9:00:09 PM: */ SELECT * FROM [InboundEDIInfo] WHERE InboundEDIId = 9
+/*9/28/2023 9:00:09 PM: */ SELECT Id FROM [Orders] WHERE Status = 'SYNCERROR' OR Status = 'NEW'
+/*9/28/2023 9:00:09 PM: */ SELECT * FROM [InboundEDI] WHERE [Id] = 1
+/*9/28/2023 9:00:09 PM: */ SELECT * FROM [OutboundEDI] WHERE OrderId = 9
+/*9/28/2023 9:00:09 PM: */ SELECT * FROM [InboundEDIInfo] WHERE InboundEDIId = 1
+/*9/28/2023 9:00:09 PM: */ SELECT * FROM [OutboundEDI] WHERE OrderId = 1
+/*9/28/2023 9:00:09 PM: */ SELECT * FROM [Customers] WHERE [Id] = 1
+/*9/28/2023 9:00:09 PM: */ SELECT * FROM [Customers] WHERE [Id] = 1
+/*9/28/2023 9:00:09 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/28/2023 9:00:09 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/28/2023 9:00:09 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/28/2023 9:00:09 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/28/2023 9:39:05 PM: */ SELECT * FROM [Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2023-09-21' AND OrderDate <= '2023-09-28' ORDER BY Id DESC
+/*9/28/2023 9:39:29 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 67 ORDER BY Id
+/*9/28/2023 9:39:39 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 64 ORDER BY Id
+/*9/28/2023 9:39:55 PM: */ SELECT * FROM [Orders] WHERE Status <> 'DELETED' AND Id = 72 ORDER BY Id DESC
+/*9/28/2023 9:39:57 PM: */ SELECT * FROM [OrderStores] WHERE OrderId = 72 ORDER BY Id ASC
+/*9/28/2023 9:40:42 PM: */ SELECT * FROM [Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2023-09-21' AND OrderDate <= '2023-09-28' ORDER BY Id DESC
+/*9/28/2023 9:50:20 PM: */ SELECT * FROM [Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2023-09-21' AND OrderDate <= '2023-09-28' ORDER BY Id DESC
+/*9/28/2023 9:50:44 PM: */ SELECT * FROM [Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2023-09-21' AND OrderDate <= '2023-09-28' ORDER BY Id DESC
+/*9/28/2023 9:51:02 PM: */ SELECT * FROM [Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2023-09-21' AND OrderDate <= '2023-09-28' ORDER BY Id DESC
+/*9/28/2023 9:52:43 PM: */ SELECT * FROM [Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2023-09-21' AND OrderDate <= '2023-09-28' ORDER BY Id DESC
+/*9/28/2023 9:54:33 PM: */ SELECT * FROM [Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2023-09-21' AND OrderDate <= '2023-09-28' ORDER BY Id DESC
+/*9/28/2023 9:54:37 PM: */ SELECT * FROM [Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2023-09-21' AND OrderDate <= '2023-09-28' ORDER BY Id DESC
+/*9/28/2023 9:55:16 PM: */ SELECT * FROM [Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2023-09-21' AND OrderDate <= '2023-09-28' ORDER BY Id DESC
+/*9/28/2023 9:57:14 PM: */ SELECT * FROM [Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2023-09-21' AND OrderDate <= '2023-09-28' ORDER BY Id DESC
+/*9/28/2023 9:57:25 PM: */ SELECT * FROM [Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2023-09-21' AND OrderDate <= '2023-09-28' ORDER BY Id DESC
+/*9/28/2023 9:58:19 PM: */ SELECT * FROM [Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2023-09-21' AND OrderDate <= '2023-09-28' ORDER BY Id DESC

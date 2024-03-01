@@ -1,0 +1,10 @@
+/*2/18/2024 9:00:29 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'bazighminhas1@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 9:00:43 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/18/2024 9:00:46 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/18/2024 9:00:49 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/18/2024 9:01:05 PM: */ SELECT * FROM [VW_RouteTypes] WHERE [Name] = 'bazigh ali minhas'
+/*2/18/2024 9:01:05 PM: */ /****************************************Begin Transaction********************************/
+/*2/18/2024 9:01:05 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM RouteTypes
+/*2/18/2024 9:01:05 PM: */ INSERT INTO [RouteTypes] ([Id],[Name],[Description],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (8,'bazigh ali minhas','i am developer','1/1/1900 12:00:00 AM',0,'2/18/2024 9:01:05 PM',0)
+/*2/18/2024 9:01:05 PM: */ /****************************************Commit Transaction********************************/
+/*2/18/2024 9:01:05 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC

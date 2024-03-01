@@ -1,0 +1,59 @@
+/*2/4/2024 7:43:24 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:43:53 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:44:28 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:44:46 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:44:50 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:44:53 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:46:06 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:46:25 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:46:33 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:46:39 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:46:41 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:48:39 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:48:43 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:48:47 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:49:18 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:49:28 AM: */ /****************************************Begin Transaction********************************/
+/*2/4/2024 7:49:28 AM: */ UPDATE [CustomerProductCatalog] SET [ERPCustomerID] = 'CSN6172',[TCIN] = '79318167',[PartnerSKU] = 'CY1356',[ProductTitle] = 'Courtyard CY1356 Power Loomed Indoor/Outdoor Indoor/Outdoor Area Rug - Safavieh',[ItemType] = 'Rugs',[ItemTypeID] = '247928',[Relationship] = 'VAP',[PublishStatus] = 'Yes',[DataUpdatesStatus] = 'APPROVED',[Price] = 0,[OfferPrice] = 0,[MAPPrice] = 0,[OfferDiscount] = 0,[PriceLastUpdated] = '2/4/2024 7:25:17 AM',[DistributionCenterName] = 'Lebanon',[DistributionCenterID] = 'mikpz1',[Inventory] = 0,[InventoryLastUpdated] = '2/4/2024 7:25:17 AM',[ModifiedDate] = '2/4/2024 7:49:28 AM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 1
+/*2/4/2024 7:49:28 AM: */ /****************************************Commit Transaction********************************/
+/*2/4/2024 7:49:29 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:49:45 AM: */ /****************************************Begin Transaction********************************/
+/*2/4/2024 7:49:45 AM: */ UPDATE [CustomerProductCatalog] SET [ERPCustomerID] = 'CSN6172',[TCIN] = '79318167',[PartnerSKU] = 'CY1356',[ProductTitle] = 'Courtyard CY1356 Power Loomed Indoor/Outdoor Indoor/Outdoor Area Rug - Safavieh',[ItemType] = 'Rugs',[ItemTypeID] = '247928',[Relationship] = 'VAP',[PublishStatus] = 'Yes',[DataUpdatesStatus] = 'APPROVED',[Price] = 10,[OfferPrice] = 20,[MAPPrice] = 30,[OfferDiscount] = 40,[PriceLastUpdated] = '2/4/2024 7:25:17 AM',[DistributionCenterName] = 'Lebanon',[DistributionCenterID] = 'mikpz1',[Inventory] = 0,[InventoryLastUpdated] = '2/4/2024 7:25:17 AM',[ModifiedDate] = '2/4/2024 7:49:45 AM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 1
+/*2/4/2024 7:49:45 AM: */ /****************************************Commit Transaction********************************/
+/*2/4/2024 7:49:46 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:49:57 AM: */ /****************************************Begin Transaction********************************/
+/*2/4/2024 7:49:57 AM: */ UPDATE [CustomerProductCatalog] SET [ERPCustomerID] = 'CSN6172',[TCIN] = '79318167',[PartnerSKU] = 'CY1356',[ProductTitle] = 'Courtyard CY1356 Power Loomed Indoor/Outdoor Indoor/Outdoor Area Rug - Safavieh',[ItemType] = 'Rugs',[ItemTypeID] = '247928',[Relationship] = 'VAP',[PublishStatus] = 'Yes',[DataUpdatesStatus] = 'APPROVED',[Price] = 10,[OfferPrice] = 20,[MAPPrice] = 30,[OfferDiscount] = 40,[PriceLastUpdated] = '2/21/2024 7:00:00 PM',[DistributionCenterName] = 'Lebanon',[DistributionCenterID] = 'mikpz1',[Inventory] = 0,[InventoryLastUpdated] = '2/4/2024 7:25:17 AM',[ModifiedDate] = '2/4/2024 7:49:57 AM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 1
+/*2/4/2024 7:49:57 AM: */ /****************************************Commit Transaction********************************/
+/*2/4/2024 7:49:58 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:50:13 AM: */ /****************************************Begin Transaction********************************/
+/*2/4/2024 7:50:13 AM: */ UPDATE [CustomerProductCatalog] SET [ERPCustomerID] = 'CSN6172',[TCIN] = '79318167',[PartnerSKU] = 'CY1356',[ProductTitle] = 'Courtyard CY1356 Power Loomed Indoor/Outdoor Indoor/Outdoor Area Rug - Safavieh',[ItemType] = 'Rugs',[ItemTypeID] = '247928',[Relationship] = 'VAP',[PublishStatus] = 'Yes',[DataUpdatesStatus] = 'APPROVED',[Price] = 10,[OfferPrice] = 20,[MAPPrice] = 30,[OfferDiscount] = 40,[PriceLastUpdated] = '2/21/2024 7:00:00 PM',[DistributionCenterName] = 'Lebanon',[DistributionCenterID] = 'mikpz1',[Inventory] = 50,[InventoryLastUpdated] = '2/4/2024 7:25:17 AM',[ModifiedDate] = '2/4/2024 7:50:13 AM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 1
+/*2/4/2024 7:50:13 AM: */ /****************************************Commit Transaction********************************/
+/*2/4/2024 7:50:14 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:50:25 AM: */ /****************************************Begin Transaction********************************/
+/*2/4/2024 7:50:25 AM: */ UPDATE [CustomerProductCatalog] SET [ERPCustomerID] = 'CSN6172',[TCIN] = '79318167',[PartnerSKU] = 'CY1356',[ProductTitle] = 'Courtyard CY1356 Power Loomed Indoor/Outdoor Indoor/Outdoor Area Rug - Safavieh',[ItemType] = 'Rugs',[ItemTypeID] = '247928',[Relationship] = 'VAP',[PublishStatus] = 'Yes',[DataUpdatesStatus] = 'APPROVED',[Price] = 10,[OfferPrice] = 20,[MAPPrice] = 30,[OfferDiscount] = 40,[PriceLastUpdated] = '2/28/2024 7:00:00 PM',[DistributionCenterName] = 'Lebanon',[DistributionCenterID] = 'mikpz1',[Inventory] = 50,[InventoryLastUpdated] = '2/4/2024 7:25:17 AM',[ModifiedDate] = '2/4/2024 7:50:25 AM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 1
+/*2/4/2024 7:50:25 AM: */ /****************************************Commit Transaction********************************/
+/*2/4/2024 7:50:26 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:50:37 AM: */ /****************************************Begin Transaction********************************/
+/*2/4/2024 7:50:37 AM: */ UPDATE [CustomerProductCatalog] SET [ERPCustomerID] = 'CSN6172',[TCIN] = '79318167',[PartnerSKU] = 'CY1356',[ProductTitle] = 'Courtyard CY1356 Power Loomed Indoor/Outdoor Indoor/Outdoor Area Rug - Safavieh',[ItemType] = 'Rugs',[ItemTypeID] = '247928',[Relationship] = 'VAP',[PublishStatus] = 'Yes',[DataUpdatesStatus] = 'APPROVED',[Price] = 10,[OfferPrice] = 20,[MAPPrice] = 30,[OfferDiscount] = 40,[PriceLastUpdated] = '2/28/2024 7:00:00 PM',[DistributionCenterName] = 'Lebanon',[DistributionCenterID] = 'mikpz1',[Inventory] = 50,[InventoryLastUpdated] = '2/4/2024 7:25:17 AM',[ModifiedDate] = '2/4/2024 7:50:37 AM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 1
+/*2/4/2024 7:50:37 AM: */ /****************************************Commit Transaction********************************/
+/*2/4/2024 7:50:38 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:51:20 AM: */ /****************************************Begin Transaction********************************/
+/*2/4/2024 7:51:20 AM: */ UPDATE [CustomerProductCatalog] SET [ERPCustomerID] = 'CSN6172',[TCIN] = '79318167',[PartnerSKU] = 'CY1356',[ProductTitle] = 'Courtyard CY1356 Power Loomed Indoor/Outdoor Indoor/Outdoor Area Rug - Safavieh',[ItemType] = 'Rugs',[ItemTypeID] = '247928',[Relationship] = 'VAP',[PublishStatus] = 'Yes',[DataUpdatesStatus] = 'APPROVED',[Price] = 10,[OfferPrice] = 20,[MAPPrice] = 30,[OfferDiscount] = 40,[PriceLastUpdated] = '2/28/2024 7:00:00 PM',[DistributionCenterName] = 'Lebanon',[DistributionCenterID] = 'mikpz1',[Inventory] = 50,[InventoryLastUpdated] = '2/28/2024 7:00:00 PM',[ModifiedDate] = '2/4/2024 7:51:20 AM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 1
+/*2/4/2024 7:51:20 AM: */ /****************************************Commit Transaction********************************/
+/*2/4/2024 7:51:21 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:51:35 AM: */ /****************************************Begin Transaction********************************/
+/*2/4/2024 7:51:35 AM: */ UPDATE [CustomerProductCatalog] SET [ERPCustomerID] = 'CSN6172',[TCIN] = '79318167',[PartnerSKU] = 'CY1356',[ProductTitle] = 'Courtyard CY1356 Power Loomed Indoor/Outdoor Indoor/Outdoor Area Rug - Safavieh',[ItemType] = 'Rugs',[ItemTypeID] = '247928',[Relationship] = 'VAP',[PublishStatus] = 'Yes',[DataUpdatesStatus] = 'APPROVED',[Price] = 10,[OfferPrice] = 20,[MAPPrice] = 30,[OfferDiscount] = 40,[PriceLastUpdated] = '2/28/2024 7:00:00 PM',[DistributionCenterName] = 'Lebanon',[DistributionCenterID] = 'mikpz1',[Inventory] = 50,[InventoryLastUpdated] = '2/5/2024 7:00:00 PM',[ModifiedDate] = '2/4/2024 7:51:35 AM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 1
+/*2/4/2024 7:51:35 AM: */ /****************************************Commit Transaction********************************/
+/*2/4/2024 7:51:36 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:51:46 AM: */ /****************************************Begin Transaction********************************/
+/*2/4/2024 7:51:46 AM: */ UPDATE [CustomerProductCatalog] SET [ERPCustomerID] = 'CSN6172',[TCIN] = '79318167',[PartnerSKU] = 'CY1356',[ProductTitle] = 'Courtyard CY1356 Power Loomed Indoor/Outdoor Indoor/Outdoor Area Rug - Safavieh',[ItemType] = 'Rugs',[ItemTypeID] = '247928',[Relationship] = 'VAP',[PublishStatus] = 'Yes',[DataUpdatesStatus] = 'APPROVED',[Price] = 10,[OfferPrice] = 20,[MAPPrice] = 30,[OfferDiscount] = 40,[PriceLastUpdated] = '2/28/2024 7:00:00 PM',[DistributionCenterName] = 'Lebanon',[DistributionCenterID] = 'mikpz1',[Inventory] = 50,[InventoryLastUpdated] = '2/5/2024 7:00:00 PM',[ModifiedDate] = '2/4/2024 7:51:46 AM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 1
+/*2/4/2024 7:51:46 AM: */ /****************************************Commit Transaction********************************/
+/*2/4/2024 7:51:47 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:52:10 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:55:03 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:56:23 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:56:40 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:56:59 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:57:07 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:59:14 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:59:44 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC

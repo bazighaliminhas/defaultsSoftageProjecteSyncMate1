@@ -1,0 +1,2 @@
+/*1/7/2024 4:57:53 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/7/2024 4:58:08 PM: */ Error: SELECT * FROM [VW_Customers] WHERE [Name] = 'Target'

@@ -1,0 +1,1 @@
+/*9/28/2023 11:26:11 PM: */ SELECT * FROM [Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2023-09-21' AND OrderDate <= '2023-09-28' ORDER BY Id DESC

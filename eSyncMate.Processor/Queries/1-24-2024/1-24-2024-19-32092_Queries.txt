@@ -1,0 +1,13 @@
+/*1/24/2024 7:12:51 PM: */ /****************************************Begin Transaction********************************/
+/*1/24/2024 7:12:51 PM: */ UPDATE [Routes] SET [TypeId] = 3,[Status] = NULL,[SourcePartyId] = 4,[DestinationPartyId] = 2,[SourceConnectorId] = 2,[DestinationConnectorId] = 4,[MapId] = 10,[PartyGroupId] = 1,[ModifiedDate] = '1/24/2024 7:12:49 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 2
+/*1/24/2024 7:12:51 PM: */ Error: UPDATE [Routes] SET [TypeId] = 3,[Status] = NULL,[SourcePartyId] = 4,[DestinationPartyId] = 2,[SourceConnectorId] = 2,[DestinationConnectorId] = 4,[MapId] = 10,[PartyGroupId] = 1,[ModifiedDate] = '1/24/2024 7:12:49 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 2
+/*1/24/2024 7:12:51 PM: */ /****************************************Rollback Transaction********************************/
+/*1/24/2024 7:13:02 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*1/24/2024 7:13:04 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/24/2024 7:13:05 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*1/24/2024 7:13:05 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*1/24/2024 7:13:05 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*1/24/2024 7:13:05 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*1/24/2024 7:13:26 PM: */ /****************************************Begin Transaction********************************/
+/*1/24/2024 7:13:34 PM: */ UPDATE [Routes] SET [TypeId] = 3,[Status] = NULL,[SourcePartyId] = 4,[DestinationPartyId] = 2,[SourceConnectorId] = 2,[DestinationConnectorId] = 4,[MapId] = 10,[PartyGroupId] = 1,[ModifiedDate] = '1/24/2024 7:13:21 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 2
+/*1/24/2024 7:13:34 PM: */ Error: UPDATE [Routes] SET [TypeId] = 3,[Status] = NULL,[SourcePartyId] = 4,[DestinationPartyId] = 2,[SourceConnectorId] = 2,[DestinationConnectorId] = 4,[MapId] = 10,[PartyGroupId] = 1,[ModifiedDate] = '1/24/2024 7:13:21 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 2

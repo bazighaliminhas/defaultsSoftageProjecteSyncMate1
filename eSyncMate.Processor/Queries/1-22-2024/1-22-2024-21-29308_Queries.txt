@@ -1,0 +1,9 @@
+/*1/22/2024 9:00:13 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*1/22/2024 9:00:15 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/22/2024 9:00:17 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/22/2024 9:00:36 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE [Description] = 'SCS - Target Store'
+/*1/22/2024 9:00:37 PM: */ /****************************************Begin Transaction********************************/
+/*1/22/2024 9:00:37 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM PartnerGroups
+/*1/22/2024 9:00:37 PM: */ INSERT INTO [PartnerGroups] ([Id],[SourcePartyId],[DestinationPartyId],[Description],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (2,4,3,'SCS - Target Store','1/1/1900 12:00:00 AM',0,'1/22/2024 9:00:37 PM',0)
+/*1/22/2024 9:00:37 PM: */ /****************************************Commit Transaction********************************/
+/*1/22/2024 9:00:41 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC

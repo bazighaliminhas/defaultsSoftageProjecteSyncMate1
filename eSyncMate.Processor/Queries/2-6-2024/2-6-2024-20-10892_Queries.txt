@@ -1,0 +1,1 @@
+/*2/6/2024 8:57:50 PM: */ SELECT * FROM [Customers] WHERE  ERPCustomerID = 'TARGET' ORDER BY Id DESC

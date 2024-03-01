@@ -1,0 +1,1301 @@
+/*2/1/2024 8:09:27 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/1/2024 8:09:28 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/1/2024 8:09:28 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/1/2024 8:09:28 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/1/2024 8:09:28 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/1/2024 8:09:29 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/1/2024 8:09:53 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/1/2024 8:10:13 PM: */ /****************************************Begin Transaction********************************/
+/*2/1/2024 8:10:14 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM InboundEDI
+/*2/1/2024 8:10:14 PM: */ INSERT INTO [InboundEDI] ([Id],[Type],[Status],[Data],[CreatedDate],[CreatedBy]) VALUES (1085,'850','NEW','Medical 9485 August
+
+
+
+!E:\C4\API\UATCode
+
+
+
+
+
+E:\C10\LatestOrderCreationScripts(C10S-21583)
+
+
+WayfairAPi_SalesorderDetail
+
+
+Logmein
+bilalayub@vcs.com.pk
+Bilal12345
+
+http://mom-web.momeni.com/SPARS.WEB/
+
+WlamartAPI:collette@lrresources.com
+Mart@2020
+
+Release no
+
+C14
+UID: VCSAdmin
+Pwd: *Zahid2020^
+
+sa
+DadiIsTheBest01!
+
+Domain: LRRESOURCES
+
+result,
+			referenceId,
+			validationErrors,
+			validationMessages
+
+
+2021@dMinLOLOI$ C4
+
+
+
+C2S-52625 4 HRS
+C2S-53144 2hrs
+
+
+\\vcs-nas\ClientDocuments\ClientConnectionDetail
+
+update EDI_DocumentSchedule set FrequencyTimes = ''00:00,06:00,12:00,18:00''   where mENUTAG = ''mirRPSAPISalesOrderDetailDaily4Times''
+
+C14
+
+Welcome2020!
+hafeez@vcs.com.pk
+ 
+https://control.itsupport247.net/index.asps
+
+ PWD
+Majid    MAJID-321
+$parsus$858$
+
+C2 Users
+sparsdc as uid & pwd   n 
+spars2 as uid & pwd   Spars2$858
+
+gc *.sql | ac a.txt
+
+
+"YpCl0sWtoMJSZkKhUvrWIyyrIuHmdo"
+cognos as uid & pwd    Momeni@108
+ 
+
+
+
+
+
+https://api.revcascade.com/auth/token/ 
+
+[{\"ItemID\":\"ASHAL282357372608\",\"Qty\":1,\"WHSID\":\"RUG\"
+
+1806580589232
+
+http://localhost:9090/Home/LoadMenu/miwPickingTicketDashboard%7C1%7CRFNOPWl4U1BBUlNDNztVSUQ9c2E7UFdEPWFuZ2VsOw==%7CATL%7C1502%7CPickingTicket
+
+User: Shahid.baig  Pass: Vcs#123456789
+
+C:\Users\Bilal\Desktop\New.
+.
+Shah
+
+AOA Dear All please use following IP to Connect SQL Servers Via VPN
+VCSSQL01 192.168.1.246
+VCSSQL02  192.168.1.249
+VCSSQL03   192.168.1.250
+
+
+
+--INSERT INTO SDE_AuthoriedIPS(IPAddress,Allowed,APP,ADDUser,ADDDate)
+--VALUES(''111.119.187.19'',1,''SPARS.Digital.Engine'',1,GETDATE())
+
+23-12-2020 ModDate Set in Items and RugsOAK Table backup table in given Below
+--zdb_RugsOAK_23122020
+--zdb_Items_23122020
+
+sheet pwd  @dminVCSUS858$
+
+sa $#102019!VC$
+
+!#SR@mo2021#
+!#SR@mo2021#
+
+
+C4: !LR@MO2021#
+C7:Spars
+
+
+
+
+C10 : !#RH@mo2021#
+C18
+Spars
+Spa!1234
+
+
+sa
+Rug$americ@
+
+
+Administrator
+Rac!1234
+
+
+
+C7 Shahid.baig 
+Vcs$123456789
+
+SheetPWD
+!#VC$@CCS2021#
+
+C14
+saRH@mo2021
+#LRSql2020^
+
+
+VCSSQL01	192.168.1.246
+VCSSQL02	192.168.1.249
+VCSIIS		192.168.1.248
+VCSNAS		192.168.1.251
+
+
+
+url : https://rang-reza.com.pk:2083/
+Host IP: 173.249.24.142
+CPanel Username: rangrez1
+CPanel Password: sW1h1y5Z#3[aUA
+
+wsShipping
+56568
+
+
+bilal143
+mughal@143
+
+
+
+
+
+
+
+PWD:ukH-_JqqNMRp5hB
+
+cd C:\Program Files\Redis
+redis-cli -p 8085
+flushall
+
+
+
+[4:36 PM, 6/14/2021] Waleed Vcs: 58.181.115.18
+[4:36 PM, 6/14/2021] Waleed Vcs: RDC krna
+[4:36 PM, 6/14/2021] Waleed Vcs: user: Adminsitrator
+password: Imlive2018
+
+
+
+
+saif
+Saif123
+
+Wlaeed.baig
+S@f@W@l808
+
+
+Shahid.baig
+VCs@S@h007
+
+
+SparsVPN04
+%4V95=rn9e3NqbGL
+
+
+sp_AutoSuggestBORelease
+
+
+sa
+S@F@ma10nDB##
+
+VCSAdmin
+!#LRR@mo2021#
+
+
+BIZMATE
+: 182.176.3.202
+
+user: ALKFPRD\Administrator
+password:@aLKF$un0023
+
+sa
+Rtyq5J4ZZchFGdb
+
+sa
+Biz@2022
+	
+
+
+
+Cubic fORMULA = length * width * height
+sp_UpdatePKTShipVia
+C2 changes
+
+VM HOST
+299885768
+adminc14$
+VCS\VM
+@dMinvm
+
+
+C4 VM
+anydes 531747155
+pass = adminc4$
+
+window user id = vm\qa
+pass = @dMinvm
+
+
+C7 Client VM Connection
+
+388391316
+2021@dMinC7$
+
+
+
+
+!#LRR@mo2021#
+
+
+\\lrresources-iis\Install\SPARSScheduler\2021-09-09_53
+
+
+
+
+waleed
+Waleed123
+
+3337039
+
+
+Shahid.Baig
+VCs#S@h007$
+
+
+userID: SparsVPN05	
+Password: aT?HaFWh3!+Xf7mK
+
+Changeme@123
+
+C14
+usmanabid
+ uid-usmanabid@sparsus.com
+New PWD: 2021@dMinLRR#
+
+
+
+!@SPAR$2021VC$
+
+
+EXEC sp_EDI_GetGoodBSalesOrders
+
+
+Tmapper
+Majid#123IB$
+
+waleed.baig: S@f#W@l008$
+
+
+http://anascloud.hostedrmm.com/WCC2/Home/Login
+abubaker@sparsus.com
+Spars858C6
+
+spars
+!#BR@mo2021#
+
+
+
+83529
+
+=CONCATENATE("SELECT ''",L2,"''"," UNION ALL")
+
+userID: MajidVPN	
+Password: $9E-dJcpbZ8DCJRg
+
+RDC IP: 10.10.180.3
+user: usr02
+password: Changeme@123
+
+
+userID: SparsVPN05	
+Password: aT?HaFWh3!+Xf7mK
+
+RDC IP: 10.10.180.6
+user: usr05
+password: Changeme@123
+
+shared secret: 10F2964A9C987209
+47.21.13.14
+
+
+
+C6
+http://anascloud.hostedrmm.com/WCC2/Home/Login
+abubaker@sparsus.com
+Spars858C6
+
+spars
+!#BR@mo2021#
+
+
+Bokara$Spars2000
+
+#LRSql2020^
+
+
+
+
+New
+shahid.baig: VCS#SH@D007#
+
+
+
+DB_C7
+SPARSAPI
+S@F@api02DB##
+
+LOLOI C4 
+SQL PWD
+Bilal_95 OiWD9Q!341SEHQ*jF206
+
+
+SPARS_WEBKey : sparsweb@vcs858$
+
+
+
+
+60030115 PWD
+
+
+
+
+C4 Connection Credential
+
+UserName : Bilal.Ayub
+PWD : 6w%#U2ASqbe2
+Lri-RDP04 Ip 10.0.0.66
+
+
+
+
+
+----INSERT INTO SDE_AuthoriedIPS(IPAddress,Allowed,APP,ADDUser,ADDDate)
+----VALUES (''192.168.10.9'',1,''SPARS.Digital.Engine'',1,GETDATE())
+
+
+-update users set loginstatus = 0 where userno = 1
+--insert into Adjustment_ItemQuantities select isnull(max(sequenceno),0)+1, getdate(), 0,0,0,0,0,0,0,0,1 from Adjustment_ItemQuantities
+--update  GLPeriod set Opened = 1, locked = 0 where begindate < getdate() and Opened = 0 and locked = 1
+--update company set PeriodID = ( select max(periodid) from GLPeriod where Opened = 1)
+
+
+C22 VM
+Anydesk: 742039600
+Pwd: 2021@dMinC22$
+
+
+C4_VM
+
+@dMinvm
+
+2021@dMinC4$
+
+C10
+remote.rizzyhome.com
+RH\spars3
+SPARS@2022!
+
+Skype PWD
+bilu@143
+
+SPARSNet
+UserName : bilal_ayub
+PWD : Bilal123
+
+TFS
+Bilal
+bilal12345
+
+
+
+waleed
+Waleed123
+
+sp_ProductionNote_AddFormula
+
+
+157048284 (C2 QA AnyDesk)
+
+531747155 (C$ QA Any Desk)
+
+New VCSIIS
+Anydesk: 981186586
+Anydesk Pwd: 2022@dMinVCSII$$
+Login PWD: 2021@dMinvcsiis$
+
+192.168.0.37
+
+
+
+C7: VPN:
+UserID: SparsVPN04
+Pass: Ju*ImaTEre*efLD+prA2
+
+Server: 10.10.180.5
+UserID: usr04
+Pass: Changeme@123
+
+RIGHT(''999999''+ISNULL(AddressID,''''),6) 
+
+shahid.Baig: VCS#SH$hD007&
+
+Waleed.Baig: S@few@l08$
+
+C18
+administrator
+Rac!1234
+
+SELECT DISTINCT OBJECT_NAME(OBJECT_ID),
+object_definition(OBJECT_ID)
+FROM sys.Procedures
+WHERE object_definition(OBJECT_ID) LIKE ''%'' + ''CarrierProNo'' + ''%''
+GO
+
+
+
+
+SELECT  MAX(DATENAME(month, AddDate)) [Months],SUM(TotalQty) TotalQty , 
+CASE WHEN Field2String = ''AKM'' THEN ''Al Karam (Sundar)''
+	 WHEN Field2String = ''SAV'' THEN ''Al Karam (Gakhar)''
+END UnitName
+FROM ProductionNote WHERE Status IN (1,2) 
+AND Field2String IN (''AKM'',''SAV'') 
+GROUP BY YEAR(AddDate),MONTH(AddDate),Field2String
+ORDER BY YEAR(AddDate) DESC,MONTH(AddDate) DESC
+
+
+INSERT INTO PanelChartMappings (MappingID,PanelID,SeriesLabel,XAxisDataSourceColumn,YAxisDataSourceColumn,DataSourceID,XAxisDataLabel,YAxisDataLabel,SeriesColor,SeriesOrder)
+VALUES (15,19,''TotalQty'',''Months'',''TotalQty'',35,''TotalQty'',''#0b62a4'',2),
+ (16,19,''UnitName'',''Months'',''UnitName'',35,''UnitName'',''##00802b'',3)
+
+
+//92 order id ptcl smart services
+402005362;90892194-1
+
+
+Interwood Corvit Server Information
+
+User Name: Corvit
+      Password: Corvit#@!$1974$
+      Gateway:58.27.243.242
+      port:3121
+
+
+NetFlix
+Asad_ali376@yahoo.com
+201092@
+
+
+
+C22	
+Anydesk  742039600	
+Pwd: 2021@dMinC22$	
+OS Pwd: 2021@dMinC22$
+
+399411299;90180774-1
+
+
+
+Laptop Charges Cutting
+Start From july 2023
+
+
+Employes Salary Statement
+Employee Loan Statement
+
+
+
+SOLANA API KEY
+z0m4VWkEXHlWdrh-f-oNCQai2LBsUZQ_
+
+HTTPS : https://solana-mainnet.g.alchemy.com/v2/z0m4VWkEXHlWdrh-f-oNCQai2LBsUZQ_
+Websocket
+wss://solana-mainnet.g.alchemy.com/v2/z0m4VWkEXHlWdrh-f-oNCQai2LBsUZQ_
+
+
+
+D:\Esoftage\eSyncMate\UI>npm install -g @angular/cli
+
+ng serve
+
+
+
+Program ID
+ERReFUswtvWd5gPKKwLMCe6pVYYsVigQgba4NUT4pzFw
+
+Open the Project path in Visual Code using Command Line 
+code .
+
+
+
+Pub Key
+
+DNV6KM5WSynT1gKLM2oVB76KgH6ZR6SBdocVymzEC6nQ
+
+The secret key is:  Uint8Array(64) [
+   83, 158, 250, 100,  46,  78, 210, 120, 130,  68,  46,
+  249, 221, 120,  87, 137, 128,  57, 221, 183, 240, 121,
+  230,   3,  47, 131,  73,  92, 138, 229, 172, 128, 183,
+  205,  52,  21,  54, 104,  21,  38, 206,  19, 102,  20,
+  108,  86,  23,  29, 150, 103, 222, 227,  25,   0, 224,
+  117, 160, 129, 156, 220, 133,   4, 135,  37
+]
+
+
+bilal06660
+
+
+
+get the Solana Network
+solana config get
+
+set the locall network
+solana config set --url localhost
+	
+set the Solana DevNet
+solana config set --url devnet
+
+set the Solana MainNet
+solana config set --url mainnet-beta
+
+Set the wallet
+solana config set --keypair ~/<FILE_PATH>
+
+Solana New Key pair
+solana-keygen new
+
+Solana AirDrop for DevNet
+solana airdrop 1
+
+get the network of salana running
+solana address
+
+PwMS/,B)^Xi4R@*
+
+
+
+
+
+
+
+
+
+
+
+The public key is:  8o1vU6FwfKeRnMcW6kcZqMbMxDihLvHT4KNp6wCyRyLy
+The secret key is:   
+ r   L 1( ! uo ▬ ·§! 0 ¶sˑj B /yRj  & _  \↔ @ P~ ♦  ؆
+
+
+
+make new Interface and Component
+
+ng g c routes-engine/routes
+
+ng g c routes-engine/routes
+
+ng g c routes-engine/add-routes-dialog
+
+ng g c routes-engine/edit-routes-dialog
+
+
+
+Creating New project in angular
+ng new  projectname  --no-standalone
+
+
+
+React JS Create new project 
+
+npx create-react-app my-app
+cd my-app
+
+
+ng g c routes-engine/routes
+
+ng g c routes-engine/routes
+
+ng g c routes-engine/add-routes-dialog
+
+ng g c routes-engine/edit-routes-dialog
+npm start
+
+
+C71i9HajapZSZgryBuHLzbAqsgH7it2x7VE4qUxmWj6x
+solana airdrop 5 --url https://api.devnet.solana.com ''C71i9HajapZSZgryBuHLzbAqsgH7it2x7VE4qUxmWj6x''
+
+ALTER TABLE Routes
+ALTER COLUMN WeakkDays VARCHAR(250) NULL;
+
+-- Rename the WeakkDays column to WeekDays
+EXEC sp_rename ''Routes.WeaakDays'', ''WeekDays'', ''COLUMN'';
+
+-- Example assuming a schema named "dbo"
+EXEC sp_rename ''dbo.Routes.WeaakDays'', ''WeekDays'', ''COLUMN'';','2/1/2024 8:10:13 PM',1)
+/*2/1/2024 8:10:14 PM: */ /****************************************Commit Transaction********************************/
+/*2/1/2024 8:10:14 PM: */ /****************************************Begin Transaction********************************/
+/*2/1/2024 8:10:14 PM: */ UPDATE [InboundEDI] SET [Type] = '850',[Status] = 'EXCEPTION',[Data] = 'Medical 9485 August
+
+
+
+!E:\C4\API\UATCode
+
+
+
+
+
+E:\C10\LatestOrderCreationScripts(C10S-21583)
+
+
+WayfairAPi_SalesorderDetail
+
+
+Logmein
+bilalayub@vcs.com.pk
+Bilal12345
+
+http://mom-web.momeni.com/SPARS.WEB/
+
+WlamartAPI:collette@lrresources.com
+Mart@2020
+
+Release no
+
+C14
+UID: VCSAdmin
+Pwd: *Zahid2020^
+
+sa
+DadiIsTheBest01!
+
+Domain: LRRESOURCES
+
+result,
+			referenceId,
+			validationErrors,
+			validationMessages
+
+
+2021@dMinLOLOI$ C4
+
+
+
+C2S-52625 4 HRS
+C2S-53144 2hrs
+
+
+\\vcs-nas\ClientDocuments\ClientConnectionDetail
+
+update EDI_DocumentSchedule set FrequencyTimes = ''00:00,06:00,12:00,18:00''   where mENUTAG = ''mirRPSAPISalesOrderDetailDaily4Times''
+
+C14
+
+Welcome2020!
+hafeez@vcs.com.pk
+ 
+https://control.itsupport247.net/index.asps
+
+ PWD
+Majid    MAJID-321
+$parsus$858$
+
+C2 Users
+sparsdc as uid & pwd   n 
+spars2 as uid & pwd   Spars2$858
+
+gc *.sql | ac a.txt
+
+
+"YpCl0sWtoMJSZkKhUvrWIyyrIuHmdo"
+cognos as uid & pwd    Momeni@108
+ 
+
+
+
+
+
+https://api.revcascade.com/auth/token/ 
+
+[{\"ItemID\":\"ASHAL282357372608\",\"Qty\":1,\"WHSID\":\"RUG\"
+
+1806580589232
+
+http://localhost:9090/Home/LoadMenu/miwPickingTicketDashboard%7C1%7CRFNOPWl4U1BBUlNDNztVSUQ9c2E7UFdEPWFuZ2VsOw==%7CATL%7C1502%7CPickingTicket
+
+User: Shahid.baig  Pass: Vcs#123456789
+
+C:\Users\Bilal\Desktop\New.
+.
+Shah
+
+AOA Dear All please use following IP to Connect SQL Servers Via VPN
+VCSSQL01 192.168.1.246
+VCSSQL02  192.168.1.249
+VCSSQL03   192.168.1.250
+
+
+
+--INSERT INTO SDE_AuthoriedIPS(IPAddress,Allowed,APP,ADDUser,ADDDate)
+--VALUES(''111.119.187.19'',1,''SPARS.Digital.Engine'',1,GETDATE())
+
+23-12-2020 ModDate Set in Items and RugsOAK Table backup table in given Below
+--zdb_RugsOAK_23122020
+--zdb_Items_23122020
+
+sheet pwd  @dminVCSUS858$
+
+sa $#102019!VC$
+
+!#SR@mo2021#
+!#SR@mo2021#
+
+
+C4: !LR@MO2021#
+C7:Spars
+
+
+
+
+C10 : !#RH@mo2021#
+C18
+Spars
+Spa!1234
+
+
+sa
+Rug$americ@
+
+
+Administrator
+Rac!1234
+
+
+
+C7 Shahid.baig 
+Vcs$123456789
+
+SheetPWD
+!#VC$@CCS2021#
+
+C14
+saRH@mo2021
+#LRSql2020^
+
+
+VCSSQL01	192.168.1.246
+VCSSQL02	192.168.1.249
+VCSIIS		192.168.1.248
+VCSNAS		192.168.1.251
+
+
+
+url : https://rang-reza.com.pk:2083/
+Host IP: 173.249.24.142
+CPanel Username: rangrez1
+CPanel Password: sW1h1y5Z#3[aUA
+
+wsShipping
+56568
+
+
+bilal143
+mughal@143
+
+
+
+
+
+
+
+PWD:ukH-_JqqNMRp5hB
+
+cd C:\Program Files\Redis
+redis-cli -p 8085
+flushall
+
+
+
+[4:36 PM, 6/14/2021] Waleed Vcs: 58.181.115.18
+[4:36 PM, 6/14/2021] Waleed Vcs: RDC krna
+[4:36 PM, 6/14/2021] Waleed Vcs: user: Adminsitrator
+password: Imlive2018
+
+
+
+
+saif
+Saif123
+
+Wlaeed.baig
+S@f@W@l808
+
+
+Shahid.baig
+VCs@S@h007
+
+
+SparsVPN04
+%4V95=rn9e3NqbGL
+
+
+sp_AutoSuggestBORelease
+
+
+sa
+S@F@ma10nDB##
+
+VCSAdmin
+!#LRR@mo2021#
+
+
+BIZMATE
+: 182.176.3.202
+
+user: ALKFPRD\Administrator
+password:@aLKF$un0023
+
+sa
+Rtyq5J4ZZchFGdb
+
+sa
+Biz@2022
+	
+
+
+
+Cubic fORMULA = length * width * height
+sp_UpdatePKTShipVia
+C2 changes
+
+VM HOST
+299885768
+adminc14$
+VCS\VM
+@dMinvm
+
+
+C4 VM
+anydes 531747155
+pass = adminc4$
+
+window user id = vm\qa
+pass = @dMinvm
+
+
+C7 Client VM Connection
+
+388391316
+2021@dMinC7$
+
+
+
+
+!#LRR@mo2021#
+
+
+\\lrresources-iis\Install\SPARSScheduler\2021-09-09_53
+
+
+
+
+waleed
+Waleed123
+
+3337039
+
+
+Shahid.Baig
+VCs#S@h007$
+
+
+userID: SparsVPN05	
+Password: aT?HaFWh3!+Xf7mK
+
+Changeme@123
+
+C14
+usmanabid
+ uid-usmanabid@sparsus.com
+New PWD: 2021@dMinLRR#
+
+
+
+!@SPAR$2021VC$
+
+
+EXEC sp_EDI_GetGoodBSalesOrders
+
+
+Tmapper
+Majid#123IB$
+
+waleed.baig: S@f#W@l008$
+
+
+http://anascloud.hostedrmm.com/WCC2/Home/Login
+abubaker@sparsus.com
+Spars858C6
+
+spars
+!#BR@mo2021#
+
+
+
+83529
+
+=CONCATENATE("SELECT ''",L2,"''"," UNION ALL")
+
+userID: MajidVPN	
+Password: $9E-dJcpbZ8DCJRg
+
+RDC IP: 10.10.180.3
+user: usr02
+password: Changeme@123
+
+
+userID: SparsVPN05	
+Password: aT?HaFWh3!+Xf7mK
+
+RDC IP: 10.10.180.6
+user: usr05
+password: Changeme@123
+
+shared secret: 10F2964A9C987209
+47.21.13.14
+
+
+
+C6
+http://anascloud.hostedrmm.com/WCC2/Home/Login
+abubaker@sparsus.com
+Spars858C6
+
+spars
+!#BR@mo2021#
+
+
+Bokara$Spars2000
+
+#LRSql2020^
+
+
+
+
+New
+shahid.baig: VCS#SH@D007#
+
+
+
+DB_C7
+SPARSAPI
+S@F@api02DB##
+
+LOLOI C4 
+SQL PWD
+Bilal_95 OiWD9Q!341SEHQ*jF206
+
+
+SPARS_WEBKey : sparsweb@vcs858$
+
+
+
+
+60030115 PWD
+
+
+
+
+C4 Connection Credential
+
+UserName : Bilal.Ayub
+PWD : 6w%#U2ASqbe2
+Lri-RDP04 Ip 10.0.0.66
+
+
+
+
+
+----INSERT INTO SDE_AuthoriedIPS(IPAddress,Allowed,APP,ADDUser,ADDDate)
+----VALUES (''192.168.10.9'',1,''SPARS.Digital.Engine'',1,GETDATE())
+
+
+-update users set loginstatus = 0 where userno = 1
+--insert into Adjustment_ItemQuantities select isnull(max(sequenceno),0)+1, getdate(), 0,0,0,0,0,0,0,0,1 from Adjustment_ItemQuantities
+--update  GLPeriod set Opened = 1, locked = 0 where begindate < getdate() and Opened = 0 and locked = 1
+--update company set PeriodID = ( select max(periodid) from GLPeriod where Opened = 1)
+
+
+C22 VM
+Anydesk: 742039600
+Pwd: 2021@dMinC22$
+
+
+C4_VM
+
+@dMinvm
+
+2021@dMinC4$
+
+C10
+remote.rizzyhome.com
+RH\spars3
+SPARS@2022!
+
+Skype PWD
+bilu@143
+
+SPARSNet
+UserName : bilal_ayub
+PWD : Bilal123
+
+TFS
+Bilal
+bilal12345
+
+
+
+waleed
+Waleed123
+
+sp_ProductionNote_AddFormula
+
+
+157048284 (C2 QA AnyDesk)
+
+531747155 (C$ QA Any Desk)
+
+New VCSIIS
+Anydesk: 981186586
+Anydesk Pwd: 2022@dMinVCSII$$
+Login PWD: 2021@dMinvcsiis$
+
+192.168.0.37
+
+
+
+C7: VPN:
+UserID: SparsVPN04
+Pass: Ju*ImaTEre*efLD+prA2
+
+Server: 10.10.180.5
+UserID: usr04
+Pass: Changeme@123
+
+RIGHT(''999999''+ISNULL(AddressID,''''),6) 
+
+shahid.Baig: VCS#SH$hD007&
+
+Waleed.Baig: S@few@l08$
+
+C18
+administrator
+Rac!1234
+
+SELECT DISTINCT OBJECT_NAME(OBJECT_ID),
+object_definition(OBJECT_ID)
+FROM sys.Procedures
+WHERE object_definition(OBJECT_ID) LIKE ''%'' + ''CarrierProNo'' + ''%''
+GO
+
+
+
+
+SELECT  MAX(DATENAME(month, AddDate)) [Months],SUM(TotalQty) TotalQty , 
+CASE WHEN Field2String = ''AKM'' THEN ''Al Karam (Sundar)''
+	 WHEN Field2String = ''SAV'' THEN ''Al Karam (Gakhar)''
+END UnitName
+FROM ProductionNote WHERE Status IN (1,2) 
+AND Field2String IN (''AKM'',''SAV'') 
+GROUP BY YEAR(AddDate),MONTH(AddDate),Field2String
+ORDER BY YEAR(AddDate) DESC,MONTH(AddDate) DESC
+
+
+INSERT INTO PanelChartMappings (MappingID,PanelID,SeriesLabel,XAxisDataSourceColumn,YAxisDataSourceColumn,DataSourceID,XAxisDataLabel,YAxisDataLabel,SeriesColor,SeriesOrder)
+VALUES (15,19,''TotalQty'',''Months'',''TotalQty'',35,''TotalQty'',''#0b62a4'',2),
+ (16,19,''UnitName'',''Months'',''UnitName'',35,''UnitName'',''##00802b'',3)
+
+
+//92 order id ptcl smart services
+402005362;90892194-1
+
+
+Interwood Corvit Server Information
+
+User Name: Corvit
+      Password: Corvit#@!$1974$
+      Gateway:58.27.243.242
+      port:3121
+
+
+NetFlix
+Asad_ali376@yahoo.com
+201092@
+
+
+
+C22	
+Anydesk  742039600	
+Pwd: 2021@dMinC22$	
+OS Pwd: 2021@dMinC22$
+
+399411299;90180774-1
+
+
+
+Laptop Charges Cutting
+Start From july 2023
+
+
+Employes Salary Statement
+Employee Loan Statement
+
+
+
+SOLANA API KEY
+z0m4VWkEXHlWdrh-f-oNCQai2LBsUZQ_
+
+HTTPS : https://solana-mainnet.g.alchemy.com/v2/z0m4VWkEXHlWdrh-f-oNCQai2LBsUZQ_
+Websocket
+wss://solana-mainnet.g.alchemy.com/v2/z0m4VWkEXHlWdrh-f-oNCQai2LBsUZQ_
+
+
+
+D:\Esoftage\eSyncMate\UI>npm install -g @angular/cli
+
+ng serve
+
+
+
+Program ID
+ERReFUswtvWd5gPKKwLMCe6pVYYsVigQgba4NUT4pzFw
+
+Open the Project path in Visual Code using Command Line 
+code .
+
+
+
+Pub Key
+
+DNV6KM5WSynT1gKLM2oVB76KgH6ZR6SBdocVymzEC6nQ
+
+The secret key is:  Uint8Array(64) [
+   83, 158, 250, 100,  46,  78, 210, 120, 130,  68,  46,
+  249, 221, 120,  87, 137, 128,  57, 221, 183, 240, 121,
+  230,   3,  47, 131,  73,  92, 138, 229, 172, 128, 183,
+  205,  52,  21,  54, 104,  21,  38, 206,  19, 102,  20,
+  108,  86,  23,  29, 150, 103, 222, 227,  25,   0, 224,
+  117, 160, 129, 156, 220, 133,   4, 135,  37
+]
+
+
+bilal06660
+
+
+
+get the Solana Network
+solana config get
+
+set the locall network
+solana config set --url localhost
+	
+set the Solana DevNet
+solana config set --url devnet
+
+set the Solana MainNet
+solana config set --url mainnet-beta
+
+Set the wallet
+solana config set --keypair ~/<FILE_PATH>
+
+Solana New Key pair
+solana-keygen new
+
+Solana AirDrop for DevNet
+solana airdrop 1
+
+get the network of salana running
+solana address
+
+PwMS/,B)^Xi4R@*
+
+
+
+
+
+
+
+
+
+
+
+The public key is:  8o1vU6FwfKeRnMcW6kcZqMbMxDihLvHT4KNp6wCyRyLy
+The secret key is:   
+ r   L 1( ! uo ▬ ·§! 0 ¶sˑj B /yRj  & _  \↔ @ P~ ♦  ؆
+
+
+
+make new Interface and Component
+
+ng g c routes-engine/routes
+
+ng g c routes-engine/routes
+
+ng g c routes-engine/add-routes-dialog
+
+ng g c routes-engine/edit-routes-dialog
+
+
+
+Creating New project in angular
+ng new  projectname  --no-standalone
+
+
+
+React JS Create new project 
+
+npx create-react-app my-app
+cd my-app
+
+
+ng g c routes-engine/routes
+
+ng g c routes-engine/routes
+
+ng g c routes-engine/add-routes-dialog
+
+ng g c routes-engine/edit-routes-dialog
+npm start
+
+
+C71i9HajapZSZgryBuHLzbAqsgH7it2x7VE4qUxmWj6x
+solana airdrop 5 --url https://api.devnet.solana.com ''C71i9HajapZSZgryBuHLzbAqsgH7it2x7VE4qUxmWj6x''
+
+ALTER TABLE Routes
+ALTER COLUMN WeakkDays VARCHAR(250) NULL;
+
+-- Rename the WeakkDays column to WeekDays
+EXEC sp_rename ''Routes.WeaakDays'', ''WeekDays'', ''COLUMN'';
+
+-- Example assuming a schema named "dbo"
+EXEC sp_rename ''dbo.Routes.WeaakDays'', ''WeekDays'', ''COLUMN'';',[CreatedDate] = '2/1/2024 8:10:13 PM',[CreatedBy] = 1 WHERE [Id] = 1085
+/*2/1/2024 8:10:14 PM: */ /****************************************Commit Transaction********************************/
+/*2/1/2024 8:23:34 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'

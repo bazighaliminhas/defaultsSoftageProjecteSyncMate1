@@ -1,0 +1,11 @@
+/*1/9/2024 7:33:02 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*1/9/2024 7:33:04 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/9/2024 7:33:10 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/9/2024 7:33:13 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/9/2024 7:55:45 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/9/2024 7:56:29 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/9/2024 7:56:36 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/9/2024 7:56:50 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/9/2024 7:56:52 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/9/2024 7:56:55 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/9/2024 7:58:14 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC

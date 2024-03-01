@@ -1,0 +1,7 @@
+/*1/9/2024 6:45:03 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*1/9/2024 6:45:10 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2024-01-02' AND OrderDate <= '2024-01-09' ORDER BY Id DESC
+/*1/9/2024 6:45:12 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 2866 ORDER BY Id
+/*1/9/2024 6:45:25 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/9/2024 6:47:08 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*1/9/2024 6:47:09 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/9/2024 6:47:10 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC

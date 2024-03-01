@@ -1,0 +1,146 @@
+/*2/16/2024 2:37:36 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/16/2024 2:37:39 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/16/2024 2:37:42 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/16/2024 2:37:43 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/16/2024 2:37:44 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/16/2024 2:37:48 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/16/2024 2:37:51 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/16/2024 2:37:51 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/16/2024 2:37:51 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/16/2024 2:37:51 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/16/2024 2:37:51 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/16/2024 2:38:02 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/16/2024 2:38:02 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/16/2024 2:38:02 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/16/2024 2:38:02 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/16/2024 2:38:02 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/16/2024 2:38:07 PM: */ SELECT * FROM [VW_Routes] WHERE [Id] = 9
+/*2/16/2024 2:38:07 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 2
+/*2/16/2024 2:38:07 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 3
+/*2/16/2024 2:38:07 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 3
+/*2/16/2024 2:38:07 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 4
+/*2/16/2024 2:38:07 PM: */ SELECT * FROM [VW_Maps] WHERE [Id] = 10
+/*2/16/2024 2:38:07 PM: */ /****************************************Begin Transaction********************************/
+/*2/16/2024 2:38:07 PM: */ UPDATE [Routes] SET [TypeId] = 3,[Status] = 'Active',[SourcePartyId] = 2,[DestinationPartyId] = 3,[SourceConnectorId] = 3,[DestinationConnectorId] = 4,[MapId] = 10,[PartyGroupId] = 1,[FrequencyType] = 'Monthly',[StartDate] = '1/10/2024 12:00:00 AM',[EndDate] = '2/11/2024 7:00:00 PM',[RepeatCount] = 2,[WeekDays] = 'Thursday,Friday',[OnDay] = '3,2,22222',[ExecutionTime] = '',[ModifiedDate] = '2/16/2024 2:38:07 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 9
+/*2/16/2024 2:38:07 PM: */ /****************************************Commit Transaction********************************/
+/*2/16/2024 2:38:08 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/16/2024 2:38:11 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/16/2024 2:38:11 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/16/2024 2:38:11 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/16/2024 2:38:11 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/16/2024 2:38:11 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/16/2024 2:38:16 PM: */ SELECT * FROM [VW_Routes] WHERE [Id] = 9
+/*2/16/2024 2:38:16 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 2
+/*2/16/2024 2:38:16 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 3
+/*2/16/2024 2:38:17 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 3
+/*2/16/2024 2:38:17 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 4
+/*2/16/2024 2:38:17 PM: */ SELECT * FROM [VW_Maps] WHERE [Id] = 10
+/*2/16/2024 2:38:17 PM: */ /****************************************Begin Transaction********************************/
+/*2/16/2024 2:38:17 PM: */ UPDATE [Routes] SET [TypeId] = 3,[Status] = 'Active',[SourcePartyId] = 2,[DestinationPartyId] = 3,[SourceConnectorId] = 3,[DestinationConnectorId] = 4,[MapId] = 10,[PartyGroupId] = 1,[FrequencyType] = 'Monthly',[StartDate] = '1/10/2024 12:00:00 AM',[EndDate] = '2/12/2024 7:00:00 PM',[RepeatCount] = 2,[WeekDays] = 'Thursday,Friday',[OnDay] = '3,2,22222',[ExecutionTime] = '',[ModifiedDate] = '2/16/2024 2:38:16 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 9
+/*2/16/2024 2:38:17 PM: */ /****************************************Commit Transaction********************************/
+/*2/16/2024 2:38:17 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/16/2024 2:38:18 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/16/2024 2:38:18 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/16/2024 2:38:18 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/16/2024 2:38:19 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/16/2024 2:38:19 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/16/2024 2:39:10 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/16/2024 2:39:12 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/16/2024 2:39:12 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/16/2024 2:39:12 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/16/2024 2:39:12 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/16/2024 2:39:12 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/16/2024 2:39:17 PM: */ SELECT * FROM [VW_Routes] WHERE [Id] = 9
+/*2/16/2024 2:39:17 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 2
+/*2/16/2024 2:39:17 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 3
+/*2/16/2024 2:39:17 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 3
+/*2/16/2024 2:39:17 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 4
+/*2/16/2024 2:39:17 PM: */ SELECT * FROM [VW_Maps] WHERE [Id] = 10
+/*2/16/2024 2:39:17 PM: */ /****************************************Begin Transaction********************************/
+/*2/16/2024 2:39:17 PM: */ UPDATE [Routes] SET [TypeId] = 3,[Status] = 'Active',[SourcePartyId] = 2,[DestinationPartyId] = 3,[SourceConnectorId] = 3,[DestinationConnectorId] = 4,[MapId] = 10,[PartyGroupId] = 1,[FrequencyType] = 'Monthly',[StartDate] = '1/10/2024 12:00:00 AM',[EndDate] = '2/14/2024 12:00:00 AM',[RepeatCount] = 2,[WeekDays] = 'Thursday,Friday',[OnDay] = '3,2,22222',[ExecutionTime] = '',[ModifiedDate] = '2/16/2024 2:39:17 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 9
+/*2/16/2024 2:39:17 PM: */ /****************************************Commit Transaction********************************/
+/*2/16/2024 2:39:18 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/16/2024 2:39:20 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/16/2024 2:39:20 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/16/2024 2:39:20 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/16/2024 2:39:20 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/16/2024 2:39:20 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/16/2024 2:39:55 PM: */ SELECT * FROM [VW_Routes] WHERE [Id] = 9
+/*2/16/2024 2:39:55 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 2
+/*2/16/2024 2:39:55 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 3
+/*2/16/2024 2:39:55 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 3
+/*2/16/2024 2:39:55 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 4
+/*2/16/2024 2:39:55 PM: */ SELECT * FROM [VW_Maps] WHERE [Id] = 10
+/*2/16/2024 2:39:55 PM: */ /****************************************Begin Transaction********************************/
+/*2/16/2024 2:39:55 PM: */ UPDATE [Routes] SET [TypeId] = 3,[Status] = 'Active',[SourcePartyId] = 2,[DestinationPartyId] = 3,[SourceConnectorId] = 3,[DestinationConnectorId] = 4,[MapId] = 10,[PartyGroupId] = 1,[FrequencyType] = 'Monthly',[StartDate] = '1/11/2024 12:00:00 AM',[EndDate] = '2/22/2024 12:00:00 AM',[RepeatCount] = 2,[WeekDays] = 'Thursday,Friday',[OnDay] = '3,2,22222',[ExecutionTime] = '',[ModifiedDate] = '2/16/2024 2:39:55 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 9
+/*2/16/2024 2:39:55 PM: */ /****************************************Commit Transaction********************************/
+/*2/16/2024 2:39:56 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/16/2024 2:40:00 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/16/2024 2:40:00 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/16/2024 2:40:00 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/16/2024 2:40:00 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/16/2024 2:40:00 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/16/2024 2:40:05 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/16/2024 2:40:05 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/16/2024 2:40:05 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/16/2024 2:40:05 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/16/2024 2:40:05 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/16/2024 2:40:13 PM: */ SELECT * FROM [VW_Routes] WHERE [Id] = 9
+/*2/16/2024 2:40:13 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 2
+/*2/16/2024 2:40:13 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 3
+/*2/16/2024 2:40:13 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 3
+/*2/16/2024 2:40:13 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 4
+/*2/16/2024 2:40:14 PM: */ SELECT * FROM [VW_Maps] WHERE [Id] = 10
+/*2/16/2024 2:40:14 PM: */ /****************************************Begin Transaction********************************/
+/*2/16/2024 2:40:14 PM: */ UPDATE [Routes] SET [TypeId] = 3,[Status] = 'Active',[SourcePartyId] = 2,[DestinationPartyId] = 3,[SourceConnectorId] = 3,[DestinationConnectorId] = 4,[MapId] = 10,[PartyGroupId] = 1,[FrequencyType] = 'Monthly',[StartDate] = '2/7/2024 12:00:00 AM',[EndDate] = '2/22/2024 12:00:00 AM',[RepeatCount] = 2,[WeekDays] = 'Thursday,Friday',[OnDay] = '3,2,22222',[ExecutionTime] = '',[ModifiedDate] = '2/16/2024 2:40:13 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 9
+/*2/16/2024 2:40:14 PM: */ /****************************************Commit Transaction********************************/
+/*2/16/2024 2:40:14 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/16/2024 2:40:38 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/16/2024 2:42:51 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/16/2024 2:43:17 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/16/2024 2:43:56 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/16/2024 2:44:45 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/16/2024 2:44:51 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/16/2024 2:44:51 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/16/2024 2:44:51 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/16/2024 2:44:51 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/16/2024 2:44:51 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/16/2024 2:45:28 PM: */ /****************************************Begin Transaction********************************/
+/*2/16/2024 2:45:28 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Routes
+/*2/16/2024 2:45:28 PM: */ INSERT INTO [Routes] ([Id],[TypeId],[Status],[SourcePartyId],[DestinationPartyId],[SourceConnectorId],[DestinationConnectorId],[MapId],[PartyGroupId],[FrequencyType],[StartDate],[EndDate],[RepeatCount],[WeekDays],[OnDay],[ExecutionTime],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (10,2,'In-Active',1,1,4,3,11,1,'Hourly','2/16/2024 12:00:00 AM','2/22/2024 12:00:00 AM',3,'','','','1/1/1900 12:00:00 AM',0,'2/16/2024 2:45:28 PM',0)
+/*2/16/2024 2:45:28 PM: */ /****************************************Commit Transaction********************************/
+/*2/16/2024 2:45:28 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/16/2024 2:45:37 PM: */ SELECT Id,RouteId,Type,Message , Details , CreatedDate ,CreatedBy ,ModifiedDate , ModifiedBy FROM VW_RouteLog WHERE RouteId = '10'
+/*2/16/2024 2:45:40 PM: */ SELECT Id,RouteId,Type,Message , Details , CreatedDate ,CreatedBy ,ModifiedDate , ModifiedBy FROM VW_RouteLog WHERE RouteId = '8'
+/*2/16/2024 2:45:46 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/16/2024 2:45:49 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/16/2024 2:45:51 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/16/2024 2:46:25 PM: */ /****************************************Begin Transaction********************************/
+/*2/16/2024 2:46:25 PM: */ UPDATE [CustomerProductCatalog] SET [ERPCustomerID] = 'CSN6172',[TCIN] = '79318179',[PartnerSKU] = 'CY1356-3101-5',[ProductTitle] = 'Courtyard CY1356 Power Loomed Rectangle Indoor/Outdoor Indoor/Outdoor Area Rug - Natural/Blue - 5'' 3" X 7'' 7" - Safavieh',[ItemType] = 'Rugsf',[ItemTypeID] = '247928f',[Relationship] = 'VC',[PublishStatus] = 'Yes',[DataUpdatesStatus] = 'APPROVED',[Price] = 112,[OfferPrice] = 81,[MAPPrice] = 0,[OfferDiscount] = 0,[PriceLastUpdated] = '10/3/2023 7:00:00 PM',[DistributionCenterName] = 'Lebanon',[DistributionCenterID] = 'mikpz1',[Inventory] = 18,[InventoryLastUpdated] = '7/17/2023 7:00:00 PM',[ModifiedDate] = '2/16/2024 2:46:25 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 2276524
+/*2/16/2024 2:46:25 PM: */ /****************************************Commit Transaction********************************/
+/*2/16/2024 2:46:25 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/16/2024 2:48:36 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/16/2024 2:48:53 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/16/2024 2:54:26 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/16/2024 2:54:50 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/16/2024 2:55:01 PM: */ /****************************************Begin Transaction********************************/
+/*2/16/2024 2:55:01 PM: */ UPDATE [CustomerProductCatalog] SET [ERPCustomerID] = 'CSN6172',[TCIN] = '79318179',[PartnerSKU] = 'CY1356-3101-5',[ProductTitle] = 'Courtyard CY1356 Power Loomed Rectangle Indoor/Outdoor Indoor/Outdoor Area Rug - Natural/Blue - 5'' 3" X 7'' 7" - Safavieh',[ItemType] = 'Rugsf',[ItemTypeID] = '247928f',[Relationship] = 'VC',[PublishStatus] = 'Yes',[DataUpdatesStatus] = 'APPROVED',[Price] = 112,[OfferPrice] = 81,[MAPPrice] = 0,[OfferDiscount] = 0,[PriceLastUpdated] = '10/20/2023 12:00:00 AM',[DistributionCenterName] = 'Lebanon',[DistributionCenterID] = 'mikpz1',[Inventory] = 18,[InventoryLastUpdated] = '7/18/2023 12:00:00 AM',[ModifiedDate] = '2/16/2024 2:55:01 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 2276524
+/*2/16/2024 2:55:01 PM: */ /****************************************Commit Transaction********************************/
+/*2/16/2024 2:55:01 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/16/2024 2:55:18 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/16/2024 2:58:09 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/16/2024 2:58:12 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/16/2024 2:58:12 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/16/2024 2:58:12 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/16/2024 2:58:12 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/16/2024 2:58:12 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/16/2024 2:58:30 PM: */ SELECT * FROM [VW_Routes] WHERE [Id] = 10
+/*2/16/2024 2:58:30 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 1
+/*2/16/2024 2:58:30 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 1
+/*2/16/2024 2:58:30 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 4
+/*2/16/2024 2:58:30 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 3
+/*2/16/2024 2:58:30 PM: */ SELECT * FROM [VW_Maps] WHERE [Id] = 11
+/*2/16/2024 2:58:31 PM: */ /****************************************Begin Transaction********************************/
+/*2/16/2024 2:58:31 PM: */ UPDATE [Routes] SET [TypeId] = 2,[Status] = 'Active',[SourcePartyId] = 1,[DestinationPartyId] = 1,[SourceConnectorId] = 4,[DestinationConnectorId] = 3,[MapId] = 11,[PartyGroupId] = 1,[FrequencyType] = 'Hourly',[StartDate] = '2/16/2024 12:00:00 AM',[EndDate] = '2/22/2024 12:00:00 AM',[RepeatCount] = 3,[WeekDays] = '',[OnDay] = '',[ExecutionTime] = '',[ModifiedDate] = '2/16/2024 2:58:29 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 10
+/*2/16/2024 2:58:31 PM: */ /****************************************Commit Transaction********************************/
+/*2/16/2024 2:59:06 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC

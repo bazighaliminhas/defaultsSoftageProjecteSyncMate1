@@ -1,0 +1,137 @@
+
+<div class="mat-table-container">
+
+  <mat-card>
+    <mat-card-content>
+      <mat-form-field appearance="fill" color="accent">
+        <mat-label>Search by:</mat-label>
+        <mat-select id="myComboBox" [(ngModel)]="selectedOption" (click)="onSelectionChange()">
+          <mat-option *ngFor="let option of options" [value]="option">
+            {{ option }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      &nbsp;
+
+      <ng-container *ngIf="selectedOption !== 'Created Date' else dateRangeField">
+        <mat-form-field appearance="fill" color="accent">
+          <mat-label>{{ label }}</mat-label>
+          <input matInput [(ngModel)]="searchValue" />
+        </mat-form-field>
+      </ng-container>
+
+      <ng-template #dateRangeField>
+        <mat-form-field appearance="fill" color="accent">
+          <mat-label>{{ label }}</mat-label>
+          <mat-date-range-input [rangePicker]="picker">
+            <input matStartDate [(ngModel)]="startDate" placeholder="Start date">
+            <input matEndDate [(ngModel)]="endDate" placeholder="End date">
+          </mat-date-range-input>
+          <mat-hint>MM/DD/YYYY – MM/DD/YYYY</mat-hint>
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-date-range-picker #picker></mat-date-range-picker>
+        </mat-form-field>
+      </ng-template>
+
+      &nbsp;
+      <button mat-flat-button color="accent" (click)="getRoutes()">
+        <span>Search </span>
+        <mat-spinner *ngIf="showSpinnerforSearch" diameter="20"></mat-spinner>
+      </button>
+
+      &nbsp;
+
+      <button mat-flat-button color="accent" (click)="openAddRouteDialog()">
+        <span>Add Route</span>
+        <mat-spinner *ngIf="showSpinnerforSearch" diameter="20"></mat-spinner>
+      </button>
+    </mat-card-content>
+  </mat-card>
+
+
+  &nbsp;
+  <mat-card>
+    <mat-card-content>
+      <table mat-table [dataSource]="routesToDisplay">
+
+        <!----ID Column-->
+        <ng-container matColumnDef="id">
+          <th mat-header-cell *matHeaderCellDef>Route ID</th>
+          <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        </ng-container>
+
+        <!--Partner Group Description-->
+        <ng-container matColumnDef="Status">
+          <th mat-header-cell *matHeaderCellDef>Status</th>
+          <td mat-cell *matCellDef="let element"> {{element.status}} </td>
+        </ng-container>
+
+        <!--SourceParty-->
+        <ng-container matColumnDef="SourceParty">
+          <th mat-header-cell *matHeaderCellDef>Source Party</th>
+          <td mat-cell *matCellDef="let element"> {{element.sourceParty}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="SourceConnector">
+          <th mat-header-cell *matHeaderCellDef>Source Connector</th>
+          <td mat-cell *matCellDef="let element"> {{element.sourceConnector}} </td>
+        </ng-container>
+
+        <!--DestinationParty-->
+        <ng-container matColumnDef="DestinationParty">
+          <th mat-header-cell *matHeaderCellDef>Destination Party</th>
+          <td mat-cell *matCellDef="let element"> {{element.destinationParty}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="DestinationConnector">
+          <th mat-header-cell *matHeaderCellDef>Destination Connector</th>
+          <td mat-cell *matCellDef="let element"> {{element.destinationConnector}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="Map">
+          <th mat-header-cell *matHeaderCellDef>Map</th>
+          <td mat-cell *matCellDef="let element"> {{element.map}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="PartnerGroup">
+          <th mat-header-cell *matHeaderCellDef>Partner Group</th>
+          <td mat-cell *matCellDef="let element"> {{element.partnerGroup}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="RouteType">
+          <th mat-header-cell *matHeaderCellDef>Route Type</th>
+          <td mat-cell *matCellDef="let element"> {{element.routeType}} </td>
+        </ng-container>
+
+        <!--Created Date-->
+        <ng-container matColumnDef="CreatedDate">
+          <th mat-header-cell *matHeaderCellDef>Create Date</th>
+          <td mat-cell *matCellDef="let element"> {{element.createdDate | date:'dd-MMM-YYYY hh:mm a'}} </td>
+        </ng-container>
+
+        <!--Edit-->
+        <ng-container matColumnDef="Edit">
+          <th mat-header-cell *matHeaderCellDef> Actions</th>
+          <td mat-cell *matCellDef="let element">
+            <button mat-icon-button aria-label="normal button" (click)="openEditDialog(element)" color="accent" matTooltip="Edit Route" matTooltipPosition="above">
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button aria-label="normal button" (click)="showRouteLog(element)" color="accent" matTooltip="Route Log" matTooltipPosition="above">
+              <mat-icon>history</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="columns"></tr>
+        <tr mat-row *matRowDef="let row; columns: columns"></tr>
+
+      </table>
+
+    </mat-card-content>
+  </mat-card>
+</div>
+
+<div *ngIf="showSpinner" class="spinner-overlay">
+  <mat-spinner></mat-spinner>
+</div>

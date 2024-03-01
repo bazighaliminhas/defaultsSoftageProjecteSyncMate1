@@ -1,0 +1,17 @@
+/*1/8/2024 8:00:15 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 8:01:27 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 8:17:19 PM: */ SELECT * FROM [VW_Customers] WHERE [Name] = 'Target Store'
+/*1/8/2024 8:17:19 PM: */ /****************************************Begin Transaction********************************/
+/*1/8/2024 8:17:19 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Customers
+/*1/8/2024 8:17:19 PM: */ INSERT INTO [Customers] ([Id],[Name],[ERPCustomerID],[ISACustomerID],[ISA856ReceiverId],[ISA810ReceiverId],[Marketplace],[CreatedDate],[CreatedBy]) VALUES (3,'Target Store','TARGET','6111470100','6111470100','6111470100','Target Stores','1/8/2024 8:17:19 PM',0)
+/*1/8/2024 8:17:19 PM: */ /****************************************Commit Transaction********************************/
+/*1/8/2024 8:17:19 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 8:17:50 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 8:18:08 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 8:18:21 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 8:18:27 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 8:18:44 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 8:18:48 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 8:56:45 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 8:56:47 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 8:57:01 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC

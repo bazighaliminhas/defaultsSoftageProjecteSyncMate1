@@ -1,0 +1,13 @@
+/*9/9/2023 2:03:12 PM: */ SELECT * FROM [Customers] WHERE [ISACustomerID] = '925485USSM'
+/*9/9/2023 2:03:12 PM: */ Error: SELECT * FROM [Customers] WHERE CustomerId = 1
+/*9/9/2023 2:04:35 PM: */ SELECT * FROM [Customers] WHERE [ISACustomerID] = '925485USSM'
+/*9/9/2023 2:04:35 PM: */ Error: SELECT * FROM [Customers] WHERE CustomerId = 1
+/*9/9/2023 2:04:40 PM: */ SELECT * FROM [Customers] WHERE [ISACustomerID] = '925485USSM'
+/*9/9/2023 2:04:41 PM: */ Error: SELECT * FROM [Customers] WHERE CustomerId = 1
+/*9/9/2023 2:05:02 PM: */ SELECT * FROM [Customers] WHERE [ISACustomerID] = '925485USSM'
+/*9/9/2023 2:05:02 PM: */ Error: SELECT * FROM [Customers] WHERE CustomerId = 1
+/*9/9/2023 2:06:00 PM: */ SELECT * FROM [Customers] WHERE [ISACustomerID] = '925485USSM'
+/*9/9/2023 2:06:08 PM: */ Error: SELECT * FROM [Customers] WHERE CustomerId = 1
+/*9/9/2023 2:08:00 PM: */ SELECT * FROM [Customers] WHERE [ISACustomerID] = '925485USSM'
+/*9/9/2023 2:08:10 PM: */ Error: SELECT * FROM [Customers] WHERE CustomerId = 1
+/*9/9/2023 2:08:24 PM: */ SELECT * FROM [Customers] WHERE [ISACustomerID] = '925485USSM'

@@ -1,0 +1,13 @@
+/*2/16/2024 7:25:07 PM: */ SELECT * FROM [VW_RouteTypes] WHERE  Id = 1 ORDER BY Id DESC
+/*2/16/2024 7:25:43 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/16/2024 7:39:10 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/16/2024 7:42:11 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/16/2024 7:42:23 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/16/2024 7:46:24 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/16/2024 7:46:27 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/16/2024 7:46:39 PM: */ SELECT * FROM [VW_RouteTypes] WHERE  Id = 1 ORDER BY Id DESC
+/*2/16/2024 7:53:20 PM: */ SELECT * FROM [VW_RouteTypes] WHERE [Name] = 'sdfdsfa'
+/*2/16/2024 7:54:15 PM: */ /****************************************Begin Transaction********************************/
+/*2/16/2024 7:54:15 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM RouteTypes
+/*2/16/2024 7:54:15 PM: */ INSERT INTO [RouteTypes] ([Id],[Name],[Description],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (6,'sdfdsfa','sdfsadf','1/1/1900 12:00:00 AM',0,'2/16/2024 7:54:15 PM',0)
+/*2/16/2024 7:54:15 PM: */ /****************************************Commit Transaction********************************/

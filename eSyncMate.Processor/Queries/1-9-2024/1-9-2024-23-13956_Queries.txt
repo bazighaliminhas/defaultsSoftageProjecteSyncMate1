@@ -1,0 +1,4 @@
+/*1/9/2024 11:09:24 PM: */ Error: SELECT * FROM [VW_ConnectorTypes] ORDER BY Id DESC
+/*1/9/2024 11:09:41 PM: */ Error: SELECT * FROM [VW_ConnectorTypes] ORDER BY Id DESC
+/*1/9/2024 11:09:52 PM: */ Error: SELECT * FROM [VW_ConnectorTypes] ORDER BY Id DESC
+/*1/9/2024 11:10:14 PM: */ Error: SELECT * FROM [VW_ConnectorTypes] ORDER BY Id DESC

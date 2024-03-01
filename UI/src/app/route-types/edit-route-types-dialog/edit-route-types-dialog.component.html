@@ -1,0 +1,33 @@
+
+<div mat-dialog-content class="dialog-content">
+  <h1 class="dialog-title">Modify RouteTypes</h1>
+  <form [formGroup]="updateRouteTypesForm" class="customer-form">
+
+    <mat-form-field class="form-field" [ngStyle]="{'display': 'none'}">
+      <mat-label>Id</mat-label>
+      <input matInput formControlName="id">
+    </mat-form-field>
+
+    <!-- Row 1: Route Types Name -->
+    <div class="form-row">
+      <mat-form-field class="form-field">
+        <mat-label>Route Types Name</mat-label>
+        <input matInput formControlName="name">
+      </mat-form-field>
+    </div>
+
+    <!-- Row 2: Description -->
+    <div class="form-row">
+      <mat-form-field class="full-width" style="width: 100%;">
+        <mat-label>Description</mat-label>
+        <textarea matInput formControlName="description" style="height: 300px;"></textarea>
+      </mat-form-field>
+    </div>
+
+  </form>
+</div>
+
+<div mat-dialog-actions class="dialog-actions">
+  <button mat-button class="cancel-button" (click)="onCancel()">Cancel</button>
+  <button mat-raised-button color="primary" [disabled]="!updateRouteTypesForm.valid" (click)="updateRouteTypes()">Update</button>
+</div>

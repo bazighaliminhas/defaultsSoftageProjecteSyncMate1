@@ -1,0 +1,36 @@
+/*2/6/2024 7:41:33 PM: */ SELECT * FROM [Customers] WHERE  ERPCustomerID = 'csn6172' ORDER BY Id DESC
+/*2/6/2024 7:41:50 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:41:53 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:42:08 PM: */ SELECT * FROM [Customers] WHERE  ERPCustomerID = 'csn6172' ORDER BY Id DESC
+/*2/6/2024 7:43:58 PM: */ SELECT * FROM [Customers] WHERE  ERPCustomerID = 'csn6172' ORDER BY Id DESC
+/*2/6/2024 7:46:12 PM: */ SELECT * FROM [Customers] WHERE  ERPCustomerID = 'csn6172' ORDER BY Id DESC
+/*2/6/2024 7:46:28 PM: */ SELECT * FROM [Customers] WHERE  ERPCustomerID = 'csn6172' ORDER BY Id DESC
+/*2/6/2024 7:47:08 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:47:24 PM: */ SELECT * FROM [Customers] WHERE  ERPCustomerID = 'CSN6172' ORDER BY Id DESC
+/*2/6/2024 7:47:45 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:47:52 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:48:13 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:48:26 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:48:43 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:48:45 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:49:17 PM: */ SELECT * FROM [Customers] WHERE  ERPCustomerID = 'TARGET' ORDER BY Id DESC
+/*2/6/2024 7:52:02 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:52:09 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:52:13 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:52:35 PM: */ SELECT * FROM [Customers] WHERE  ERPCustomerID = 'TARGET' ORDER BY Id DESC
+/*2/6/2024 7:53:18 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:53:32 PM: */ SELECT * FROM [Customers] WHERE  ERPCustomerID = 'TARGET' ORDER BY Id DESC
+/*2/6/2024 7:54:13 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:54:28 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:54:47 PM: */ SELECT * FROM [Customers] WHERE  ERPCustomerID = 'TARGET' ORDER BY Id DESC
+/*2/6/2024 7:56:26 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:56:49 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:56:59 PM: */ SELECT * FROM [Customers] WHERE  ERPCustomerID = 'TARGET' ORDER BY Id DESC
+/*2/6/2024 7:57:39 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:57:44 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:57:47 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:58:25 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:58:28 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:58:33 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:58:51 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:58:54 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC

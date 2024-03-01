@@ -1,0 +1,43 @@
+/*2/9/2024 8:24:52 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/9/2024 8:24:57 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/9/2024 8:25:03 PM: */ SELECT ERPCustomerID,FileName,CreatedDate,CreatedBy FROM CustomerProductCatalog_Log WITH (NOLOCK) WHERE ERPCustomerID = 'TAR6266P'
+/*2/9/2024 8:25:17 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/9/2024 8:25:44 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2024-02-02' AND OrderDate <= '2024-02-09' ORDER BY Id DESC
+/*2/9/2024 8:25:46 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2024-02-02' AND OrderDate <= '2024-02-09' ORDER BY Id DESC
+/*2/9/2024 8:25:52 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND Status = 'SPLITED' ORDER BY Id DESC
+/*2/9/2024 8:25:55 PM: */ SELECT * FROM [OrderStores] WHERE OrderId = 2851 ORDER BY Id ASC
+/*2/9/2024 8:26:22 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND Status = 'SYNCED' ORDER BY Id DESC
+/*2/9/2024 8:26:24 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND Status = 'PROCESSED' ORDER BY Id DESC
+/*2/9/2024 8:26:26 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND Status = 'INVEDI' ORDER BY Id DESC
+/*2/9/2024 8:26:32 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 2854 ORDER BY Id
+/*2/9/2024 8:26:48 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 2854 ORDER BY Id
+/*2/9/2024 8:27:44 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 2854 ORDER BY Id
+/*2/9/2024 8:30:49 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/9/2024 8:30:50 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/9/2024 8:35:21 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/9/2024 8:35:24 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/9/2024 8:35:38 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/9/2024 8:39:19 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/9/2024 8:40:01 PM: */ /****************************************Begin Transaction********************************/
+/*2/9/2024 8:40:01 PM: */ UPDATE [CustomerProductCatalog] SET [ERPCustomerID] = 'CSN6172',[TCIN] = '79318179',[PartnerSKU] = 'CY1356-3101-5',[ProductTitle] = 'Courtyard CY1356 Power Loomed Rectangle Indoor/Outdoor Indoor/Outdoor Area Rug - Natural/Blue - 5'' 3" X 7'' 7" - Safavieh',[ItemType] = 'Rugsf',[ItemTypeID] = '247928f',[Relationship] = 'VC',[PublishStatus] = 'Yes',[DataUpdatesStatus] = 'APPROVED',[Price] = 112,[OfferPrice] = 81,[MAPPrice] = 0,[OfferDiscount] = 0,[PriceLastUpdated] = '10/15/2023 12:08:02 AM',[DistributionCenterName] = 'Lebanon',[DistributionCenterID] = 'mikpz1',[Inventory] = 18,[InventoryLastUpdated] = '7/17/2023 9:30:19 AM',[ModifiedDate] = '2/9/2024 8:40:01 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 2276524
+/*2/9/2024 8:40:01 PM: */ /****************************************Commit Transaction********************************/
+/*2/9/2024 8:40:01 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/9/2024 8:40:10 PM: */ /****************************************Begin Transaction********************************/
+/*2/9/2024 8:40:10 PM: */ UPDATE [CustomerProductCatalog] SET [ERPCustomerID] = 'TAR6266P',[TCIN] = '79318178',[PartnerSKU] = 'CY1356-3101-4',[ProductTitle] = 'Courtyard CY1356 Power Loomed Rectangle Indoor/Outdoor Indoor/Outdoor Area Rug - Natural/Blue - 4'' X 5'' 7" - Safavieh',[ItemType] = 'Rugs',[ItemTypeID] = '247928',[Relationship] = 'VC',[PublishStatus] = 'Yes',[DataUpdatesStatus] = 'APPROVED',[Price] = 68,[OfferPrice] = 49,[MAPPrice] = 0,[OfferDiscount] = 0,[PriceLastUpdated] = '10/15/2023 12:08:02 AM',[DistributionCenterName] = 'Lebanon',[DistributionCenterID] = 'mikpz1',[Inventory] = 19,[InventoryLastUpdated] = '7/24/2023 8:55:32 AM',[ModifiedDate] = '2/9/2024 8:40:10 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 2276523
+/*2/9/2024 8:40:10 PM: */ /****************************************Commit Transaction********************************/
+/*2/9/2024 8:40:11 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/9/2024 8:40:36 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*2/9/2024 8:40:36 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/9/2024 8:41:29 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/9/2024 8:41:43 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/9/2024 8:46:05 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/9/2024 8:47:10 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/9/2024 8:49:33 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/9/2024 8:49:34 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/9/2024 8:49:34 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/9/2024 8:49:34 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/9/2024 8:49:34 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/9/2024 8:49:52 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/9/2024 8:49:54 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/9/2024 8:50:13 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/9/2024 8:50:23 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC

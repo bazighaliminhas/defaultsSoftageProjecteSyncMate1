@@ -1,0 +1,54 @@
+/*2/16/2024 3:48:33 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/16/2024 3:48:33 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/16/2024 3:48:33 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/16/2024 3:48:33 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/16/2024 3:48:33 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/16/2024 3:48:44 PM: */ SELECT * FROM [VW_Routes] WHERE [Id] = 5
+/*2/16/2024 3:48:44 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 3
+/*2/16/2024 3:48:44 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 3
+/*2/16/2024 3:48:44 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 4
+/*2/16/2024 3:48:44 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 4
+/*2/16/2024 3:48:44 PM: */ SELECT * FROM [VW_Maps] WHERE [Id] = 11
+/*2/16/2024 3:48:57 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/16/2024 3:49:01 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/16/2024 3:49:01 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/16/2024 3:49:01 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/16/2024 3:49:01 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/16/2024 3:49:01 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/16/2024 3:49:08 PM: */ SELECT * FROM [VW_Routes] WHERE [Id] = 5
+/*2/16/2024 3:49:08 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 3
+/*2/16/2024 3:49:08 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 3
+/*2/16/2024 3:49:08 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 4
+/*2/16/2024 3:49:08 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 4
+/*2/16/2024 3:49:08 PM: */ SELECT * FROM [VW_Maps] WHERE [Id] = 11
+/*2/16/2024 3:49:33 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/16/2024 3:49:35 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/16/2024 3:49:35 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/16/2024 3:49:35 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/16/2024 3:49:35 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/16/2024 3:49:35 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/16/2024 3:49:41 PM: */ SELECT * FROM [VW_Routes] WHERE [Id] = 10
+/*2/16/2024 3:49:41 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 1
+/*2/16/2024 3:49:41 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 1
+/*2/16/2024 3:49:41 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 4
+/*2/16/2024 3:49:41 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 3
+/*2/16/2024 3:49:41 PM: */ SELECT * FROM [VW_Maps] WHERE [Id] = 11
+/*2/16/2024 3:49:47 PM: */ /****************************************Begin Transaction********************************/
+/*2/16/2024 3:49:47 PM: */ UPDATE [Routes] SET [TypeId] = 2,[Status] = 'In-Active',[SourcePartyId] = 1,[DestinationPartyId] = 1,[SourceConnectorId] = 4,[DestinationConnectorId] = 3,[MapId] = 11,[PartyGroupId] = 1,[FrequencyType] = 'Hourly',[StartDate] = '2/16/2024 12:00:00 AM',[EndDate] = '2/22/2024 12:00:00 AM',[RepeatCount] = 3,[WeekDays] = '',[OnDay] = '',[ExecutionTime] = '',[JobID] = NULL,[ModifiedDate] = '2/16/2024 3:49:40 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 10
+/*2/16/2024 3:49:47 PM: */ /****************************************Commit Transaction********************************/
+/*2/16/2024 3:49:50 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/16/2024 3:49:53 PM: */ SELECT * FROM [Connectors] ORDER BY Id DESC
+/*2/16/2024 3:49:53 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/16/2024 3:49:53 PM: */ SELECT * FROM [RouteTypes] ORDER BY Id DESC
+/*2/16/2024 3:49:53 PM: */ SELECT * FROM [PartnerGroups] ORDER BY Id DESC
+/*2/16/2024 3:49:53 PM: */ SELECT * FROM [Maps] ORDER BY Id DESC
+/*2/16/2024 3:49:59 PM: */ SELECT * FROM [VW_Routes] WHERE [Id] = 10
+/*2/16/2024 3:49:59 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 1
+/*2/16/2024 3:49:59 PM: */ SELECT * FROM [VW_Customers] WHERE [Id] = 1
+/*2/16/2024 3:49:59 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 4
+/*2/16/2024 3:49:59 PM: */ SELECT * FROM [VW_Connectors] WHERE [Id] = 3
+/*2/16/2024 3:49:59 PM: */ SELECT * FROM [VW_Maps] WHERE [Id] = 11
+/*2/16/2024 3:50:21 PM: */ /****************************************Begin Transaction********************************/
+/*2/16/2024 3:50:21 PM: */ UPDATE [Routes] SET [TypeId] = 2,[Status] = 'Active',[SourcePartyId] = 1,[DestinationPartyId] = 1,[SourceConnectorId] = 4,[DestinationConnectorId] = 3,[MapId] = 11,[PartyGroupId] = 1,[FrequencyType] = 'Hourly',[StartDate] = '2/16/2024 12:00:00 AM',[EndDate] = '2/22/2024 12:00:00 AM',[RepeatCount] = 3,[WeekDays] = '',[OnDay] = '',[ExecutionTime] = '',[JobID] = '53',[ModifiedDate] = '2/16/2024 3:49:59 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 10
+/*2/16/2024 3:50:21 PM: */ /****************************************Commit Transaction********************************/
+/*2/16/2024 3:50:24 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC

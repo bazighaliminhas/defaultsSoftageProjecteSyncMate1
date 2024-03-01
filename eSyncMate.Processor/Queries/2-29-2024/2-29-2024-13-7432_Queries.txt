@@ -1,0 +1,7 @@
+/*2/29/2024 1:31:11 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/29/2024 1:31:12 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/29/2024 1:31:46 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/29/2024 1:38:34 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*2/29/2024 1:38:35 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/29/2024 1:44:29 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/29/2024 1:55:51 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC

@@ -1,0 +1,19 @@
+/*9/29/2023 12:00:04 AM: */ SELECT Id FROM [Orders] WHERE Status = 'ASNMARK'
+/*9/29/2023 12:00:04 AM: */ SELECT Id FROM [Orders] WHERE Status = 'ASNGEN'
+/*9/29/2023 12:00:04 AM: */ SELECT Id FROM [Orders] WHERE Status = 'SYNCERROR' OR Status = 'NEW'
+/*9/29/2023 12:00:04 AM: */ SELECT * FROM [Orders] WHERE [Id] = 9
+/*9/29/2023 12:00:04 AM: */ SELECT * FROM [Orders] WHERE [Id] = 1
+/*9/29/2023 12:00:04 AM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 9
+/*9/29/2023 12:00:04 AM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 1
+/*9/29/2023 12:00:04 AM: */ SELECT * FROM [InboundEDI] WHERE [Id] = 1
+/*9/29/2023 12:00:04 AM: */ SELECT * FROM [InboundEDI] WHERE [Id] = 9
+/*9/29/2023 12:00:04 AM: */ SELECT * FROM [InboundEDIInfo] WHERE InboundEDIId = 9
+/*9/29/2023 12:00:04 AM: */ SELECT * FROM [InboundEDIInfo] WHERE InboundEDIId = 1
+/*9/29/2023 12:00:04 AM: */ SELECT * FROM [OutboundEDI] WHERE OrderId = 1
+/*9/29/2023 12:00:04 AM: */ SELECT * FROM [OutboundEDI] WHERE OrderId = 9
+/*9/29/2023 12:00:05 AM: */ SELECT * FROM [Customers] WHERE [Id] = 1
+/*9/29/2023 12:00:05 AM: */ SELECT * FROM [Customers] WHERE [Id] = 1
+/*9/29/2023 12:00:05 AM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/29/2023 12:00:05 AM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/29/2023 12:00:05 AM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/29/2023 12:00:05 AM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1

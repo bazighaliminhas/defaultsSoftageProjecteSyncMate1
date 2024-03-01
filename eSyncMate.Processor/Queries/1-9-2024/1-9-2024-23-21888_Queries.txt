@@ -1,0 +1,2 @@
+/*1/9/2024 11:08:08 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/9/2024 11:08:10 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC

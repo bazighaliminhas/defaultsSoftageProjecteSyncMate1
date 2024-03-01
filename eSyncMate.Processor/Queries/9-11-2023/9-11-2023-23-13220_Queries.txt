@@ -1,0 +1,4 @@
+/*9/11/2023 11:08:39 PM: */ SELECT * FROM [Orders] WHERE Id = 1 AND  OrderDate >= '09-11-2023' AND  OrderDate <= '09-12-2023' ORDER BY OrderDate DESC
+/*9/11/2023 11:08:42 PM: */ SELECT * FROM [Orders] WHERE Id = 1 AND  OrderDate >= '09-11-2023' AND  OrderDate <= '09-12-2023' ORDER BY OrderDate DESC
+/*9/11/2023 11:08:52 PM: */ SELECT * FROM [Orders] WHERE Id = 1 AND  OrderDate >= '08-01-2023' AND  OrderDate <= '09-12-2023' ORDER BY OrderDate DESC
+/*9/11/2023 11:32:32 PM: */ SELECT * FROM [Orders] WHERE Id = 1 AND  OrderDate >= '02-02-2001' AND  OrderDate <= '09-12-2023' ORDER BY OrderDate DESC

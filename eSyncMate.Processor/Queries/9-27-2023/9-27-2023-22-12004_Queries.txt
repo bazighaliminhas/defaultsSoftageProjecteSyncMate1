@@ -1,0 +1,30 @@
+/*9/27/2023 10:00:10 PM: */ SELECT * FROM [Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2023-09-20' AND OrderDate <= '2023-09-27' ORDER BY Id DESC
+/*9/27/2023 10:00:14 PM: */ SELECT Id FROM [Orders] WHERE Status = 'INVOICED'
+/*9/27/2023 10:00:14 PM: */ SELECT Id FROM [Orders] WHERE Status = 'SYNCERROR' OR Status = 'NEW'
+/*9/27/2023 10:00:14 PM: */ SELECT Id FROM [Orders] WHERE Status = 'ASNMARK'
+/*9/27/2023 10:00:14 PM: */ SELECT Id FROM [Orders] WHERE Status = 'ASNGEN'
+/*9/27/2023 10:00:14 PM: */ SELECT * FROM [Orders] WHERE [Id] = 9
+/*9/27/2023 10:00:14 PM: */ SELECT * FROM [Orders] WHERE [Id] = 1
+/*9/27/2023 10:00:14 PM: */ SELECT * FROM [Orders] WHERE [Id] = 69
+/*9/27/2023 10:00:14 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 69
+/*9/27/2023 10:00:14 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 1
+/*9/27/2023 10:00:14 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 9
+/*9/27/2023 10:00:14 PM: */ SELECT * FROM [InboundEDI] WHERE [Id] = 1
+/*9/27/2023 10:00:14 PM: */ SELECT * FROM [InboundEDI] WHERE [Id] = 9
+/*9/27/2023 10:00:14 PM: */ SELECT * FROM [InboundEDI] WHERE [Id] = 55
+/*9/27/2023 10:00:14 PM: */ SELECT * FROM [InboundEDIInfo] WHERE InboundEDIId = 55
+/*9/27/2023 10:00:14 PM: */ SELECT * FROM [InboundEDIInfo] WHERE InboundEDIId = 9
+/*9/27/2023 10:00:14 PM: */ SELECT * FROM [InboundEDIInfo] WHERE InboundEDIId = 1
+/*9/27/2023 10:00:15 PM: */ SELECT * FROM [OutboundEDI] WHERE OrderId = 69
+/*9/27/2023 10:00:15 PM: */ SELECT * FROM [OutboundEDI] WHERE OrderId = 9
+/*9/27/2023 10:00:15 PM: */ SELECT * FROM [OutboundEDI] WHERE OrderId = 1
+/*9/27/2023 10:00:15 PM: */ SELECT * FROM [Customers] WHERE [Id] = 1
+/*9/27/2023 10:00:15 PM: */ SELECT * FROM [Customers] WHERE [Id] = 2
+/*9/27/2023 10:00:15 PM: */ SELECT * FROM [Customers] WHERE [Id] = 1
+/*9/27/2023 10:00:15 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 2
+/*9/27/2023 10:00:15 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/27/2023 10:00:15 PM: */ SELECT * FROM [VW_CustomerMaps] WHERE CustomerId = 1
+/*9/27/2023 10:00:15 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 2
+/*9/27/2023 10:00:15 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/27/2023 10:00:15 PM: */ SELECT * FROM [VW_CustomerConnectors] WHERE CustomerId = 1
+/*9/27/2023 10:05:49 PM: */ SELECT * FROM [Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2023-09-20' AND OrderDate <= '2023-09-27' ORDER BY Id DESC

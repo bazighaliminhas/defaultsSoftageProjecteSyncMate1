@@ -1,0 +1,11 @@
+/*2/18/2024 7:02:32 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/18/2024 7:02:32 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/18/2024 7:02:34 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/18/2024 7:21:35 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC
+/*2/18/2024 7:21:35 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/18/2024 7:21:48 PM: */ SELECT * FROM [VW_RouteTypes] WHERE [Name] = 'dsadsad'
+/*2/18/2024 7:21:48 PM: */ /****************************************Begin Transaction********************************/
+/*2/18/2024 7:21:48 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM RouteTypes
+/*2/18/2024 7:21:48 PM: */ INSERT INTO [RouteTypes] ([Id],[Name],[Description],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (7,'dsadsad','dscfsdsdsads','1/1/1900 12:00:00 AM',0,'2/18/2024 7:21:48 PM',0)
+/*2/18/2024 7:21:48 PM: */ /****************************************Commit Transaction********************************/
+/*2/18/2024 7:21:48 PM: */ SELECT * FROM [VW_RouteTypes] ORDER BY Id DESC

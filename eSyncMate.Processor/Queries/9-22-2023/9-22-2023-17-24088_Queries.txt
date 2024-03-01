@@ -1,0 +1,13 @@
+/*9/22/2023 5:44:39 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 5:46:41 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 5:47:34 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 5:47:43 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 5:47:53 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 5:49:06 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 5:49:24 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 5:49:38 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 5:50:09 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 5:51:05 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 5:51:16 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 9 ORDER BY Id
+/*9/22/2023 5:51:58 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 5:52:19 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC

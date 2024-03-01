@@ -1,0 +1,6 @@
+/*1/19/2024 8:10:48 PM: */ Error: SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/19/2024 8:15:06 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/19/2024 8:16:23 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/19/2024 8:17:46 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/19/2024 8:18:02 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  Description = 'SCS Customer-Target Plus' ORDER BY Id DESC
+/*1/19/2024 8:18:06 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  Description = 'SCS Customer-Target Plusdsdds' ORDER BY Id DESC

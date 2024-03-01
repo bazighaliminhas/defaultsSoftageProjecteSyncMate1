@@ -1,0 +1,208 @@
+/*1/11/2024 8:46:20 PM: */ SELECT * FROM [VW_Maps] WHERE [Name] = 'Test Saif Map'
+/*1/11/2024 8:46:20 PM: */ /****************************************Begin Transaction********************************/
+/*1/11/2024 8:46:20 PM: */ SELECT MAX(CONVERT(INT, ISNULL(Id, '0'))) FROM Maps
+/*1/11/2024 8:46:20 PM: */ INSERT INTO [Maps] ([Id],[Name],[TypeId],[Map],[ModifiedDate],[ModifiedBy],[CreatedDate],[CreatedBy]) VALUES (13,'Test Saif Map',4,'{
+	"StartNodes": [
+		{ "Name": "BSN", "Data": [ "00", "#valueof($.SONo)", "#customfunction(EDI.Processor,EDI.Maps.Transformations.formatDate,#valueof($.ShipDate),yyyyMMdd)", "#customfunction(EDI.Processor,EDI.Maps.Transformations.getCurrentTime,)", "0002" ] },
+		{ "Name": "HL", "Data": [ "1", "", "S" ] },
+		{ "Name": "TD5", "Data": [ "B", "2", "#valueof($.Carrier)", "M" ] },
+		{ "Name": "REF", "Data": [ "BM", "#valueof($.BOL)" ] },
+		{ "Name": "N1", "Data": [ "ST", "", "92" , "#valueof($.DC)" ] },
+	],
+	"Orders": {
+		"#loop($.Stores)": {
+			"Data": [
+		        { "Name": "HL", "Data": [ "@HL_IDX@", "1", "O" ] },
+		        { "Name": "PRF", "Data": [ "#valueof($.CustomerPO)" ] },
+		        { "Name": "PID", "Data": [ "S", "", "VI", "ZZ" ] },
+        		{ "Name": "TD1", "Data": [ "CTN25", "#currentvalueatpath($.TotalCarton)" ] },
+		        { "Name": "N1", "Data": [ "BY", "", "92" , "#currentvalueatpath($.StoreNo)" ] },
+			],
+	        "Packs": {
+		        "#loop($.Cartons)": {
+			        "Data": [
+				        { "Name": "HL", "Data": [ "@HL_IDX@", "@HL_P_IDX@", "P" ] },
+				        { "Name": "MAN", "Data": [ "GM", "#currentvalueatpath($.TrackingNo)" ] },
+			        ],
+			        "Items": {
+				        "#loop($.Items)": {
+					        "Data": [
+						        { "Name": "HL", "Data": [ "@HL_IDX@", "@HL_P_IDX@", "I" ] },
+						        { "Name": "LIN", "Data": [ "", "UP", "#currentvalueatpath($.UPC)" ] },
+						        { "Name": "SN1", "Data": [ "", "#currentvalueatpath($.Qty)", "EA" ] },
+						        { "Name": "PO4", "Data": [ "2" ] },
+					        ]
+				        } 
+			        } 
+		        }
+	        },
+		}
+	},
+	"EndNodes": [
+		{ "Name": "CTT", "Data": [ "@HLCOUNT@" ] },
+	]
+}','1/1/1900 12:00:00 AM',0,'1/11/2024 8:46:20 PM',0)
+/*1/11/2024 8:46:20 PM: */ /****************************************Commit Transaction********************************/
+/*1/11/2024 8:46:20 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*1/11/2024 8:46:41 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*1/11/2024 8:47:02 PM: */ /****************************************Begin Transaction********************************/
+/*1/11/2024 8:47:02 PM: */ UPDATE [Maps] SET [Name] = 'Test Saif Map Edi',[TypeId] = 6,[Map] = '{
+	"StartNodes": [
+		{ "Name": "BSN", "Data": [ "00", "#valueof($.SONo)", "#customfunction(EDI.Processor,EDI.Maps.Transformations.formatDate,#valueof($.ShipDate),yyyyMMdd)", "#customfunction(EDI.Processor,EDI.Maps.Transformations.getCurrentTime,)", "0002" ] },
+		{ "Name": "HL", "Data": [ "1", "", "S" ] },
+		{ "Name": "TD5", "Data": [ "B", "2", "#valueof($.Carrier)", "M" ] },
+		{ "Name": "REF", "Data": [ "BM", "#valueof($.BOL)" ] },
+		{ "Name": "N1", "Data": [ "ST", "", "92" , "#valueof($.DC)" ] },
+	],
+	"Orders1": {
+		"#loop($.Stores)": {
+			"Data": [
+		        { "Name": "HL", "Data": [ "@HL_IDX@", "1", "O" ] },
+		        { "Name": "PRF", "Data": [ "#valueof($.CustomerPO)" ] },
+		        { "Name": "PID", "Data": [ "S", "", "VI", "ZZ" ] },
+        		{ "Name": "TD1", "Data": [ "CTN25", "#currentvalueatpath($.TotalCarton)" ] },
+		        { "Name": "N1", "Data": [ "BY", "", "92" , "#currentvalueatpath($.StoreNo)" ] },
+			],
+	        "Packs": {
+		        "#loop($.Cartons)": {
+			        "Data": [
+				        { "Name": "HL", "Data": [ "@HL_IDX@", "@HL_P_IDX@", "P" ] },
+				        { "Name": "MAN", "Data": [ "GM", "#currentvalueatpath($.TrackingNo)" ] },
+			        ],
+			        "Items": {
+				        "#loop($.Items)": {
+					        "Data": [
+						        { "Name": "HL", "Data": [ "@HL_IDX@", "@HL_P_IDX@", "I" ] },
+						        { "Name": "LIN", "Data": [ "", "UP", "#currentvalueatpath($.UPC)" ] },
+						        { "Name": "SN1", "Data": [ "", "#currentvalueatpath($.Qty)", "EA" ] },
+						        { "Name": "PO4", "Data": [ "2" ] },
+					        ]
+				        } 
+			        } 
+		        }
+	        },
+		}
+	},
+	"EndNodes": [
+		{ "Name": "CTT", "Data": [ "@HLCOUNT@" ] },
+	]
+}',[ModifiedDate] = '1/11/2024 8:47:02 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 13
+/*1/11/2024 8:47:02 PM: */ /****************************************Commit Transaction********************************/
+/*1/11/2024 8:47:02 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*1/11/2024 8:47:54 PM: */ SELECT * FROM [MapTypes] ORDER BY Id DESC
+/*1/11/2024 8:48:31 PM: */ /****************************************Begin Transaction********************************/
+/*1/11/2024 8:49:30 PM: */ UPDATE [Maps] SET [Name] = 'Test Saif Map',[TypeId] = 3,[Map] = '{
+	"StartNodes": [
+		{ "Name": "BSN", "Data": [ "00", "#valueof($.SONo)", "#customfunction(EDI.Processor,EDI.Maps.Transformations.formatDate,#valueof($.ShipDate),yyyyMMdd)", "#customfunction(EDI.Processor,EDI.Maps.Transformations.getCurrentTime,)", "0002" ] },
+		{ "Name": "HL", "Data": [ "1", "", "S" ] },
+		{ "Name": "TD5", "Data": [ "B", "2", "#valueof($.Carrier)", "M" ] },
+		{ "Name": "REF", "Data": [ "BM", "#valueof($.BOL)" ] },
+		{ "Name": "N1", "Data": [ "ST", "", "92" , "#valueof($.DC)" ] },
+	],
+	"Orders": {
+		"#loop($.Stores)": {
+			"Data": [
+		        { "Name": "HL", "Data": [ "@HL_IDX@", "1", "O" ] },
+		        { "Name": "PRF", "Data": [ "#valueof($.CustomerPO)" ] },
+		        { "Name": "PID", "Data": [ "S", "", "VI", "ZZ" ] },
+        		{ "Name": "TD1", "Data": [ "CTN25", "#currentvalueatpath($.TotalCarton)" ] },
+		        { "Name": "N1", "Data": [ "BY", "", "92" , "#currentvalueatpath($.StoreNo)" ] },
+			],
+	        "Packs": {
+		        "#loop($.Cartons)": {
+			        "Data": [
+				        { "Name": "HL", "Data": [ "@HL_IDX@", "@HL_P_IDX@", "P" ] },
+				        { "Name": "MAN", "Data": [ "GM", "#currentvalueatpath($.TrackingNo)" ] },
+			        ],
+			        "Items": {
+				        "#loop($.Items)": {
+					        "Data": [
+						        { "Name": "HL", "Data": [ "@HL_IDX@", "@HL_P_IDX@", "I" ] },
+						        { "Name": "LIN", "Data": [ "", "UP", "#currentvalueatpath($.UPC)" ] },
+						        { "Name": "SN1", "Data": [ "", "#currentvalueatpath($.Qty)", "EA" ] },
+						        { "Name": "PO4", "Data": [ "2" ] },
+					        ]
+				        } 
+			        } 
+		        }
+	        },
+		}
+	},
+	"EndNodes": [
+		{ "Name": "CTT", "Data": [ "@HLCOUNT@" ] },
+	]
+}',[ModifiedDate] = '1/11/2024 8:48:28 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 13
+/*1/11/2024 8:49:31 PM: */ /****************************************Commit Transaction********************************/
+/*1/11/2024 8:49:32 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*1/11/2024 8:49:42 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/11/2024 8:49:48 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/11/2024 8:49:53 PM: */ /****************************************Begin Transaction********************************/
+/*1/11/2024 8:49:53 PM: */ UPDATE [Connectors] SET [TypeId] = 3,[Name] = 'Test Saif1',[Data] = '{
+  "BaseUrl": "https://6198403.restlets.api.netsuite.com/app/site/hosting/",
+  "Url": "restlet.nl",
+  "Method": "PUT",
+  "Headers": [
+    {
+      "Name": "Host",
+      "Value": "6198403.restlets.api.netsuite.com"
+    },
+    {
+      "Name": "Content-Type",
+      "Value": "application/json"
+    }
+  ],
+  "Parmeters": [
+    {
+      "Name": "script",
+      "Value": "1167"
+    },
+    {
+      "Name": "deploy",
+      "Value": "1"
+    }
+  ],
+  "BodyFormat": "JSON",
+  "ConsumerKey": "75fd391bed60ac6f9544267044544eba3cf2a828f700064bdd75e9ded4b0a266",
+  "ConsumerSecret": "79017bcbe52c2ad8bb18aebe1bd9da45998c034151c2d0e5fd1a1af83393ee0f",
+  "Token": "655063da3a0282aa64603249da3b2d4d585b3a458871f440883a4bd0dba69411",
+  "TokenSecret": "92b2fd5f13d17120c1b9c2ea2edca1f2b02f1e058efc93edd4312748b23d7f68",
+  "Realm": "6198403"
+}',[ModifiedDate] = '1/11/2024 8:49:53 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 6
+/*1/11/2024 8:49:53 PM: */ /****************************************Commit Transaction********************************/
+/*1/11/2024 8:49:53 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/11/2024 8:49:58 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC
+/*1/11/2024 8:50:03 PM: */ /****************************************Begin Transaction********************************/
+/*1/11/2024 8:50:03 PM: */ UPDATE [Connectors] SET [TypeId] = 4,[Name] = 'Test Saif',[Data] = '{
+  "BaseUrl": "https://6198403.restlets.api.netsuite.com/app/site/hosting/",
+  "Url": "restlet.nl",
+  "Method": "PUT",
+  "Headers": [
+    {
+      "Name": "Host",
+      "Value": "6198403.restlets.api.netsuite.com"
+    },
+    {
+      "Name": "Content-Type",
+      "Value": "application/json"
+    }
+  ],
+  "Parmeters": [
+    {
+      "Name": "script",
+      "Value": "1167"
+    },
+    {
+      "Name": "deploy",
+      "Value": "1"
+    }
+  ],
+  "BodyFormat": "JSON",
+  "ConsumerKey": "75fd391bed60ac6f9544267044544eba3cf2a828f700064bdd75e9ded4b0a266",
+  "ConsumerSecret": "79017bcbe52c2ad8bb18aebe1bd9da45998c034151c2d0e5fd1a1af83393ee0f",
+  "Token": "655063da3a0282aa64603249da3b2d4d585b3a458871f440883a4bd0dba69411",
+  "TokenSecret": "92b2fd5f13d17120c1b9c2ea2edca1f2b02f1e058efc93edd4312748b23d7f68",
+  "Realm": "6198403"
+}',[ModifiedDate] = '1/11/2024 8:50:03 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 6
+/*1/11/2024 8:50:03 PM: */ /****************************************Commit Transaction********************************/
+/*1/11/2024 8:50:03 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/11/2024 8:50:07 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC

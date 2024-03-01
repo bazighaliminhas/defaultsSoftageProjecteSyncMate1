@@ -1,0 +1,2 @@
+/*2/4/2024 7:40:16 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/4/2024 7:41:45 AM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC

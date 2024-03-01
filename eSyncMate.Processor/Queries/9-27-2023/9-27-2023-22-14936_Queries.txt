@@ -1,0 +1,5 @@
+/*9/27/2023 10:11:54 PM: */ SELECT * FROM [Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2023-09-20' AND OrderDate <= '2023-09-27' ORDER BY Id DESC
+/*9/27/2023 10:16:59 PM: */ SELECT * FROM [Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2023-09-20' AND OrderDate <= '2023-09-27' ORDER BY Id DESC
+/*9/27/2023 10:17:04 PM: */ SELECT * FROM [Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2023-09-20' AND OrderDate <= '2023-09-27' ORDER BY Id DESC
+/*9/27/2023 10:17:09 PM: */ SELECT * FROM [Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2023-09-20' AND OrderDate <= '2023-09-27' ORDER BY Id DESC
+/*9/27/2023 10:17:46 PM: */ Error: SELECT * FROM [Orders] WHERE Status <> 'DELETED' AND Id = 69 AND OrderDate >= '""' AND OrderDate <= '""' ORDER BY Id DESC

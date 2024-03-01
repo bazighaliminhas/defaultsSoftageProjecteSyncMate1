@@ -1,0 +1,3 @@
+/*9/22/2023 3:57:40 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC
+/*9/22/2023 3:57:47 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-20' ORDER BY OrderDate DESC
+/*9/22/2023 3:58:07 PM: */ SELECT * FROM [Orders] WHERE  OrderDate >= '2023-09-15' AND  OrderDate <= '2023-09-22' ORDER BY OrderDate DESC

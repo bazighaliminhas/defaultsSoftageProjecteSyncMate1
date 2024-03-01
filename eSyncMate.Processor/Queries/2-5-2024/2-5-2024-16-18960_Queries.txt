@@ -1,0 +1,2 @@
+/*2/5/2024 4:03:18 PM: */ Error: SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/5/2024 4:03:45 PM: */ Error: SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC

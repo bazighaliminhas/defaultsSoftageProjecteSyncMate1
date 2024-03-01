@@ -1,0 +1,128 @@
+<div mat-dialog-content class="dialog-content">
+  <h1 class="dialog-title">Edit Customer Product Catalog</h1>
+  <form [formGroup]="updateCustomerProductCatalogForm" class="customerProductCatalog-form">
+
+    <mat-tab-group>
+      <mat-tab label="General">
+        <br />
+        <!-- Row 1: Name -->
+        <div class="form-row">
+          <mat-form-field class="form-field">
+            <mat-label>TCIN</mat-label>
+            <input matInput formControlName="tcin">
+          </mat-form-field>
+
+          <mat-form-field class="form-field">
+            <mat-label>Partner SKU</mat-label>
+            <input matInput formControlName="partnerSKU">
+          </mat-form-field>
+
+          <mat-form-field class="form-field">
+            <mat-label>Item Type</mat-label>
+            <input matInput formControlName="itemType">
+          </mat-form-field>
+
+          <mat-form-field class="form-field">
+            <mat-label>Item Type ID</mat-label>
+            <input matInput formControlName="itemTypeID">
+          </mat-form-field>
+
+
+        </div>
+
+        <!-- Row 2: Name -->
+        <div class="form-row">
+          <mat-form-field class="form-field">
+            <mat-label>Relationship</mat-label>
+            <input matInput formControlName="relationship">
+          </mat-form-field>
+
+          <mat-form-field class="form-field">
+            <mat-label>Publish Status</mat-label>
+            <input matInput formControlName="publishStatus">
+          </mat-form-field>
+
+          <mat-form-field class="form-field">
+            <mat-label>Data Updates Status</mat-label>
+            <input matInput formControlName="dataUpdatesStatus">
+          </mat-form-field>
+
+          <mat-form-field class="form-field">
+            <mat-label>Distribution Center Name</mat-label>
+            <input matInput formControlName="distributionCenterName">
+          </mat-form-field>
+
+        </div>
+        <!-- Row 3: Name -->
+        <div class="form-row">
+          <mat-form-field class="form-field">
+            <mat-label>Distribution CenterID</mat-label>
+            <input matInput formControlName="distributionCenterID">
+          </mat-form-field>
+
+          <mat-form-field class="form-field">
+            <mat-label>Inventory</mat-label>
+            <input matInput formControlName="inventory">
+          </mat-form-field>
+
+          <mat-form-field class="form-field">
+            <input formControlName="inventoryLastUpdated" matInput [matDatepicker]="inventoryLastUpdatedPicker" placeholder="Inventory Last Updated">
+            <mat-datepicker-toggle matSuffix [for]="inventoryLastUpdatedPicker"></mat-datepicker-toggle>
+            <mat-datepicker #inventoryLastUpdatedPicker></mat-datepicker>
+          </mat-form-field>
+
+        </div>
+
+        <div class="form-row">
+          <mat-form-field class="full-width" style="width: 100%;">
+            <mat-label>Product Title</mat-label>
+            <textarea matInput formControlName="productTitle" style="height: 100px;"></textarea>
+          </mat-form-field>
+        </div>
+      </mat-tab>
+
+      <mat-tab label="Pricing">
+        <br />
+        <!-- Row 2: Name -->
+        <div class="form-row">
+
+          <mat-form-field class="form-field">
+            <mat-label>Price</mat-label>
+            <input matInput formControlName="price">
+          </mat-form-field>
+
+          <mat-form-field class="form-field">
+            <mat-label>Offer Price</mat-label>
+            <input matInput formControlName="offerPrice">
+          </mat-form-field>
+
+          <mat-form-field class="form-field">
+            <mat-label>MAP Price</mat-label>
+            <input matInput formControlName="mapPrice">
+          </mat-form-field>
+          <mat-form-field class="form-field">
+            <mat-label>Offer Discount</mat-label>
+            <input matInput formControlName="offerDiscount">
+          </mat-form-field>
+        </div>
+
+        <div class="form-row">
+
+          <mat-form-field class="form-field">
+            <input formControlName="priceLastUpdated" matInput [matDatepicker]="priceLastUpdatedPicker" placeholder="Price Last Updated">
+            <mat-datepicker-toggle matSuffix [for]="priceLastUpdatedPicker"></mat-datepicker-toggle>
+            <mat-datepicker #priceLastUpdatedPicker></mat-datepicker>
+          </mat-form-field>
+
+        </div>
+
+      </mat-tab>
+
+    </mat-tab-group>
+  </form>
+</div>
+
+<div mat-dialog-actions class="dialog-actions">
+  <button mat-button class="cancel-button" (click)="onCancel()">Cancel</button>
+  <button mat-raised-button color="primary" [disabled]="!updateCustomerProductCatalogForm.valid" (click)="updateCustomerProductCatalog()">Update</button>
+</div>

@@ -1,0 +1,2 @@
+/*2/6/2024 9:05:09 PM: */ SELECT * FROM [Customers] WHERE  ERPCustomerID = 'TARGET' ORDER BY Id DESC
+/*2/6/2024 9:05:38 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC

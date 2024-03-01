@@ -1,0 +1,7 @@
+/*2/6/2024 7:10:48 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:12:34 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:15:59 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:16:07 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:17:32 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:17:53 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/6/2024 7:18:03 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC

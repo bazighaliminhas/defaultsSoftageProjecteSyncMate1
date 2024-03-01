@@ -1,0 +1,14 @@
+/*1/20/2024 2:46:04 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*1/20/2024 2:46:12 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/20/2024 2:46:16 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/20/2024 2:46:22 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/20/2024 2:47:00 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/20/2024 2:48:05 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/20/2024 2:48:17 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/20/2024 2:49:06 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/20/2024 2:50:45 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/20/2024 2:51:45 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/20/2024 2:51:55 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/20/2024 2:53:03 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/20/2024 2:53:06 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/20/2024 2:53:07 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC

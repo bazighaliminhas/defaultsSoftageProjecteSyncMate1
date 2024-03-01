@@ -1,0 +1,42 @@
+/*1/23/2024 1:00:09 PM: */ SELECT * FROM [VW_Users] WHERE Email = 'majid@gmail.com' AND Password = 'GGGGGGGG' AND Status = 'ACTIVE'
+/*1/23/2024 1:00:49 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/23/2024 1:00:57 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/23/2024 1:01:10 PM: */ /****************************************Begin Transaction********************************/
+/*1/23/2024 1:01:10 PM: */ UPDATE [PartnerGroups] SET [SourcePartyId] = 4,[DestinationPartyId] = 5,[Description] = 'SCS - Target Store',[ModifiedDate] = '1/23/2024 1:01:10 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 2
+/*1/23/2024 1:01:10 PM: */ /****************************************Commit Transaction********************************/
+/*1/23/2024 1:01:11 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/23/2024 1:01:15 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/23/2024 1:01:19 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/23/2024 1:01:24 PM: */ /****************************************Begin Transaction********************************/
+/*1/23/2024 1:01:24 PM: */ UPDATE [PartnerGroups] SET [SourcePartyId] = 4,[DestinationPartyId] = 3,[Description] = 'SCS - Target Store',[ModifiedDate] = '1/23/2024 1:01:24 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 2
+/*1/23/2024 1:01:24 PM: */ /****************************************Commit Transaction********************************/
+/*1/23/2024 1:01:24 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/23/2024 1:01:31 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/23/2024 1:05:33 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/23/2024 1:05:47 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/23/2024 1:05:56 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/23/2024 1:06:04 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/23/2024 1:06:17 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/23/2024 1:06:37 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/23/2024 1:06:45 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/23/2024 1:06:46 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/23/2024 1:06:50 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/23/2024 1:07:16 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/23/2024 1:07:22 PM: */ /****************************************Begin Transaction********************************/
+/*1/23/2024 1:07:22 PM: */ UPDATE [PartnerGroups] SET [SourcePartyId] = 2,[DestinationPartyId] = 4,[Description] = 'Nordstrom Store - SCS',[ModifiedDate] = '1/23/2024 1:07:22 PM',[ModifiedBy] = 0,[CreatedDate] = '1/1/1900 12:00:00 AM',[CreatedBy] = 0 WHERE [Id] = 2
+/*1/23/2024 1:07:22 PM: */ /****************************************Commit Transaction********************************/
+/*1/23/2024 1:07:22 PM: */ SELECT * FROM [VW_PartnerGroups] ORDER BY Id DESC
+/*1/23/2024 1:10:19 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  Description = 'SCS Customer-Target Plus' ORDER BY Id DESC
+/*1/23/2024 1:10:21 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  Description = 'SCS Customer-Target Plus' ORDER BY Id DESC
+/*1/23/2024 1:10:21 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  Description = 'SCS Customer-Target Plus' ORDER BY Id DESC
+/*1/23/2024 1:10:21 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  Description = 'SCS Customer-Target Plus' ORDER BY Id DESC
+/*1/23/2024 1:10:21 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  Description = 'SCS Customer-Target Plus' ORDER BY Id DESC
+/*1/23/2024 1:10:21 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  Description = 'SCS Customer-Target Plus' ORDER BY Id DESC
+/*1/23/2024 1:10:22 PM: */ SELECT * FROM [VW_PartnerGroups] WHERE  Description = 'SCS Customer-Target Plus' ORDER BY Id DESC
+/*1/23/2024 1:10:23 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/23/2024 1:10:48 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2024-01-16' AND OrderDate <= '2024-01-23' ORDER BY Id DESC
+/*1/23/2024 1:11:38 PM: */ SELECT * FROM [VW_Orders] WHERE Status <> 'DELETED' AND OrderDate >= '2022-12-01' AND OrderDate <= '2024-01-23' ORDER BY Id DESC
+/*1/23/2024 1:12:59 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 2865 ORDER BY Id
+/*1/23/2024 1:13:33 PM: */ SELECT * FROM [VW_OrderData] WHERE OrderId = 2851 ORDER BY Id
+/*1/23/2024 1:15:30 PM: */ SELECT * FROM [VW_Connectors] ORDER BY Id DESC
+/*1/23/2024 1:15:33 PM: */ SELECT * FROM [ConnectorTypes] ORDER BY Id DESC

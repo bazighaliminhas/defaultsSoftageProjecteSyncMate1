@@ -1,0 +1,6 @@
+/*1/8/2024 9:42:24 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 9:42:29 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 9:43:00 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 9:43:10 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 9:43:19 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 9:43:59 PM: */ /****************************************Begin Transaction********************************/

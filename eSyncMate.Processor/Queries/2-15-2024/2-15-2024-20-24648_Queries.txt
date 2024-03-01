@@ -1,0 +1,30 @@
+/*2/15/2024 8:02:31 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/15/2024 8:03:05 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/15/2024 8:04:18 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/15/2024 8:05:07 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/15/2024 8:05:52 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/15/2024 8:07:28 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/15/2024 8:07:35 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/15/2024 8:07:44 PM: */ SELECT Id,RouteId,Type,Message , Details , CreatedDate ,CreatedBy ,ModifiedDate , ModifiedBy FROM VW_RouteLog WHERE RouteId = '9'
+/*2/15/2024 8:07:47 PM: */ SELECT Id,RouteId,Type,Message , Details , CreatedDate ,CreatedBy ,ModifiedDate , ModifiedBy FROM VW_RouteLog WHERE RouteId = '6'
+/*2/15/2024 8:09:05 PM: */ SELECT * FROM [VW_CustomerProductCatalog] ORDER BY Id DESC
+/*2/15/2024 8:11:04 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/15/2024 8:11:11 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/15/2024 8:11:17 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/15/2024 8:14:58 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/15/2024 8:15:21 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/15/2024 8:16:43 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/15/2024 8:16:50 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/15/2024 8:17:35 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/15/2024 8:17:51 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*2/15/2024 8:18:04 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/15/2024 8:20:19 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/15/2024 8:21:23 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/15/2024 8:21:25 PM: */ SELECT Id,RouteId,Type,Message , Details , CreatedDate ,CreatedBy ,ModifiedDate , ModifiedBy FROM VW_RouteLog WHERE RouteId = '8'
+/*2/15/2024 8:21:28 PM: */ SELECT Id,RouteId,Type,Message , Details , CreatedDate ,CreatedBy ,ModifiedDate , ModifiedBy FROM VW_RouteLog WHERE RouteId = '8'
+/*2/15/2024 8:21:31 PM: */ SELECT Id,RouteId,Type,Message , Details , CreatedDate ,CreatedBy ,ModifiedDate , ModifiedBy FROM VW_RouteLog WHERE RouteId = '8'
+/*2/15/2024 8:21:51 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/15/2024 8:25:14 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/15/2024 8:25:43 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC
+/*2/15/2024 8:25:53 PM: */ SELECT * FROM [VW_Routes] ORDER BY Id DESC
+/*2/15/2024 8:25:54 PM: */ SELECT * FROM [VW_Maps] ORDER BY Id DESC

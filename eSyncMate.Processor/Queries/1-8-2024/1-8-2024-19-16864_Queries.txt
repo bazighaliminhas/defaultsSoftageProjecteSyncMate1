@@ -1,0 +1,2 @@
+/*1/8/2024 7:56:06 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
+/*1/8/2024 7:57:25 PM: */ SELECT * FROM [Customers] ORDER BY Id DESC
